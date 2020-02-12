@@ -1,6 +1,5 @@
 {
-  "short_name": "ms.media",
-	"name": "Matthew Sullivan || Media Specialist",
+  "display": "standalone",
 	"icons": [
 		{
 			"src": "faviconandroid-chrome-36x36.png",
@@ -47,7 +46,8 @@
 			"sizes": "512x512",
 			"type": "image/png"
 		}
-	],
-	"theme_color": "#ffffff",
-	"display": "standalone"
+  ],
+  "name": "Matthew Sullivan || Media Specialist",
+  "short_name": "ms.media",
+	"theme_color": "#ffffff"
 }
