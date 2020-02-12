@@ -15,11 +15,13 @@
     "extends": "react-app"
   },
   "dependencies": {
+    "@rooks/use-window-size": "^3.6.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-particle-image": "^1.0.1",
     "react-scripts": "3.3.1"
   },
   "devDependencies": {
