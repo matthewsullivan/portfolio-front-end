@@ -7,6 +7,24 @@ import React from 'react';
 
 import './App.css';
 
+/**
+ * Get Navigation
+ * @return {JSX}
+ */
+const getNavigation = () => {
+  const sections = ['About', 'Services', 'Folio', 'contact'];
+
+  return sections.map((section) => {
+    return (
+      <li className="navigation__item" key={section}>
+        <a className="navigation__link" href="#">
+          {section}
+        </a>
+      </li>
+    );
+  });
+};
+
 export default function App() {
   return (
     <div className="app">
@@ -17,28 +35,7 @@ export default function App() {
           src="/assets/logo--square.png"
         />
         <nav className="navigation">
-          <ul className="navigation__list">
-            <li className="navigation__item">
-              <a className="navigation__link" href="#">
-                About
-              </a>
-            </li>
-            <li className="navigation__item">
-              <a className="navigation__link" href="#">
-                Services
-              </a>
-            </li>
-            <li className="navigation__item">
-              <a className="navigation__link" href="#">
-                Folio
-              </a>
-            </li>
-            <li className="navigation__item">
-              <a className="navigation__link" href="#">
-                Contact
-              </a>
-            </li>
-          </ul>
+          <ul className="navigation__list">{getNavigation()}</ul>
         </nav>
       </header>
       <section className="hero"></section>
