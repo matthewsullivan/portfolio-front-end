@@ -5,6 +5,8 @@ import React from 'react';
 // import GitHubIcon from '@material-ui/icons/GitHub';
 // import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
+import Hero from './components/Hero/Hero';
+
 import './App.css';
 
 /**
@@ -31,14 +33,17 @@ export default function App() {
       <header className="header">
         <img
           alt="Header Logo Image"
-          className="header__img"
+          className="header__image"
           src="/assets/logo--square.png"
         />
         <nav className="navigation">
           <ul className="navigation__list">{getNavigation()}</ul>
         </nav>
       </header>
-      <section className="hero"></section>
+
+      <section className="hero">
+        <Hero />
+      </section>
     </div>
   );
 }

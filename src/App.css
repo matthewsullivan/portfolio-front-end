@@ -19,7 +19,7 @@
   padding: 0 32px;
 }
 
-.header__img {
+.header__image {
   background: var(--palette-primary);
   height: 72px;
   object-fit: contain;
@@ -39,7 +39,7 @@
     height: 192px;
   }
 
-  .header__img {
+  .header__image {
     height: 96px;
     width: 96px;
   }
