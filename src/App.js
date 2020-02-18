@@ -5,7 +5,7 @@ import React from 'react';
 // import GitHubIcon from '@material-ui/icons/GitHub';
 // import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
-import Hero from './components/Hero/Hero';
+import Carousel from './components/Hero/Carousel';
 
 import './App.css';
 
@@ -19,7 +19,7 @@ const getNavigation = () => {
   return sections.map((section) => {
     return (
       <li className="navigation__item" key={section}>
-        <a className="navigation__link" href="#">
+        <a className="navigation__link" href={`#${section}`}>
           {section}
         </a>
       </li>
@@ -32,7 +32,7 @@ export default function App() {
     <div className="app">
       <header className="header">
         <img
-          alt="Header Logo Image"
+          alt="Header Logo"
           className="header__image"
           src="/assets/logo--square.png"
         />
@@ -42,7 +42,7 @@ export default function App() {
       </header>
 
       <section className="hero">
-        <Hero />
+        <Carousel />
       </section>
     </div>
   );
