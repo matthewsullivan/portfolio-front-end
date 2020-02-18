@@ -1,0 +1,45 @@
+@import "~/common/Template.module.css";
+
+.button {
+  background: var(--palette-secondary);
+  backface-visibility: hidden;
+  background-clip: padding-box;
+  box-shadow: 0 0 1px transparent;
+  color: var(--palette-tertiary);
+  display: inline-block;
+  font-family: var(--typography-primary);
+  font-size: 14px;
+  padding: 6px 12px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform: translateZ(0);
+  transition: 0.2s;
+  vertical-align: middle;
+}
+
+.button:before {
+  border: var(--palette-secondary) solid 1px;
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition-duration: 0.2s;
+  transition-property: top, right, bottom, left;
+}
+
+.button:hover:before,
+.button:focus:before,
+.button:active:before {
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  top: -2px;
+}
+
+.button:hover {
+  background: var(--palette-secondary);
+  color: var(--palette-tertiary);
+}

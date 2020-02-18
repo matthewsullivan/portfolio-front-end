@@ -1,0 +1,66 @@
+@import "~/common/Template.module.css";
+@import "~react-alice-carousel/lib/alice-carousel.css";
+@import '~@material/react-button/dist/button.css';
+
+.carousel__slide {
+  cursor: grab;
+  min-height: 440px;
+  position: relative;
+  height: calc(100vh - 112px - 80px);
+}
+
+.carousel__image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel__title {
+  color: var(--palette-tertiary);
+  font-family: var(--typography-primary);
+  font-size: 72px;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+}
+
+.carousel__body {
+  color: var(--palette-tertiary);
+  font-family: var(--typography-primary);
+  padding: 0 32px;
+  text-align: center;
+}
+
+.carousel__dots {
+  color: var(--palette-secondary);  
+}
+
+@media only screen and (min-width: 768px) {
+  .carousel__slide {
+    height: calc(100vh - 192px - 80px);
+  }
+
+  .carousel__title {
+    font-size: 96px;
+    line-height: 0.8;
+    margin: 0 0 16px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .carousel__body {
+    max-width: 408px;
+  }
+}
