@@ -26,16 +26,48 @@
   width: 72px;
 }
 
+.navigation{
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .header {
     box-sizing: border-box;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 32px;
     height: 192px;
   }
 
   .header__img {
     height: 96px;
     width: 96px;
+  }
+
+  .navigation {
+    display: inline-block;
+    width: 272px;
+  }
+  
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation__link {
+    color: var(--palette-primary);
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none; 
+    text-transform: uppercase;
+    transition: 0.2s;
+  }
+  
+  .navigation__link:hover {
+    color: var(--palette-secondary);
   }
 }
 
