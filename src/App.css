@@ -1,74 +1,43 @@
 
+:root {
+  --palette-primary: #070a21;
+  --palette-secondary: #2ecc71;
+  --palette-tertiary: #f9f9f9;
+}
+
 .app {
   background: #fff;
+  border: 16px solid var(--palette-primary);
 }
 
-h1 {
-  font-family: 'Abril Fatface', cursive;
-  font-size: 3.1875rem;
-  font-weight: 300;
-  letter-spacing: -1px;
-  line-height: 2.875rem;
-  -webkit-font-smoothing: antialiased;
-}
-
-h1 span {
-  display: block;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.25rem;
-}
-
-.hero {
+.header {
+  align-items: center;
+  background: #fdfdfd;
   display: flex;
-  border: 16px solid #fff;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  height: 100vh;
-  width: 100%;
+  height: 112px;
+  justify-content: left;
+  padding: 0 32px;
 }
 
-.hero__image {
-  background: url(/assets/hero.jpg) no-repeat;
-  background-size: cover;
-  flex: 0 0 100%;
-  height: 400px;
-}
-
-.hero__content {
-  box-sizing: border-box;
-  flex: 0 0 100%;
-  height: 600px;
-  padding: 0;
-  text-align: center;
-}
-
-@media only screen and (min-width: 480px) {
-  .hero {
-    flex-direction: row-reverse;
-  }
+.header__img {
+  background: var(--palette-primary);
+  height: 72px;
+  object-fit: contain;
+  width: 72px;
 }
 
 @media only screen and (min-width: 768px) {
-  .hero__image {
-    clip-path: polygon(0 0.5%, 100% 0, 100% 100%, 0 99.5%);
-    height: 100%;
-    flex: 0 0 65%;
+  .header {
+    box-sizing: border-box;
+    justify-content: center;
+    height: 192px;
   }
 
-  .hero__content {
-    flex: 1;
-    height: 100%;
-    padding: 0 40px 0 24px;
-    max-width: 400px;
-    text-align: left;
+  .header__img {
+    height: 96px;
+    width: 96px;
   }
 }
 
 @media only screen and (min-width: 992px){
-  .hero__image {
-    flex: 1;
-  }
 }
