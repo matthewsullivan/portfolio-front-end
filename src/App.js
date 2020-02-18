@@ -1,11 +1,6 @@
 import React from 'react';
 
-// import IconButton from '@material-ui/core/IconButton';
-
-// import GitHubIcon from '@material-ui/icons/GitHub';
-// import LinkedInIcon from '@material-ui/icons/LinkedIn';
-
-import Carousel from './components/Hero/Carousel';
+import Carousel from './components/Carousel/Carousel';
 
 import './App.css';
 
@@ -14,7 +9,7 @@ import './App.css';
  * @return {JSX}
  */
 const getNavigation = () => {
-  const sections = ['About', 'Services', 'Folio', 'contact'];
+  const sections = ['about', 'services', 'folio', 'contact'];
 
   return sections.map((section) => {
     return (
