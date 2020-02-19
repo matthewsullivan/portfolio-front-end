@@ -1,5 +1,7 @@
 import React from 'react';
 
+import MdRemove from 'react-ionicons/lib/MdRemove';
+
 import PropTypes from 'prop-types';
 
 import './Title.css';
@@ -14,9 +16,14 @@ export default function Title(props) {
   const {body, chapter, title} = props;
 
   return (
-    <section>
-      <p>{chapter}</p>
-      <p>{body}</p> <h2>{title}</h2>
+    <section className="title">
+      <div className={chapter ? 'chapter' : 'chapter--hidden'} hidden={true}>
+        <MdRemove color="#070a21" fontSize="16" />
+        <p className="chapter__content">{chapter}</p>
+        <MdRemove color="#070a21" fontSize="16" />
+      </div>
+      <h2 className="title__heading">{title}</h2>
+      <p className="title__body">{body}</p>
     </section>
   );
 }

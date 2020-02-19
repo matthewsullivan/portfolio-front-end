@@ -155,10 +155,33 @@ export default function App() {
           title="About"
         />
       </section>
-      <section id="services" style={{height: 500}}></section>
-      <section id="folio" style={{height: 500}}></section>
-      <section id="contact" style={{height: 500}}></section>
-      <section id="cv" style={{height: 500}}></section>
+      <section id="services" style={{height: 500}}>
+        <Title
+          body="Full Stack in more ways than one."
+          chapter="02"
+          title="Services"
+        />
+      </section>
+      <section id="folio" style={{height: 500}}>
+        <Title
+          body="Hand picked projects and case studies."
+          chapter="03"
+          title="Works"
+        />
+      </section>
+      <section id="contact" style={{height: 500}}>
+        <Title
+          body="Please don't hesitate to reach out to me with any questions."
+          chapter="04"
+          title="Contact"
+        />
+      </section>
+      <section id="cv" style={{height: 500}}>
+        <Title
+          body="You've made it this far. Why not check out my curriculum vitae too?"
+          title="Curriculum Vitae"
+        />
+      </section>
     </div>
   );
 }
