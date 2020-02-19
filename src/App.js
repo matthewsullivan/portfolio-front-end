@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Headroom from 'react-headroom';
 import IosClose from 'react-ionicons/lib/IosClose';
 import IosMenu from 'react-ionicons/lib/IosMenu';
@@ -24,9 +25,9 @@ const getNavigation = (element) => {
     const navigation = sections.map((section) => {
       return (
         <li className="drawer-navigation__item" key={section}>
-          <a className="drawer-navigation__link" href={`#${section}`}>
+          <AnchorLink className="drawer-navigation__link" href={`#${section}`}>
             {section}
-          </a>
+          </AnchorLink>
         </li>
       );
     });
@@ -42,14 +43,14 @@ const getNavigation = (element) => {
   const navigation = sections.map((section) => {
     return (
       <li className="navigation__item" key={section}>
-        <a
+        <AnchorLink
           className={`navigation__link ${
             element === 'headroom' ? 'navigation__link--headroom' : ''
           }`}
           href={`#${section}`}
         >
           {section}
-        </a>
+        </AnchorLink>
       </li>
     );
   });
@@ -88,11 +89,13 @@ export default function App() {
       >
         <section className="drawer__content">
           <header className="drawer__header">
-            <img
-              alt="Header Logo"
-              className="drawer__image"
-              src="/assets/logo--square.png"
-            />
+            <AnchorLink href="#hero" offset="128">
+              <img
+                alt="Header Logo"
+                className="drawer__image"
+                src="/assets/logo--square.png"
+              />
+            </AnchorLink>
 
             <div className="drawer__close" onClick={() => handleDrawerToggle()}>
               <IosClose color="#f9f9f9" fontSize="32" />
@@ -108,11 +111,13 @@ export default function App() {
         pinStart={192}
         wrapperStyle={{marginTop: -88}}
       >
-        <img
-          alt="Header Logo"
-          className="headroom__image"
-          src="/assets/logo--square.png"
-        />
+        <AnchorLink href="#hero" offset="208">
+          <img
+            alt="Header Logo"
+            className="headroom__image"
+            src="/assets/logo--square.png"
+          />
+        </AnchorLink>
         <IosMenu
           className="headroom__drawer-icon"
           color="#f9f9f9"
@@ -122,11 +127,13 @@ export default function App() {
       </Headroom>
 
       <header className="header">
-        <img
-          alt="Header Logo"
-          className="header__image"
-          src="/assets/logo--square.png"
-        />
+        <AnchorLink href="#hero" offset="208">
+          <img
+            alt="Header Logo"
+            className="header__image"
+            src="/assets/logo--square.png"
+          />
+        </AnchorLink>
         <IosMenu
           className="header__drawer-icon"
           color="#070a21"
@@ -135,11 +142,14 @@ export default function App() {
         {getNavigation('header')}
       </header>
 
-      <section className="hero">
+      <section id="hero">
         <Hero />
       </section>
 
-      <section className="about" style={{height: 500}}></section>
+      <section id="about" style={{height: 500}}></section>
+      <section id="services" style={{height: 500}}></section>
+      <section id="folio" style={{height: 500}}></section>
+      <section id="contact" style={{height: 500}}></section>
     </div>
   );
 }
