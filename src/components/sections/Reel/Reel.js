@@ -13,7 +13,14 @@ export default function Reel() {
   return (
     <section className="reel">
       <header className="reel__header">
-        <Title body="Have a look at my demo reel." light title="Demo Reel" />
+        <Title
+          body="Have a look at my demo reel."
+          className="reel__header"
+          light
+          title="Demo Reel"
+        />
+
+        <div className="line" />
       </header>
       <section className="reel__content">
         <ReactPlayer className="reel__video" {...options} />
