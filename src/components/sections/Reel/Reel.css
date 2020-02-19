@@ -1,0 +1,31 @@
+@import "~/common/Template.module.css";
+
+.reel {
+  padding: 24px 0;
+}
+
+.reel__header {
+  background: var(--palette-primary);
+  display: flex;
+  flex-direction: column;
+  height: 240px;
+  justify-content: center;
+}
+
+.reel__content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .reel__content {
+    padding: 44px;
+  }
+
+  .reel__video {
+    height: 488px !important;
+    width: 904px !important;
+  }
+}
