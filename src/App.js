@@ -9,6 +9,7 @@ import SlidingPanel from 'react-sliding-side-panel';
 
 import {disableBodyScroll, enableBodyScroll} from 'body-scroll-lock';
 
+import Title from './components/elements/Title/Title';
 import Hero from './components/sections/Hero/Hero';
 
 import './App.css';
@@ -48,6 +49,7 @@ const getNavigation = (element) => {
             element === 'headroom' ? 'navigation__link--headroom' : ''
           }`}
           href={`#${section}`}
+          offset="88"
         >
           {section}
         </AnchorLink>
@@ -146,10 +148,17 @@ export default function App() {
         <Hero />
       </section>
 
-      <section id="about" style={{height: 500}}></section>
+      <section id="about" style={{height: 500}}>
+        <Title
+          body="Enthuiastic and Experienced Software Developer"
+          chapter="01"
+          title="About"
+        />
+      </section>
       <section id="services" style={{height: 500}}></section>
       <section id="folio" style={{height: 500}}></section>
       <section id="contact" style={{height: 500}}></section>
+      <section id="cv" style={{height: 500}}></section>
     </div>
   );
 }
