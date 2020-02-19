@@ -23,15 +23,19 @@ export default function Hero() {
 
   /**
    * Handle Slide Changed
-   * @param {object} e 
+   * @param {object} event 
    */
-  const handleSlideChanged = (e) => {
-    setSelected(e.slide);
-  }
+  const handleSlideChanged = (event) => {
+    setSelected(event.slide);
+  };
 
   return (
     <section className="carousel">
-      <AliceCarousel onSlideChanged={handleSlideChanged} ref={(el) => (carousel = el)} {...options}>
+      <AliceCarousel
+        onSlideChanged={handleSlideChanged}
+        ref={(el) => (carousel = el)}
+        {...options}
+      >
         <div
           className="carousel__slide"
           onDragStart={options.handleOnDragStart}
@@ -73,16 +77,32 @@ export default function Hero() {
       </AliceCarousel>
 
       <nav className="controls">
-        <div className="controls__button controls__button--prev" onClick={() => carousel.slidePrev()}>
-          <IosArrowBack color="#fff"/>
+        <div
+          className="controls__button controls__button--prev"
+          onClick={() => carousel.slidePrev()}
+        >
+          <IosArrowBack color="#fff" />
         </div>
-        <div className="controls__button controls__button--next" onClick={() => carousel.slideNext()}>
-          <IosArrowForward color="#fff"/>
+        <div
+          className="controls__button controls__button--next"
+          onClick={() => carousel.slideNext()}
+        >
+          <IosArrowForward color="#fff" />
         </div>
 
         <div className="controls__dots">
-          <span className={`controls__dot ${selected === 0 ? 'controls__dot--selected' : ''}`} onClick={() => carousel.slideTo(0)}></span>
-          <span className={`controls__dot ${selected === 1 ? 'controls__dot--selected' : ''}`} onClick={() => carousel.slideTo(1)}></span>
+          <span
+            className={`controls__dot ${
+              selected === 0 ? 'controls__dot--selected' : ''
+            }`}
+            onClick={() => carousel.slideTo(0)}
+          ></span>
+          <span
+            className={`controls__dot ${
+              selected === 1 ? 'controls__dot--selected' : ''
+            }`}
+            onClick={() => carousel.slideTo(1)}
+          ></span>
         </div>
       </nav>
     </section>
