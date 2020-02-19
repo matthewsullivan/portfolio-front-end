@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Carousel from './components/sections/Hero/Hero';
+import Hero from './components/sections/Hero/Hero';
+import Headroom from 'react-headroom';
 
 import './App.css';
 
@@ -25,6 +26,14 @@ const getNavigation = () => {
 export default function App() {
   return (
     <div className="app">
+      <Headroom
+        disableInlineStyles
+        pinStart={192}
+        wrapperStyle={{marginTop: -88}}
+      >
+        Content here
+      </Headroom>
+
       <header className="header">
         <img
           alt="Header Logo"
@@ -37,8 +46,10 @@ export default function App() {
       </header>
 
       <section className="hero">
-        <Carousel />
+        <Hero />
       </section>
+
+      <section className="about" style={{height: 500}}></section>
     </div>
   );
 }

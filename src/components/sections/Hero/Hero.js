@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 
 import AliceCarousel from 'react-alice-carousel';
 
-import IosArrowBack from 'react-ionicons/lib/IosArrowBack'
-import IosArrowForward from 'react-ionicons/lib/IosArrowForward'
+import IosArrowBack from 'react-ionicons/lib/IosArrowBack';
+import IosArrowForward from 'react-ionicons/lib/IosArrowForward';
 
 import Button from '../../elements/Button/Button';
 
@@ -23,7 +23,7 @@ export default function Hero() {
 
   /**
    * Handle Slide Changed
-   * @param {object} event 
+   * @param {object} event
    */
   const handleSlideChanged = (event) => {
     setSelected(event.slide);
