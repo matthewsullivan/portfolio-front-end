@@ -43,7 +43,7 @@ export default function Hero() {
           <img
             alt="Carousel Slide Forest Background"
             className="carousel__image"
-            src="assets/slide-1.jpg"
+            src="assets/carousel/carousel-a.jpg"
           />
 
           <div className="carousel__content">
@@ -62,7 +62,7 @@ export default function Hero() {
           <img
             alt="Carousel Slide Forest Background with Sun"
             className="carousel__image"
-            src="assets/slide-2.jpg"
+            src="assets/carousel/carousel-b.jpg"
           />
 
           <div className="carousel__content">
