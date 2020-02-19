@@ -1,48 +1,68 @@
 import React from 'react';
 
-import Hero from './components/sections/Hero/Hero';
 import Headroom from 'react-headroom';
+import IosMenu from 'react-ionicons/lib/IosMenu';
+
+import Hero from './components/sections/Hero/Hero';
 
 import './App.css';
 
 /**
  * Get Navigation
+ * @param {boolean} headroom
  * @return {JSX}
  */
-const getNavigation = () => {
+const getNavigation = (headroom) => {
   const sections = ['about', 'services', 'folio', 'contact'];
 
-  return sections.map((section) => {
+  const navigation = sections.map((section) => {
     return (
       <li className="navigation__item" key={section}>
-        <a className="navigation__link" href={`#${section}`}>
+        <a
+          className={`navigation__link ${
+            headroom ? 'navigation__link--headroom' : ''
+          }`}
+          href={`#${section}`}
+        >
           {section}
         </a>
       </li>
     );
   });
+
+  return (
+    <nav className={`navigation ${headroom ? 'navigation--headroom' : ''}`}>
+      <ul className="navigation__list">{navigation}</ul>
+    </nav>
+  );
 };
 
 export default function App() {
   return (
     <div className="app">
-      <Headroom
-        disableInlineStyles
-        pinStart={192}
-        wrapperStyle={{marginTop: -88}}
-      >
-        Content here
-      </Headroom>
-
       <header className="header">
+        <Headroom
+          disableInlineStyles
+          pinStart={192}
+          wrapperStyle={{marginTop: -88}}
+        >
+          <img
+            alt="Header Logo"
+            className="header__image header__image--headroom"
+            src="/assets/logo--square.png"
+          />
+
+          <IosMenu className="drawer-icon" color="#fff" />
+
+          {getNavigation(true)}
+        </Headroom>
+
         <img
           alt="Header Logo"
           className="header__image"
           src="/assets/logo--square.png"
         />
-        <nav className="navigation">
-          <ul className="navigation__list">{getNavigation()}</ul>
-        </nav>
+        {getNavigation(false)}
       </header>
 
       <section className="hero">
