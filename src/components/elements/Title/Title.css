@@ -2,15 +2,19 @@
 
 
 .title {
+  color: var(--palette-primary);
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
+.title--light {
+  color: var(--palette-tertiary);
+}
+
 .chapter {
   align-items: center;
-  color: var(--palette-primary);
   display: flex;
   font-family: var(--typography-primary);
   font-size: 12px;
@@ -28,7 +32,6 @@
 }
 
 .title__heading {
-  color: var(--palette-primary);
   font-family: var(--typography-primary);
   font-size: 40px;
   font-weight: 900;
@@ -38,7 +41,6 @@
 }
 
 .title__body {
-  color: var(--palette-primary);
   font-family: var(--typography-primary);
   margin: 8px 0;
 }

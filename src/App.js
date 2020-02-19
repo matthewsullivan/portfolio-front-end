@@ -5,6 +5,7 @@ import Title from './components/elements/Title/Title';
 import Navigation from './components/elements/Navigation/Navigation';
 import About from './components/sections/About/About';
 import Hero from './components/sections/Hero/Hero';
+import Reel from './components/sections/Reel/Reel';
 
 import './App.css';
 
@@ -20,6 +21,10 @@ export default function App() {
 
       <section id="about">
         <About />
+      </section>
+
+      <section id="reel">
+        <Reel />
       </section>
 
       <section id="services" style={{height: 500}}>
