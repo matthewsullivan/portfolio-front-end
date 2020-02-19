@@ -40,28 +40,28 @@ const getNavigation = (headroom) => {
 export default function App() {
   return (
     <div className="app">
+      <Headroom
+        className="headroom"
+        disableInlineStyles
+        pinStart={192}
+        wrapperStyle={{marginTop: -88}}
+      >
+        <img
+          alt="Header Logo"
+          className="headroom__image"
+          src="/assets/logo--square.png"
+        />
+        <IosMenu className="headroom__drawer-icon" color="#f9f9f9" />
+        {getNavigation(true)}
+      </Headroom>
+
       <header className="header">
-        <Headroom
-          disableInlineStyles
-          pinStart={192}
-          wrapperStyle={{marginTop: -88}}
-        >
-          <img
-            alt="Header Logo"
-            className="header__image header__image--headroom"
-            src="/assets/logo--square.png"
-          />
-
-          <IosMenu className="drawer-icon" color="#fff" />
-
-          {getNavigation(true)}
-        </Headroom>
-
         <img
           alt="Header Logo"
           className="header__image"
           src="/assets/logo--square.png"
         />
+        <IosMenu className="header__drawer-icon" color="#070a21" />
         {getNavigation(false)}
       </header>
 
