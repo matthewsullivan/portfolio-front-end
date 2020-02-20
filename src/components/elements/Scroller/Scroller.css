@@ -1,2 +1,6 @@
 @import "~/common/Template.module.css";
 
+.scroller__outer {
+  position: relative;
+  width: 100%;
+}
