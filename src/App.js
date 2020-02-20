@@ -5,6 +5,7 @@ import Title from './components/elements/Title/Title';
 import Navigation from './components/elements/Navigation/Navigation';
 
 import About from './components/sections/About/About';
+import Footer from './components/sections/Footer/Footer';
 import Hero from './components/sections/Hero/Hero';
 import Reel from './components/sections/Reel/Reel';
 import Services from './components/sections/Services/Services';
@@ -51,6 +52,10 @@ export default function App() {
 
       <section id="cv">
         <Vitae />
+      </section>
+
+      <section id="footer">
+        <Footer />
       </section>
     </div>
   );
