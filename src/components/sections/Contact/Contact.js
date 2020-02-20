@@ -16,8 +16,12 @@ export default function Contact() {
   const [sent, setSent] = useState(false);
   const [response, setResponse] = useState('');
 
-  const formSubmit = (e) => {
-    e.preventDefault();
+  /**
+   * Handle Submit Form
+   * @param {object} event
+   */
+  const handleSubmitForm = (event) => {
+    event.preventDefault();
 
     let api = 'https://matthewsullivan.media';
 
@@ -49,6 +53,9 @@ export default function Contact() {
       });
   };
 
+  /**
+   * Reset Form
+   */
   const resetForm = () => {
     setEmail('');
     setLabel('Submit');
@@ -79,9 +86,9 @@ export default function Contact() {
       </div>
 
       <div className="contact__form">
-        <form onSubmit={(e) => formSubmit(e)}>
+        <form className="form" onSubmit={(event) => handleSubmitForm(event)}>
           <input
-            className="message-name"
+            className="form__input"
             name="name"
             onChange={(e) => setName(e.target.value)}
             placeholder="Your Name"
@@ -90,7 +97,7 @@ export default function Contact() {
             value={name}
           />
           <input
-            className="message-email"
+            className="form__input"
             name="email"
             onChange={(e) => setEmail(e.target.value)}
             placeholder="your@email.com"
@@ -99,7 +106,7 @@ export default function Contact() {
             value={email}
           />
           <textarea
-            className="message-input"
+            className="form__input"
             name="message"
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Please write your message here"
@@ -108,8 +115,9 @@ export default function Contact() {
             value={message}
           />
 
-          <div className="button--container">
+          <div className="form__button">
             {response}
+
             <button className="button" type="submit">
               {sent ? 'Submit Another' : label}
             </button>

@@ -34,10 +34,13 @@
   color: var(--palette-secondary);
 }
 
-.footer__copy {
-  color: var(--palette-tertiary);
-  font-family: var(--typography-primary);
-  font-size: 12px;
+.contact__form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 8px 0;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
