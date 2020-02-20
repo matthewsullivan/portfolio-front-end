@@ -5,6 +5,7 @@ import Title from './components/elements/Title/Title';
 import Navigation from './components/elements/Navigation/Navigation';
 
 import About from './components/sections/About/About';
+import Contact from './components/sections/Contact/Contact';
 import Footer from './components/sections/Footer/Footer';
 import Hero from './components/sections/Hero/Hero';
 import Reel from './components/sections/Reel/Reel';
@@ -42,12 +43,8 @@ export default function App() {
           title="Works"
         />
       </section>
-      <section id="contact" style={{height: 500}}>
-        <Title
-          body="Please don't hesitate to reach out to me with any questions."
-          chapter="04"
-          title="Contact"
-        />
+      <section id="contact">
+        <Contact />
       </section>
 
       <section id="cv">

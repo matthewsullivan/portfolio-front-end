@@ -1,0 +1,47 @@
+@import "~/common/Template.module.css";
+
+.contact {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 8px 0;
+  text-align: center;
+}
+
+.contact__content {
+  padding: 32px 0;
+}
+
+.contact__title {
+  color: var(--palette-primary);
+  font-family: var(--typography-primary);
+  margin: 8px 0;
+}
+
+.contact__link {
+  align-items: center;
+  color: #333;
+  display: flex;
+  font-family: var(--typography-primary);
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none; 
+  transition: 0.2s;
+}
+
+.contact__link:hover {
+  color: var(--palette-secondary);
+}
+
+.footer__copy {
+  color: var(--palette-tertiary);
+  font-family: var(--typography-primary);
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact {
+    padding: 32px 44px;
+  }
+}
