@@ -63,7 +63,7 @@
 }
 
 .form__input--textarea {
-  height: 248px;
+  min-height: 248px;
   padding-top: 8px;
   resize: vertical;
 }
