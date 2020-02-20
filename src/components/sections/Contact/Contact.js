@@ -1,7 +1,10 @@
 import React, {useState} from 'react';
 
 import axios from 'axios';
+import IosMail from 'react-ionicons/lib/IosMail';
 import IosMailOutline from 'react-ionicons/lib/IosMailOutline';
+import IosPerson from 'react-ionicons/lib/IosPerson';
+import MdCreate from 'react-ionicons/lib/MdCreate';
 import MdRemove from 'react-ionicons/lib/MdRemove';
 
 import Title from '../../elements/Title/Title';
@@ -14,7 +17,7 @@ export default function Contact() {
   const [message, setMessage] = useState('');
   const [name, setName] = useState('');
   const [sent, setSent] = useState(false);
-  const [response, setResponse] = useState('');
+  const [response, setResponse] = useState('* Please fill all the fields');
 
   /**
    * Handle Submit Form
@@ -48,6 +51,7 @@ export default function Contact() {
         resetForm();
       })
       .catch((e) => {
+        setLabel('Submit');
         setResponse(e.message);
         setSent(false);
       });
@@ -87,41 +91,49 @@ export default function Contact() {
 
       <div className="contact__form">
         <form className="form" onSubmit={(event) => handleSubmitForm(event)}>
-          <input
-            className="form__input"
-            name="name"
-            onChange={(e) => setName(e.target.value)}
-            placeholder="Your Name"
-            type="text"
-            required
-            value={name}
-          />
-          <input
-            className="form__input"
-            name="email"
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="your@email.com"
-            type="email"
-            required
-            value={email}
-          />
-          <textarea
-            className="form__input"
-            name="message"
-            onChange={(e) => setMessage(e.target.value)}
-            placeholder="Please write your message here"
-            required
-            type="text"
-            value={message}
-          />
-
-          <div className="form__button">
-            {response}
-
-            <button className="button" type="submit">
-              {sent ? 'Submit Another' : label}
-            </button>
+          <div className="form__group">
+            <IosPerson className="form__icon" color="#2ecc71" fontSize="24" />
+            <input
+              className="form__input"
+              name="name"
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Name"
+              type="text"
+              required
+              value={name}
+            />
           </div>
+          <div className="form__group">
+            <IosMail className="form__icon" color="#2ecc71" fontSize="24" />
+            <input
+              className="form__input"
+              name="email"
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="E-mail"
+              type="email"
+              required
+              value={email}
+            />
+          </div>
+
+          <div className="form__group">
+            <MdCreate className="form__icon" color="#2ecc71" fontSize="24" />
+            <textarea
+              className="form__input form__input--textarea"
+              name="message"
+              onChange={(e) => setMessage(e.target.value)}
+              placeholder="Message"
+              required
+              type="text"
+              value={message}
+            />
+          </div>
+
+          <p className="form__response">{response}</p>
+
+          <button className="button" type="submit">
+            {sent ? 'Submit Another' : label}
+          </button>
         </form>
       </div>
     </section>
