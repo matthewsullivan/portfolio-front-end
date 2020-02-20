@@ -1,0 +1,25 @@
+@import "~/common/Template.module.css";
+
+.footer {
+  align-items: center;
+  display: flex;
+  background: var(--palette-primary);
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 8px 0;
+  text-align: center;
+}
+
+.footer__icons {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 64px;
+}
+
+.footer__copy {
+  color: var(--palette-tertiary);
+  font-family: var(--typography-primary);
+  font-size: 12px;
+}
+
