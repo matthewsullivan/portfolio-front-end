@@ -10,6 +10,7 @@ export default function Reel() {
   const options = {
     url: 'https://youtu.be/nQa72e_cC5I',
   };
+
   return (
     <section className="reel">
       <header className="reel__header">

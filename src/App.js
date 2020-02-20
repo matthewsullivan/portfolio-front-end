@@ -6,6 +6,7 @@ import Navigation from './components/elements/Navigation/Navigation';
 import About from './components/sections/About/About';
 import Hero from './components/sections/Hero/Hero';
 import Reel from './components/sections/Reel/Reel';
+import Services from './components/sections/Services/Services';
 
 import './App.css';
 
@@ -27,13 +28,10 @@ export default function App() {
         <Reel />
       </section>
 
-      <section id="services" style={{height: 500}}>
-        <Title
-          body="Full Stack in more ways than one."
-          chapter="02"
-          title="Services"
-        />
+      <section id="services">
+        <Services />
       </section>
+
       <section id="folio" style={{height: 500}}>
         <Title
           body="Hand picked projects and case studies."
