@@ -56,6 +56,30 @@ export default function Services() {
           code maintainability and cleanliness are a must.
         </Gem>
       </div>
+
+      <section className="review">
+        <p className="review__pre-title">368 Durham</p>
+        <h2 className="review__title">WORD ON THE STREET</h2>
+        <div className="review__line" />
+        <div className="review__review">
+          <div className="review__avatar">
+            <img
+              alt="Review Avatar"
+              className="review__avatar-img"
+              src="assets/services/brian.jpg"
+            />
+          </div>
+          <p className="review__body">
+            368 Durham has used Matthew as a consult for web design and
+            development for several years on various projects. Matthew brings
+            experience and a fresh outlook to all client projects and has proven
+            to be a great asset in all various aspects.
+          </p>
+          <div className="review__line--small" />
+          <p className="review__author">Brian Rutherford</p>
+          <p className="review__company">386 Durham</p>
+        </div>
+      </section>
     </section>
   );
 }

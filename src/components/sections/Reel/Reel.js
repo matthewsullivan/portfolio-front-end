@@ -21,7 +21,7 @@ export default function Reel() {
           title="Demo Reel"
         />
 
-        <div className="line" />
+        <div className="reel__line" />
       </header>
       <section className="reel__content">
         <ReactPlayer className="reel__video" {...options} />
