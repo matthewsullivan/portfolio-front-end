@@ -5,7 +5,6 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
 const app = express();
-
 const port = 4444;
 
 app.use(bodyParser.json());
@@ -13,19 +12,17 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(cors());
 
-app.listen(port, () => {
-  console.log('Mail Server running on Port 4444');
-});
+app.listen(port);
 
-app.post('/api/v1/mailer', (req, res) => {
+app.post('/api/v1/send-email', (req, res) => {
   const data = req.body;
 
   const smtpTransport = nodemailer.createTransport({
     service: 'Gmail',
     port: 465,
     auth: {
-      user: 'ADD CREDENTAILS',
-      pass: 'ADD CREDENTAILS',
+      user: process.env.MAIL_USER,
+      pass: process.env.MAIL_PASS,
     },
   });
 
@@ -40,9 +37,9 @@ app.post('/api/v1/mailer', (req, res) => {
 
   smtpTransport.sendMail(mailOptions, (error, response) => {
     if (error) {
-      res.send('Something went wrong. Please try again');
+      res.send('Something went wrong. Please try again.');
     } else {
-      res.send(`Thanks, ${data.userName}. I will be in touch shortly`);
+      res.send(`Thanks, ${data.userName}. I will be in touch shortly.`);
     }
     smtpTransport.close();
   });

@@ -1,19 +1,23 @@
 
 ## Install
 
-Install project dependencies
+Install Project Dependencies
 
     $ npm install
 
 ## Setup
 
-Setup environment
+Setup Environment
 
     $ export NODE_ENV=development
 
+Update Mail Server Credentials
+
+    $ vim ecosystem.config.js
+    
 Start Mail Server
 
-    $ npm run mail-server
+    $ pm2 start ecosystem.config.js
 
 ## Serve
 

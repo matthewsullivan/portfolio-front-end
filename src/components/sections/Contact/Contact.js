@@ -19,7 +19,13 @@ export default function Contact() {
   const formSubmit = (e) => {
     e.preventDefault();
 
-    setLabel('...sending');
+    let api = 'https://matthewsullivan.media';
+
+    if (process.env.NODE_ENV === 'development') {
+      api = 'http://127.0.0.1:4444';
+    } else if (process.env.NODE_ENV === 'staging') {
+      api = 'https://staging.matthewsullivan.media';
+    }
 
     const data = {
       userName: name,
@@ -27,13 +33,15 @@ export default function Contact() {
       userMessage: message,
     };
 
+    setLabel('...sending');
+
     axios
-      .post('http://localhost:4444/api/v1/mailer', data)
+      .post(`${api}/api/v1/send-email`, data)
       .then((res) => {
         setResponse(res.message);
         setSent(true);
 
-        // resetForm();
+        resetForm();
       })
       .catch((e) => {
         setResponse(e.message);
