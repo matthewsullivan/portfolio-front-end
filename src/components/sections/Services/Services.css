@@ -67,12 +67,14 @@
 .review__review {
   align-items: center;
   background: var(--palette-primary);
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   margin: 72px 0;
   padding: 88px 32px;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .review__body {
@@ -81,6 +83,7 @@
   font-size: 16px;
   line-height: 28px;
   margin-top: 24px;
+  max-width: 1144px;
 }
 
 .review__author {

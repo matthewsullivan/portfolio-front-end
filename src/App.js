@@ -3,10 +3,12 @@ import React from 'react';
 import Title from './components/elements/Title/Title';
 
 import Navigation from './components/elements/Navigation/Navigation';
+
 import About from './components/sections/About/About';
 import Hero from './components/sections/Hero/Hero';
 import Reel from './components/sections/Reel/Reel';
 import Services from './components/sections/Services/Services';
+import Vitae from './components/sections/Vitae/Vitae';
 
 import './App.css';
 
@@ -46,11 +48,9 @@ export default function App() {
           title="Contact"
         />
       </section>
-      <section id="cv" style={{height: 500}}>
-        <Title
-          body="You've made it this far. Why not check out my curriculum vitae too?"
-          title="Curriculum Vitae"
-        />
+
+      <section id="cv">
+        <Vitae />
       </section>
     </div>
   );

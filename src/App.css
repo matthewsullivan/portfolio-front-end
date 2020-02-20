@@ -1,6 +1,6 @@
 @import "./common/Template.module.css";
 
 .app {
-  background: var(--palette-tertiary);
+  background: #fff;
   border: 16px solid var(--palette-primary);
 }

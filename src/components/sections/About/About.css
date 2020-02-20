@@ -26,6 +26,7 @@
   color: var(--palette-primary);
   font-family: var(--typography-primary);
   font-size: 16px;
+  line-height: 32px;
   margin-bottom: 24px;
   text-align: justify;
 }

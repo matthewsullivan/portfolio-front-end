@@ -6,15 +6,29 @@ import PropTypes from 'prop-types';
 import './Button.css';
 
 Button.propTypes = {
+  external: PropTypes.bool,
   label: PropTypes.string,
   path: PropTypes.string,
 };
 
 export default function Button(props) {
-  const {label, path} = props;
+  const {external, label, path} = props;
+
+  if (external) {
+    return (
+      <a
+        className="button"
+        href={path}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        {label}
+      </a>
+    );
+  }
 
   return (
-    <AnchorLink className="button" href={`#${path}`}>
+    <AnchorLink className="button" href={`#${path}`} offset="88">
       {label}
     </AnchorLink>
   );
