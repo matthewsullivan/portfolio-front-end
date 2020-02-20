@@ -7,6 +7,7 @@ import IosPerson from 'react-ionicons/lib/IosPerson';
 import MdCreate from 'react-ionicons/lib/MdCreate';
 import MdRemove from 'react-ionicons/lib/MdRemove';
 
+import Button from '../../elements/Button/Button';
 import Title from '../../elements/Title/Title';
 
 import './Contact.css';
@@ -131,9 +132,7 @@ export default function Contact() {
 
           <p className="form__response">{response}</p>
 
-          <button className="button" type="submit">
-            {sent ? 'Submit Another' : label}
-          </button>
+          <Button type="submit">{sent ? 'Submit Another' : label}</Button>
         </form>
       </div>
     </section>

@@ -6,13 +6,22 @@ import PropTypes from 'prop-types';
 import './Button.css';
 
 Button.propTypes = {
+  children: PropTypes.string,
   external: PropTypes.bool,
-  label: PropTypes.string,
   path: PropTypes.string,
+  type: PropTypes.string,
 };
 
 export default function Button(props) {
-  const {external, label, path} = props;
+  const {children, external, path, type} = props;
+
+  if (type) {
+    return (
+      <button className="button" type={type}>
+        {children}
+      </button>
+    );
+  }
 
   if (external) {
     return (
@@ -22,14 +31,14 @@ export default function Button(props) {
         rel="noopener noreferrer"
         target="_blank"
       >
-        {label}
+        {children}
       </a>
     );
   }
 
   return (
     <AnchorLink className="button" href={`#${path}`} offset="88">
-      {label}
+      {children}
     </AnchorLink>
   );
 }

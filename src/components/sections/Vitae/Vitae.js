@@ -14,11 +14,9 @@ export default function Vitae() {
       />
 
       <div className="vitae__line" />
-      <Button
-        external
-        label="Curriculum Vitae"
-        path="assets/cv/MatthewSullivanCV.pdf"
-      />
+      <Button external path="assets/cv/MatthewSullivanCV.pdf">
+        Curriculum Vitae
+      </Button>
       <p className="vitae__body">
         Avaliable for full time work as well as consultation work.
       </p>

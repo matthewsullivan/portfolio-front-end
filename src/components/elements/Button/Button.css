@@ -6,6 +6,7 @@
   background-clip: padding-box;
   box-shadow: 0 0 1px transparent;
   color: var(--palette-tertiary);
+  cursor: pointer;
   display: inline-block;
   font-family: var(--typography-primary);
   font-size: 14px;

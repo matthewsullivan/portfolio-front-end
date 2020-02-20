@@ -52,7 +52,7 @@ export default function Hero() {
               More than just a Developer. I am a well rounded Media Specialist
               who has a keen interest in leadership.
             </p>
-            <Button label="Portfolio" path="folio" />
+            <Button path="folio">Portfolio</Button>
           </div>
         </div>
         <div
@@ -71,7 +71,7 @@ export default function Hero() {
               Not only building, and consulting, but teaching others the lingo
               of the web and media.
             </p>
-            <Button label="Curriculum Vitae" path="cv" />
+            <Button path="cv">Curriculum Vitae</Button>
           </div>
         </div>
       </AliceCarousel>
