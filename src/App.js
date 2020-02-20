@@ -1,12 +1,11 @@
 import React from 'react';
 
-import Title from './components/elements/Title/Title';
-
 import Navigation from './components/elements/Navigation/Navigation';
 
 import About from './components/sections/About/About';
 import Contact from './components/sections/Contact/Contact';
 import Footer from './components/sections/Footer/Footer';
+import Folio from './components/sections/Folio/Folio';
 import Hero from './components/sections/Hero/Hero';
 import Reel from './components/sections/Reel/Reel';
 import Services from './components/sections/Services/Services';
@@ -36,12 +35,8 @@ export default function App() {
         <Services />
       </section>
 
-      <section id="folio" style={{height: 500}}>
-        <Title
-          body="Hand picked projects and case studies."
-          chapter="03"
-          title="Works"
-        />
+      <section id="folio">
+        <Folio />
       </section>
       <section id="contact">
         <Contact />
