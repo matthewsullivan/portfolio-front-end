@@ -1,33 +1,26 @@
 @import "~/common/Template.module.css";
 
-.vitae {
+.preview {
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.preview__container {
   align-items: center;
   display: flex;
-  background: var(--palette-tertiary);
-  flex-direction: column;
-  justify-content: center;
-  padding: 24px 8px;
-  text-align: center;
+  flex-flow: row nowrap;
+  height: 100%;
+  justify-content: flex-start;
+  padding: 0 0 0 150px;
+  position: relative;
 }
 
-.vitae__line {
+.preview__item {
   background: var(--palette-primary);
-  height: 24px;
-  margin: 16px 0;
-  opacity: 0.2;
-  width: 1px;
-}
-
-.vitae__body {
-  color: var(--palette-primary);
-  font-family: var(--typography-primary);
-  font-size: 12px;
-  font-style: italic;
-  font-weight: 400;
-}
-
-@media only screen and (min-width: 768px) {
-  .vitae {
-    padding: 72px 44px;
-  }
+  flex-shrink: 0;
+  height: 300px;
+  margin-right: 75px;
+  position: relative;
+  width: 500px;
 }
