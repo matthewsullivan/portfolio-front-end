@@ -104,6 +104,7 @@ export default function Contact() {
               value={name}
             />
           </div>
+
           <div className="form__group">
             <IosMail className="form__icon" color="#2ecc71" fontSize="24" />
             <input
