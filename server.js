@@ -17,6 +17,12 @@ app.listen(port);
 app.post('/api/v1/send-email', (req, res) => {
   const data = req.body;
 
+  if (!data.userEmail || !data.userMessage || !data.userName) {
+    res.send('All fields required');
+
+    return;
+  }
+
   const smtpTransport = nodemailer.createTransport({
     service: 'Gmail',
     port: 465,
@@ -38,9 +44,12 @@ app.post('/api/v1/send-email', (req, res) => {
   smtpTransport.sendMail(mailOptions, (error, response) => {
     if (error) {
       res.send('Something went wrong. Please try again.');
-    } else {
-      res.send(`Thanks, ${data.userName}. I will be in touch shortly.`);
+
+      return;
     }
+
+    res.send(`Thanks, ${data.userName}. I will be in touch shortly.`);
+
     smtpTransport.close();
   });
 });

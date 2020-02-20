@@ -33,7 +33,7 @@ export default function Contact() {
       userMessage: message,
     };
 
-    setLabel('...sending');
+    setLabel('Sending...');
 
     axios
       .post(`${api}/api/v1/send-email`, data)
@@ -45,6 +45,7 @@ export default function Contact() {
       })
       .catch((e) => {
         setResponse(e.message);
+        setSent(false);
       });
   };
 
@@ -76,11 +77,9 @@ export default function Contact() {
         </a>
         <MdRemove color="#070a21" />
       </div>
+
       <div className="contact__form">
         <form onSubmit={(e) => formSubmit(e)}>
-          <label className="message-name" htmlFor="message-name">
-            Your Name
-          </label>
           <input
             className="message-name"
             name="name"
@@ -90,10 +89,6 @@ export default function Contact() {
             required
             value={name}
           />
-
-          <label className="message-email" htmlFor="message-email">
-            Your Email
-          </label>
           <input
             className="message-email"
             name="email"
@@ -103,10 +98,6 @@ export default function Contact() {
             required
             value={email}
           />
-
-          <label className="message" htmlFor="message-input">
-            Your Message
-          </label>
           <textarea
             className="message-input"
             name="message"
@@ -119,12 +110,8 @@ export default function Contact() {
 
           <div className="button--container">
             {response}
-            <button
-              className="button button-primary"
-              disabled={sent}
-              type="submit"
-            >
-              {label}
+            <button className="button" type="submit">
+              {sent ? 'Submit Another' : label}
             </button>
           </div>
         </form>
