@@ -35,7 +35,7 @@ export default function About() {
           </p>
 
           <AnchorLink className="about__link" href="#cv" offset="208">
-            Check out my CV <IosArrowRoundForward fontSize="16" />
+            Check out my CV <IosArrowRoundForward fontSize="24" />
           </AnchorLink>
         </div>
 

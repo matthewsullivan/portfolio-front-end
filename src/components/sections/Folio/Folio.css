@@ -1,4 +1,5 @@
 @import "~/common/Template.module.css";
+@import '~rodal/lib/rodal.css';
 
 .title{
   padding: 24px 0;
@@ -76,12 +77,156 @@
   color: var(--palette-tertiary);
 }
 
+.study {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+
+.study__close {
+  align-items: center;
+  background: var(--palette-primary);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  height: 72px;
+  justify-content: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 72px;
+  transition: 0.2s ease-in-out;
+  z-index: 1;
+}
+
+.study__container {
+  width: 100%;
+}
+
+.study__header {
+  align-items: center;
+  background: var(--palette-tertiary);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 16px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.study__image {
+  height: 96px;
+  object-fit: contain;
+  width: 96px;
+}
+
+.study__pre-title {
+  color: var(--palette-primary);
+  font-family: var(--typography-primary);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  margin: 4px 0;
+  text-transform: uppercase;
+}
+
+.study__title {
+  color: var(--palette-primary);
+  font-family: var(--typography-primary);
+  font-size: 22px;
+  line-height: 0.8;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.study__line {
+  background: var(--palette-primary);
+  height: 48px;
+  margin: 32px 0 8px;
+  opacity: 0.2;
+  width: 1px;
+}
+
+.study__summary {
+  color: #333;
+  font-family: var(--typography-primary);
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 1144px;
+  opacity: 0.8;
+}
+
+.study__summary:last-child {
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 16px;
+}
+
+.study__link {
+  align-items: center;
+  color: var(--palette-primary);
+  display: flex;
+  font-family: var(--typography-primary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-decoration: none; 
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+  
+.study__link:hover {
+  color: var(--palette-secondary);
+}
+
+.study__content {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 1144px;
+  padding: 24px 32px;
+  position: relative;
+  text-align: justify;
+}
+
+.study__showcase {
+  background: red;
+  height: 400px;
+  width: 100%;
+}
+
+.study__information {
+  box-sizing: border-box;
+  padding: 32px 0;
+}
+
 @media only screen and (min-width: 768px) {
-  .title{
+  .title {
     padding: 72px 0;
   }
 
   .item {
     width: 484px;
+  }
+
+  .study__content {
+    flex-direction: row;
+    padding: 56px 0;
+  }
+
+  .study__showcase {
+    width: 50%;
+  }
+  
+  .study__information {
+    width: 50%;
+  }
+
+  .study__information {
+    padding: 24px 0 24px 56px;
   }
 }
