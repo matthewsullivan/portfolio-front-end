@@ -187,7 +187,6 @@ export default React.forwardRef(function Folio(props, ref) {
                 <AliceCarousel
                   className="study-carousel"
                   onSlideChanged={handleSlideChanged}
-                  ref={(el) => (carousel = el)}
                   {...carouselOptions}
                 >
                   <div
