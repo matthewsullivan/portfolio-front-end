@@ -77,7 +77,7 @@ export default function Services() {
           </p>
           <div className="review__line--small" />
           <p className="review__author">Brian Rutherford</p>
-          <p className="review__company">386 Durham</p>
+          <p className="review__company">368 Durham</p>
         </div>
       </section>
     </section>

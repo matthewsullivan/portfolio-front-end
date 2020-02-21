@@ -1,5 +1,8 @@
 @import "~/common/Template.module.css";
 
+.title{
+    padding: 24px 0;
+}
 .preview {
   min-height: 100vh;
   position: relative;
@@ -9,18 +12,51 @@
 .preview__container {
   align-items: center;
   display: flex;
-  flex-flow: row nowrap;
   height: 100%;
   justify-content: flex-start;
-  padding: 0 0 0 150px;
+  padding: 0;
   position: relative;
 }
 
 .preview__item {
-  background: var(--palette-primary);
-  flex-shrink: 0;
-  height: 300px;
-  margin-right: 75px;
-  position: relative;
-  width: 500px;
+  align-items: left;
+  background: var(--palette-tertiary);
+  border-right: 1px solid #ccc;
+  color: var(--palette-primary);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  transition: 0.8s;
+  transform: translateX(72px);
+  width: 484px;
+  will-change: transform;
 }
+
+.preview__item:last-child {
+  border: none;
+}
+
+.preview__chapter {
+  font-family: var(--typography-primary);
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.preview__title {
+  font-family: var(--typography-primary);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.preview__item:hover {
+  background: var(--palette-primary);
+  color: var(--palette-tertiary);
+}
+
+@media only screen and (min-width: 768px) {
+    .title{
+        padding: 72px 0;
+    }
+  }
