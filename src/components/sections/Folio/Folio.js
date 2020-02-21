@@ -70,7 +70,7 @@ const getStudies = (element) => {
         <img alt="Portfolio Clip" className="item__image" src={study.image} />
 
         <div className="item__content">
-          <h2 className="item__chapter">{index}</h2>
+          <h2 className="item__chapter">{`0${index + 1}`}</h2>
           <h2 className="item__title">{study.name}</h2>
           <h3 className="item__subheading">{study.type}</h3>
         </div>

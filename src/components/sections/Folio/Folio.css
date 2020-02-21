@@ -21,10 +21,9 @@
   color: var(--palette-primary);
   cursor: pointer;
   height: 100%;
-  padding: 32px;
   transition: 0.8s;
   transform: translateX(72px);
-  width: 484px;
+  width: 100vw;
   will-change: transform;
 }
 
@@ -80,5 +79,9 @@
 @media only screen and (min-width: 768px) {
   .title{
     padding: 72px 0;
+  }
+
+  .item {
+    width: 484px;
   }
 }

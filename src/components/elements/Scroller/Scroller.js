@@ -69,6 +69,7 @@ export default function Scroller(props) {
     height: 100%;
     position: absolute;
     will-change: transform;
+    -webkit-transform: translate3d(0, 0, 0);
   `;
 
   /**
