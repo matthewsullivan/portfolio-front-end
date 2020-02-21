@@ -48,7 +48,6 @@ const getNavigation = (element) => {
             element === 'headroom' ? 'navigation__link--headroom' : ''
           }`}
           href={`#${section}`}
-          offset="88"
         >
           {section}
         </AnchorLink>
