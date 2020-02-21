@@ -194,14 +194,50 @@
 }
 
 .study__showcase {
-  background: red;
-  height: 400px;
   width: 100%;
 }
 
 .study__information {
   box-sizing: border-box;
   padding: 32px 0;
+}
+
+.study-carousel {
+  position: relative;
+}
+  
+.study-carousel__slide {
+  cursor: move;
+  height: 400px;
+}
+
+.study-carousel__image {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.study-controls__dots {
+  color: var(--palette-secondary);
+  align-items: center;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  width: 100%;
+}
+
+.study-controls__dot {
+  background: #d6d6d6;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 10px;
+  margin: 0 8px;
+  transition: 0.1s;
+  width: 10px;
+}
+
+.study-controls__dot--selected {
+  background: var(--palette-secondary);
 }
 
 @media only screen and (min-width: 768px) {

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 
+import AliceCarousel from 'react-alice-carousel';
 import IosArrowRoundForward from 'react-ionicons/lib/IosArrowRoundForward';
 import IosClose from 'react-ionicons/lib/IosClose';
 import Rodal from 'rodal';
@@ -66,8 +67,16 @@ const studies = [
 
 export default React.forwardRef(function Folio(props, ref) {
   const [modalOpen, setModalOpen] = useState(false);
+  const [selected, setSelected] = useState(0);
 
-  const options = {
+  const carouselOptions = {
+    buttonsDisabled: true,
+    dotsDisabled: true,
+    handleOnDragStart: (e) => e.preventDefault(),
+    mouseTrackingEnabled: true,
+  };
+
+  const modalOptions = {
     animation: 'door',
     customStyles: {
       borderRadius: 0,
@@ -111,6 +120,14 @@ export default React.forwardRef(function Folio(props, ref) {
     setModalOpen(!modalOpen);
   };
 
+  /**
+   * Handle Slide Changed
+   * @param {object} event
+   */
+  const handleSlideChanged = (event) => {
+    setSelected(event.slide);
+  };
+
   return (
     <section className="folio">
       <Title
@@ -131,7 +148,7 @@ export default React.forwardRef(function Folio(props, ref) {
         </Scroller>
       </div>
 
-      <Rodal {...options}>
+      <Rodal {...modalOptions}>
         <div className="study">
           <div
             className="study__close"
@@ -166,7 +183,156 @@ export default React.forwardRef(function Folio(props, ref) {
               </a>
             </header>
             <div className="study__content">
-              <div className="study__showcase"></div>
+              <div className="study__showcase">
+                <AliceCarousel
+                  className="study-carousel"
+                  onSlideChanged={handleSlideChanged}
+                  ref={(el) => (carousel = el)}
+                  {...carouselOptions}
+                >
+                  <div
+                    className="study-carousel__slide"
+                    onDragStart={carouselOptions.handleOnDragStart}
+                  >
+                    <img
+                      alt="Carousel Slide Forest Background"
+                      className="study-carousel__image"
+                      src="assets/portfolio/bonterpolaris/images/01.png"
+                    />
+                  </div>
+
+                  <div
+                    className="study-carousel__slide"
+                    onDragStart={carouselOptions.handleOnDragStart}
+                  >
+                    <img
+                      alt="Carousel Slide Forest Background"
+                      className="study-carousel__image"
+                      src="assets/portfolio/bonterpolaris/images/02.png"
+                    />
+                  </div>
+                  <div
+                    className="study-carousel__slide"
+                    onDragStart={carouselOptions.handleOnDragStart}
+                  >
+                    <img
+                      alt="Carousel Slide Forest Background"
+                      className="study-carousel__image"
+                      src="assets/portfolio/bonterpolaris/images/03.png"
+                    />
+                  </div>
+                  <div
+                    className="study-carousel__slide"
+                    onDragStart={carouselOptions.handleOnDragStart}
+                  >
+                    <img
+                      alt="Carousel Slide Forest Background"
+                      className="study-carousel__image"
+                      src="assets/portfolio/bonterpolaris/images/04.png"
+                    />
+                  </div>
+                  <div
+                    className="study-carousel__slide"
+                    onDragStart={carouselOptions.handleOnDragStart}
+                  >
+                    <img
+                      alt="Carousel Slide Forest Background"
+                      className="study-carousel__image"
+                      src="assets/portfolio/bonterpolaris/images/05.png"
+                    />
+                  </div>
+                  <div
+                    className="study-carousel__slide"
+                    onDragStart={carouselOptions.handleOnDragStart}
+                  >
+                    <img
+                      alt="Carousel Slide Forest Background"
+                      className="study-carousel__image"
+                      src="assets/portfolio/bonterpolaris/images/06.png"
+                    />
+                  </div>
+                  <div
+                    className="study-carousel__slide"
+                    onDragStart={carouselOptions.handleOnDragStart}
+                  >
+                    <img
+                      alt="Carousel Slide Forest Background"
+                      className="study-carousel__image"
+                      src="assets/portfolio/bonterpolaris/images/07.png"
+                    />
+                  </div>
+                  <div
+                    className="study-carousel__slide"
+                    onDragStart={carouselOptions.handleOnDragStart}
+                  >
+                    <img
+                      alt="Carousel Slide Forest Background"
+                      className="study-carousel__image"
+                      src="assets/portfolio/bonterpolaris/images/08.png"
+                    />
+                  </div>
+                  <div
+                    className="study-carousel__slide"
+                    onDragStart={carouselOptions.handleOnDragStart}
+                  >
+                    <img
+                      alt="Carousel Slide Forest Background"
+                      className="study-carousel__image"
+                      src="assets/portfolio/bonterpolaris/images/09.png"
+                    />
+                  </div>
+                </AliceCarousel>
+
+                <nav className="study-controls">
+                  <div className="study-controls__dots">
+                    <span
+                      className={`study-controls__dot ${
+                        selected === 0 ? 'study-controls__dot--selected' : ''
+                      }`}
+                    ></span>
+                    <span
+                      className={`study-controls__dot ${
+                        selected === 1 ? 'study-controls__dot--selected' : ''
+                      }`}
+                    ></span>
+                    <span
+                      className={`study-controls__dot ${
+                        selected === 3 ? 'study-controls__dot--selected' : ''
+                      }`}
+                    ></span>
+                    <span
+                      className={`study-controls__dot ${
+                        selected === 4 ? 'study-controls__dot--selected' : ''
+                      }`}
+                    ></span>
+                    <span
+                      className={`study-controls__dot ${
+                        selected === 5 ? 'study-controls__dot--selected' : ''
+                      }`}
+                    ></span>
+                    <span
+                      className={`study-controls__dot ${
+                        selected === 6 ? 'study-controls__dot--selected' : ''
+                      }`}
+                    ></span>
+                    <span
+                      className={`study-controls__dot ${
+                        selected === 7 ? 'study-controls__dot--selected' : ''
+                      }`}
+                    ></span>
+                    <span
+                      className={`study-controls__dot ${
+                        selected === 8 ? 'study-controls__dot--selected' : ''
+                      }`}
+                    ></span>
+                    <span
+                      className={`study-controls__dot ${
+                        selected === 9 ? 'study-controls__dot--selected' : ''
+                      }`}
+                    ></span>
+                  </div>
+                </nav>
+              </div>
               <div className="study__information">
                 <h3 className="study__pre-title">Bonter Polaris</h3>
                 <h2 className="study__title">Task</h2>
