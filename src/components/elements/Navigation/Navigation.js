@@ -7,9 +7,8 @@ import Headroom from 'react-headroom';
 import IosClose from 'react-ionicons/lib/IosClose';
 import IosMenu from 'react-ionicons/lib/IosMenu';
 import MdRemove from 'react-ionicons/lib/MdRemove';
+import ScrollLock from 'react-scrolllock';
 import SlidingPanel from 'react-sliding-side-panel';
-
-import {disableBodyScroll, enableBodyScroll} from 'body-scroll-lock';
 
 import './Navigation.css';
 
@@ -75,42 +74,37 @@ export default function Navigation(props) {
 
   const [drawerOpen, setDrawerState] = useState(false);
 
-  /**
-   * Handle Drawer Toggle
-   */
-  const handleDrawerToggle = () => {
-    !drawerOpen ? disableBodyScroll() : enableBodyScroll();
-
-    setDrawerState(!drawerOpen);
-  };
-
   return (
     <>
       <SlidingPanel
-        backdropClicked={() => handleDrawerToggle()}
+        backdropClicked={() => setDrawerState(!drawerOpen)}
         panelClassName="drawer"
         isOpen={drawerOpen}
         size={80}
         type={'right'}
       >
-        <section className="drawer__content">
-          <header className="drawer__header">
-            <AnchorLink href="#hero" offset="128">
-              <img
-                alt="Header Logo"
-                className="drawer__image"
-                src="assets/logo/logo--square.png"
-              />
-            </AnchorLink>
+        <ScrollLock isActive={drawerOpen}>
+          <section className="drawer__content">
+            <header className="drawer__header">
+              <AnchorLink href="#hero" offset="128">
+                <img
+                  alt="Header Logo"
+                  className="drawer__image"
+                  src="assets/logo/logo--square.png"
+                />
+              </AnchorLink>
 
-            <div className="drawer__close" onClick={() => handleDrawerToggle()}>
-              <IosClose color="#f9f9f9" fontSize="32" />
-            </div>
-          </header>
-          {getNavigation('drawer')}
-        </section>
+              <div
+                className="drawer__close"
+                onClick={() => setDrawerState(!drawerOpen)}
+              >
+                <IosClose color="#f9f9f9" fontSize="32" />
+              </div>
+            </header>
+            {getNavigation('drawer')}
+          </section>
+        </ScrollLock>
       </SlidingPanel>
-
       <Headroom
         className={`headroom ${pinned ? 'headroom--hide' : 'headroom--show'}`}
         disableInlineStyles
@@ -127,7 +121,7 @@ export default function Navigation(props) {
         <IosMenu
           className="headroom__drawer-icon"
           color="#f9f9f9"
-          onClick={() => handleDrawerToggle()}
+          onClick={() => setDrawerState(!drawerOpen)}
         />
         {getNavigation('headroom')}
       </Headroom>
@@ -142,7 +136,7 @@ export default function Navigation(props) {
         <IosMenu
           className="header__drawer-icon"
           color="#070a21"
-          onClick={() => handleDrawerToggle()}
+          onClick={() => setDrawerState(!drawerOpen)}
         />
         {getNavigation('header')}
       </header>

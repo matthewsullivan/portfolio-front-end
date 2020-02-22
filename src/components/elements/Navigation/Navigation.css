@@ -8,6 +8,8 @@
 .drawer__content {
   background: var(--palette-primary);
   border-right: 8px solid var(--palette-secondary);
+  overflow-x: hidden;
+  overflow-y: scroll;
   padding-left: 32px;
   height: 100vh;
 }
