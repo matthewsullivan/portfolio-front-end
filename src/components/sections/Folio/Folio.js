@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 
+import axios from 'axios';
+
 import AliceCarousel from 'react-alice-carousel';
 import IosArrowRoundForward from 'react-ionicons/lib/IosArrowRoundForward';
 import IosClose from 'react-ionicons/lib/IosClose';
@@ -66,7 +68,8 @@ const studies = [
 
 export default React.forwardRef(function Folio(props, ref) {
   const [modalOpen, setModalOpen] = useState(false);
-  const [selected, setSelected] = useState(0);
+  const [selectedSlide, setSelectedSlide] = useState(0);
+  const [selectedStudy, setSelectedStudy] = useState();
 
   const carouselOptions = {
     buttonsDisabled: true,
@@ -95,9 +98,15 @@ export default React.forwardRef(function Folio(props, ref) {
    * @return {JSX}
    */
   const getStudies = () => {
+    console.log('got here');
     return studies.map((study, index) => {
       return (
-        <div className="item" key={study.name}>
+        <div
+          className="item"
+          data-study={index}
+          key={study.name}
+          onClick={() => handleStudySelection(index)}
+        >
           <img alt="Portfolio Clip" className="item__image" src={study.image} />
 
           <div className="item__content">
@@ -115,7 +124,34 @@ export default React.forwardRef(function Folio(props, ref) {
    * @param {object} event
    */
   const handleSlideChanged = (event) => {
-    setSelected(event.slide);
+    setSelectedSlide(event.slide);
+  };
+
+  /**
+   * Handle Study Selection
+   * @param {number} study
+   */
+  const handleStudySelection = (study) => {
+    let api = 'https://matthewsullivan.media';
+
+    if (process.env.NODE_ENV === 'development') {
+      api = 'http://127.0.0.1:4444';
+    } else if (process.env.NODE_ENV === 'staging') {
+      api = 'https://staging.matthewsullivan.media';
+    }
+
+    axios
+      .get(`${api}/api/v1/study/${study}`)
+      .then((res) => {
+        if (res.status === 204) throw Error('No case study found.');
+
+        setSelectedStudy(res.data);
+
+        setModalOpen(!modalOpen);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
   };
 
   return (
@@ -129,230 +165,114 @@ export default React.forwardRef(function Folio(props, ref) {
 
       <div className="preview" ref={ref}>
         <Scroller>
-          <div
-            className="preview__container"
-            onClick={() => setModalOpen(!modalOpen)}
-          >
-            {getStudies()}
-          </div>
+          <div className="preview__container">{getStudies()}</div>
         </Scroller>
       </div>
 
-      <Rodal {...modalOptions}>
-        <ScrollLock isActive={modalOpen}>
-          <div className="study">
-            <div
-              className="study__close"
-              onClick={() => setModalOpen(!modalOpen)}
-            >
-              <IosClose color="#f9f9f9" fontSize="32" />
-            </div>
-            <div className="study__container">
-              <header className="study__header">
-                <img
-                  alt="Study Logo"
-                  className="study__image"
-                  src="/assets/portfolio/bonterpolaris/logo.png"
-                />
-                <h3 className="study__pre-title">Web</h3>
-                <h2 className="study__title">Design/Development</h2>
-                <div className="study__line" />
-                <p className="study__summary">
-                  Located in Marmora, Ontario, Bonter Marine services customers
-                  throughout the surrounding area. They focus on new and used
-                  vehicle sales, ongoing maintenance of customer’s vehicles and
-                  parts.
-                </p>
+      {selectedStudy ? (
+        <Rodal {...modalOptions}>
+          <ScrollLock isActive={modalOpen}>
+            <div className="study">
+              <div
+                className="study__close"
+                onClick={() => setModalOpen(!modalOpen)}
+              >
+                <IosClose color="#f9f9f9" fontSize="32" />
+              </div>
+              <div className="study__container">
+                <header className="study__header">
+                  <img
+                    alt="Study Logo"
+                    className="study__image"
+                    src={selectedStudy.media.logo}
+                  />
+                  <h3 className="study__pre-title">{selectedStudy.platform}</h3>
+                  <h2 className="study__title">{selectedStudy.project}</h2>
+                  <div className="study__line" />
+                  <p className="study__summary">{selectedStudy.synopsis}</p>
 
-                <a
-                  className="study__link"
-                  href="https://matthewsullivan.media"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Visit Live Site <IosArrowRoundForward fontSize="24" />
-                </a>
-              </header>
-              <div className="study__content">
-                <div className="study__showcase">
-                  <AliceCarousel
-                    className="study-carousel"
-                    onSlideChanged={handleSlideChanged}
-                    {...carouselOptions}
-                  >
-                    <div
-                      className="study-carousel__slide"
-                      onDragStart={carouselOptions.handleOnDragStart}
+                  {selectedStudy.link ? (
+                    <a
+                      className="study__link"
+                      href={selectedStudy.link.path}
+                      rel="noopener noreferrer"
+                      target="_blank"
                     >
-                      <img
-                        alt="Carousel Slide Forest Background"
-                        className="study-carousel__image"
-                        src="assets/portfolio/bonterpolaris/images/01.png"
-                      />
-                    </div>
-
-                    <div
-                      className="study-carousel__slide"
-                      onDragStart={carouselOptions.handleOnDragStart}
-                    >
-                      <img
-                        alt="Carousel Slide Forest Background"
-                        className="study-carousel__image"
-                        src="assets/portfolio/bonterpolaris/images/02.png"
-                      />
-                    </div>
-                    <div
-                      className="study-carousel__slide"
-                      onDragStart={carouselOptions.handleOnDragStart}
-                    >
-                      <img
-                        alt="Carousel Slide Forest Background"
-                        className="study-carousel__image"
-                        src="assets/portfolio/bonterpolaris/images/03.png"
-                      />
-                    </div>
-                    <div
-                      className="study-carousel__slide"
-                      onDragStart={carouselOptions.handleOnDragStart}
-                    >
-                      <img
-                        alt="Carousel Slide Forest Background"
-                        className="study-carousel__image"
-                        src="assets/portfolio/bonterpolaris/images/04.png"
-                      />
-                    </div>
-                    <div
-                      className="study-carousel__slide"
-                      onDragStart={carouselOptions.handleOnDragStart}
-                    >
-                      <img
-                        alt="Carousel Slide Forest Background"
-                        className="study-carousel__image"
-                        src="assets/portfolio/bonterpolaris/images/05.png"
-                      />
-                    </div>
-                    <div
-                      className="study-carousel__slide"
-                      onDragStart={carouselOptions.handleOnDragStart}
-                    >
-                      <img
-                        alt="Carousel Slide Forest Background"
-                        className="study-carousel__image"
-                        src="assets/portfolio/bonterpolaris/images/06.png"
-                      />
-                    </div>
-                    <div
-                      className="study-carousel__slide"
-                      onDragStart={carouselOptions.handleOnDragStart}
-                    >
-                      <img
-                        alt="Carousel Slide Forest Background"
-                        className="study-carousel__image"
-                        src="assets/portfolio/bonterpolaris/images/07.png"
-                      />
-                    </div>
-                    <div
-                      className="study-carousel__slide"
-                      onDragStart={carouselOptions.handleOnDragStart}
-                    >
-                      <img
-                        alt="Carousel Slide Forest Background"
-                        className="study-carousel__image"
-                        src="assets/portfolio/bonterpolaris/images/08.png"
-                      />
-                    </div>
-                    <div
-                      className="study-carousel__slide"
-                      onDragStart={carouselOptions.handleOnDragStart}
-                    >
-                      <img
-                        alt="Carousel Slide Forest Background"
-                        className="study-carousel__image"
-                        src="assets/portfolio/bonterpolaris/images/09.png"
-                      />
-                    </div>
-                  </AliceCarousel>
-
-                  <nav className="study-controls">
-                    <div className="study-controls__dots">
-                      <span
-                        className={`study-controls__dot ${
-                          selected === 0 ? 'study-controls__dot--selected' : ''
-                        }`}
-                      ></span>
-                      <span
-                        className={`study-controls__dot ${
-                          selected === 1 ? 'study-controls__dot--selected' : ''
-                        }`}
-                      ></span>
-                      <span
-                        className={`study-controls__dot ${
-                          selected === 3 ? 'study-controls__dot--selected' : ''
-                        }`}
-                      ></span>
-                      <span
-                        className={`study-controls__dot ${
-                          selected === 4 ? 'study-controls__dot--selected' : ''
-                        }`}
-                      ></span>
-                      <span
-                        className={`study-controls__dot ${
-                          selected === 5 ? 'study-controls__dot--selected' : ''
-                        }`}
-                      ></span>
-                      <span
-                        className={`study-controls__dot ${
-                          selected === 6 ? 'study-controls__dot--selected' : ''
-                        }`}
-                      ></span>
-                      <span
-                        className={`study-controls__dot ${
-                          selected === 7 ? 'study-controls__dot--selected' : ''
-                        }`}
-                      ></span>
-                      <span
-                        className={`study-controls__dot ${
-                          selected === 8 ? 'study-controls__dot--selected' : ''
-                        }`}
-                      ></span>
-                      <span
-                        className={`study-controls__dot ${
-                          selected === 9 ? 'study-controls__dot--selected' : ''
-                        }`}
-                      ></span>
-                    </div>
-                  </nav>
-                </div>
-                <div className="study__information">
-                  <h3 className="study__pre-title">Bonter Polaris</h3>
-                  <h2 className="study__title">Task</h2>
-                  <p className="study__summary">
-                    Design and develop a new website to add and manage vehicle
-                    inventory.
-                    <br /> <br /> A custom CMS was built for the staff at Bonter
-                    Polaris to manage, upload, and archive inventory. A custom
-                    API was built specifically for the CMS and scalability.
-                    Multi-image uploading and record management were high
-                    priority items built into the CMS. <br />
+                      {selectedStudy.link.title}{' '}
+                      <IosArrowRoundForward fontSize="24" />
+                    </a>
+                  ) : (
                     <br />
-                    The front-end design is built with simplicity and
-                    user-experience in mind. Customers may view inventory with
-                    multiple filter controls, view featured items, view similar
-                    items based on the current inventory being viewed as well as
-                    see current deals.
-                  </p>
+                  )}
+                </header>
+                <div className="study__content">
+                  <div className="study__showcase">
+                    <AliceCarousel
+                      className="study-carousel"
+                      onSlideChanged={handleSlideChanged}
+                      {...carouselOptions}
+                    >
+                      {selectedStudy.media.images.map((media, index) => {
+                        return (
+                          <div
+                            className="study-carousel__slide"
+                            key={index}
+                            onDragStart={carouselOptions.handleOnDragStart}
+                          >
+                            <img
+                              alt={media.alt}
+                              className="study-carousel__image"
+                              src={media.path}
+                            />
+                          </div>
+                        );
+                      })}
+                    </AliceCarousel>
 
-                  <h2 className="study__title">Languages</h2>
-                  <p className="study__summary">
-                    Built using HTML5/CSS3, jQuery, AJAX, JSON, PHP(PDO), and
-                    MySQL.
-                  </p>
+                    <nav className="study-controls">
+                      <div className="study-controls__dots">
+                        {selectedStudy.media.images.map((media, index) => {
+                          return (
+                            <span
+                              className={`study-controls__dot ${
+                                selectedSlide === index
+                                  ? 'study-controls__dot--selected'
+                                  : ''
+                              }`}
+                              key={index}
+                            ></span>
+                          );
+                        })}
+                      </div>
+                    </nav>
+                  </div>
+                  <div className="study__information">
+                    <h3 className="study__pre-title">{selectedStudy.name}</h3>
+                    <h2 className="study__title">Task</h2>
+                    <p className="study__summary">
+                      {selectedStudy.description
+                        .split('\n')
+                        .map((item, key) => {
+                          return (
+                            <span key={key}>
+                              {item}
+                              <br />
+                            </span>
+                          );
+                        })}
+                    </p>
+
+                    <h2 className="study__title">Languages</h2>
+                    <p className="study__summary">{selectedStudy.languages}</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </ScrollLock>
-      </Rodal>
+          </ScrollLock>
+        </Rodal>
+      ) : (
+        ''
+      )}
     </section>
   );
 });

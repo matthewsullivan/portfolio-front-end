@@ -1,0 +1,421 @@
+[
+    {
+        "description": "To connect to pre-existing JSON services, and build the iOS side of the Burgerdex platform.",
+        "languages": "Built using Swift 5.0 and Xcode.",
+        "link": {
+            "title": "Download the app",
+            "path": "https://apps.apple.com/ca/app/burgerdex/id1372235797"
+        },
+        "media": {
+            "images": [
+                {
+                    "alt": "Burgerdex Screen Capture",
+                    "path": "assets/portfolio/bonterpolaris/images/01.png"
+                },
+                {
+                    "alt": "Burgerdex Screen Capture",
+                    "path": "assets/portfolio/bonterpolaris/images/02.png"
+                },
+                {
+                    "alt": "Burgerdex Screen Capture",
+                    "path": "assets/portfolio/bonterpolaris/images/03.png"
+                },
+                {
+                    "alt": "Burgerdex Screen Capture",
+                    "path": "assets/portfolio/bonterpolaris/images/04.png"
+                },
+                {
+                    "alt": "Burgerdex Screen Capture",
+                    "path": "assets/portfolio/bonterpolaris/images/05.png"
+                },
+                {
+                    "alt": "Burgerdex Screen Capture",
+                    "path": "assets/portfolio/bonterpolaris/images/06.png"
+                },
+                {
+                    "alt": "Burgerdex Screen Capture",
+                    "path": "assets/portfolio/bonterpolaris/images/07.png"
+                },
+                {
+                    "alt": "Burgerdex Screen Capture",
+                    "path": "assets/portfolio/bonterpolaris/images/08.png"
+                }
+            ],
+            "logo": "assets/portfolio/burgerdex/logo.png"
+        },
+        "name": "Burgerdex",
+        "platform": "IOS",
+        "project" : "Design/Development",
+        "synopsis": "Burgerdex is the worlds first burger catalogue aiming to index different burgers around the globe."
+    },
+    {
+        "description": "Gidme is a native service driven app that POSTs and receives information from a server in order to organize it visually for the end user. Custom services were created and stored locally within the app (when appropriate) via Core Data.\n\nAt the heart of Gidme is accurate data. The application needed to respond quickly while parsing and or loading large amounts of data. This was achieved by mapping out and reiterating a data modal that would withstand future changes. The local persistive store (Core Data) is modalar and fast and built in a relational manor.",
+        "languages": "Gidme was built using Objective-C. Communication with web services was done via JSON.",
+        "media": {
+            "images": [
+                {
+                    "alt": "Gidme Screen Capture",
+                    "path": "assets/portfolio/gidme/images/01.png"
+                },
+                {
+                    "alt": "Gidme Screen Capture",
+                    "path": "assets/portfolio/gidme/images/02.png"
+                },
+                {
+                    "alt": "Gidme Screen Capture",
+                    "path": "assets/portfolio/gidme/images/03.png"
+                },
+                {
+                    "alt": "Gidme Screen Capture",
+                    "path": "assets/portfolio/gidme/images/04.png"
+                }
+            ],
+            "logo": "assets/portfolio/gidme/logo.png"
+        },
+        "name": "Gidme",
+        "platform": "IOS",
+        "project" : "Design / Development",
+        "synopsis": "Gidme is an in-app directory for the venues, you love. Have you ever been faced with not knowing where a specific facility is within an indoor venue? Gidme fixes that. Gidme offers a micro-location based mapping solution that navigates you wherever you desire to be."
+    },
+    {
+        "description": "Design and develop a new website to add and manage vehicle inventory.\n\nA custom CMS was built for the staff at Bonter Polaris to manage, upload, and archive inventory. A custom API was built specifically for the CMS and scalability. Multi-image uploading and record management were high priority items built into the CMS.\n\nThe front-end design is built with simplicity and user-experience in mind. Customers may view inventory with multiple filter controls, view featured items, view similar items based on the current inventory being viewed as well as see current deals.",
+        "languages": "Built using HTML5/CSS3, jQuery, AJAX, JSON, PHP(PDO), and MySQL.",
+        "link": {
+            "title": "visit site",
+            "path": "https://matthewsullivan.media"
+        },
+        "media": {
+            "images": [
+                {
+                    "alt": "Bonter Polaris Screen Capture",
+                    "path": "assets/portfolio/bonterpolaris/images/01.png"
+                },
+                {
+                    "alt": "Bonter Polaris Screen Capture",
+                    "path": "assets/portfolio/bonterpolaris/images/02.png"
+                },
+                {
+                    "alt": "Bonter Polaris Screen Capture",
+                    "path": "assets/portfolio/bonterpolaris/images/03.png"
+                },
+                {
+                    "alt": "Bonter Polaris Screen Capture",
+                    "path": "assets/portfolio/bonterpolaris/images/04.png"
+                },
+                {
+                    "alt": "Bonter Polaris Screen Capture",
+                    "path": "assets/portfolio/bonterpolaris/images/05.png"
+                },
+                {
+                    "alt": "Bonter Polaris Screen Capture",
+                    "path": "assets/portfolio/bonterpolaris/images/06.png"
+                },
+                {
+                    "alt": "Bonter Polaris Screen Capture",
+                    "path": "assets/portfolio/bonterpolaris/images/07.png"
+                },
+                {
+                    "alt": "Bonter Polaris Screen Capture",
+                    "path": "assets/portfolio/bonterpolaris/images/08.png"
+                },
+                {
+                    "alt": "Bonter Polaris Screen Capture",
+                    "path": "assets/portfolio/bonterpolaris/images/09.png"
+                }
+            ],
+            "logo": "assets/portfolio/bonterpolaris/logo.png"
+        },
+        "name": "Bonter Polaris",
+        "platform": "Web",
+        "project" : "Design/Development",
+        "synopsis": "Located in Marmora, Ontario, Bonter Marine services customers throughout the surrounding area. They focus on new and used vehicle sales, ongoing maintenance of customer’s vehicles and parts."
+    },
+    {
+        "description": "The application allows team members to sign in and view their booking time of the escape room, easily contact other members, receive mission reminders, as well as view their standing on the escape room leaderboard.",
+        "languages": "The MAD Xscape room app was built with Objective-C and utilized a RESTful JSON API.",
+        "link": {
+            "title": "Download the app",
+            "path": "https://apps.apple.com/ca/app/mad-xscape/id1248017865"
+        },
+        "media": {
+            "images": [
+                {
+                    "alt": "Mad Xscape Screen Capture",
+                    "path": "assets/portfolio/madxscape/images/01.png"
+                },
+                {
+                    "alt": "Mad Xscape Screen Capture",
+                    "path": "assets/portfolio/madxscape/images/02.png"
+                },
+                {
+                    "alt": "Mad Xscape Screen Capture",
+                    "path": "assets/portfolio/madxscape/images/03.png"
+                }
+            ],
+            "logo": "assets/portfolio/madxscape/logo.png"
+        },
+        "name": "Mad Xscape",
+        "platform": "IOS",
+        "project" : "Design / Development",
+        "synopsis": "The MAD Xscape app was built for Durham College's 50th Anniversary escape room."
+    },
+    {
+        "description": "To build an inventory mangement system that allowed for internal employees to enter, update, and discard inventory records of on-hand, inbound, outband, and aging items.\n\nThe system also incorporates user-level access to filter specific capabilities and viewable items. For instance, a super-user may create employee and client accounts, while an employee may only edit and manage inventory records. Client users may only view inventory records related to their company.",
+        "languages": "Tracelogix was built on HTML5 / CSS3, Bootstrap, Javascript, jQuery, JSON and PHP (PDO) / MySQL.",
+        "media": {
+            "images": [
+                {
+                    "alt": "Tracelogix Screen Capture",
+                    "path": "assets/portfolio/tracelogix/images/01.png"
+                },
+                {
+                    "alt": "Tracelogix Screen Capture",
+                    "path": "assets/portfolio/tracelogix/images/02.png"
+                },
+                {
+                    "alt": "Tracelogix Screen Capture",
+                    "path": "assets/portfolio/tracelogix/images/03.png"
+                },
+                {
+                    "alt": "Tracelogix Screen Capture",
+                    "path": "assets/portfolio/tracelogix/images/04.png"
+                },
+                {
+                    "alt": "Tracelogix Screen Capture",
+                    "path": "assets/portfolio/tracelogix/images/05.png"
+                }
+            ],
+            "logo": "assets/portfolio/tracelogix/logo.png"
+        },
+        "name": "Tracelogix",
+        "platform": "Web",
+        "project" : "Design / Development",
+        "synopsis": "Tracelogix is a service repair centre who work with clients such as Sobey's and Mcdonalds. Tracelogix needed a proprietary inventory management system."
+    },
+    {
+        "description": "Easyaisle is a native service driven app that post's and receives information from a server in order to organize it visually for the end user. Custom services were created and stored locally within the app (when appropriate) via core data. The user may also sync their lists to the cloud for cross device communication.",
+        "languages": "Easyaisle is built in pure Objecitve-C using JSON for its web services. The app can also generate PLIST files for easy printing of shopping lists.",
+        "media": {
+            "images": [
+                {
+                    "alt": "Tracelogix Screen Capture",
+                    "path": "assets/portfolio/easyaisle/images/01.png"
+                },
+                {
+                    "alt": "Tracelogix Screen Capture",
+                    "path": "assets/portfolio/easyaisle/images/02.png"
+                },
+                {
+                    "alt": "Tracelogix Screen Capture",
+                    "path": "assets/portfolio/easyaisle/images/03.png"
+                },
+                {
+                    "alt": "Tracelogix Screen Capture",
+                    "path": "assets/portfolio/easyaisle/images/04.png"
+                }
+            ],
+            "logo": "assets/portfolio/easyaisle/logo.png"
+        },
+        "name": "easyAisle",
+        "platform": "Web",
+        "project" : "Design / Development",
+        "synopsis": "Easyaisle is an indoor navigation system that guides customers to products on their created shopping lists."
+    },
+    {
+        "description": "When starting on Stock Gaming, the website needed a design overhaul. The website was already responsive, but had some layout issues. These issues were fixed and the mobile experience was enhanced.\n\nStock Gaming needed a new logo and a website redesign. The logo idea was to represent the ups and downs of the stock market. The website design had to appeal to Stock Gaming's client base by being clean, friendly, and encourage a competitive feel.\n\nWhen starting work on Stock Gaming, the website had a few browser compatibility issues (primarily, Internet Explorer). Compatibility was a must due to Stock Gaming's target audience being on older machines. A great amount of detail and time was spent to make this happen. The website is now fully functional from IE6 and up.",
+        "languages": "Stock Gaming was built using HTML/CSS3, Angular.js, jQuery and PHP. Bootstrap was utilized for the foundation of this web-app.",
+        "media": {
+            "images": [
+                {
+                    "alt": "Stock Gaming Screen Capture",
+                    "path": "assets/portfolio/stockgaming/images/01.png"
+                },
+                {
+                    "alt": "Stock Gaming Screen Capture",
+                    "path": "assets/portfolio/stockgaming/images/02.png"
+                },
+                {
+                    "alt": "Stock Gaming Screen Capture",
+                    "path": "assets/portfolio/stockgaming/images/03.png"
+                },
+                {
+                    "alt": "Stock Gaming Screen Capture",
+                    "path": "assets/portfolio/stockgaming/images/04.png"
+                },
+                {
+                    "alt": "Stock Gaming Screen Capture",
+                    "path": "assets/portfolio/stockgaming/images/05.png"
+                },
+                {
+                    "alt": "Stock Gaming Screen Capture",
+                    "path": "assets/portfolio/stockgaming/images/06.png"
+                }
+            ],
+            "logo": "assets/portfolio/stockgaming/logo.png"
+        },
+        "name": "Stock Gaming",
+        "platform": "Web App",
+        "project" : "Re-design / Development",
+        "synopsis": "Stock Gaming is an online gaming website that allows users to make fake bets on real stock market trends."
+    },
+    {
+        "description": "Free Live Yoga is a responsive cms driven mobile friendly website. This allows students and new potential clients to access information on the go at anytime.\n\nFree Live Yoga's content comes from a custom built cms that allows the administrator of the website to make changes in content, images and even layout without the need to program.\n\nWhen worked started with Free Live Yoga, a logo was needed. The idea behind the origami style logo is to complement the nature of bending in yoga. The bird was used to complement Free Live Yoga as an acronym (FLY).\n\nThe goal of Free Live Yoga's ui/ux is to match the flow of how a class operates. With easing and a layout that falls into place while browsing.",
+        "languages": "The front-end of the website is built using HTML5/CSS3, jQuery, and AJAX.The backend is powered by PHP(PDO) and MySQL.",
+        "media": {
+            "images": [
+                {
+                    "alt": "Free Live Yoga Screen Capture",
+                    "path": "assets/portfolio/freeliveyoga/images/01.png"
+                },
+                {
+                    "alt": "Free Live Yoga Screen Capture",
+                    "path": "assets/portfolio/freeliveyoga/images/02.png"
+                },
+                {
+                    "alt": "Free Live Yoga Screen Capture",
+                    "path": "assets/portfolio/freeliveyoga/images/03.png"
+                },
+                {
+                    "alt": "Free Live Yoga Screen Capture",
+                    "path": "assets/portfolio/freeliveyoga/images/04.png"
+                }, 
+                {
+                    "alt": "Free Live Yoga Screen Capture",
+                    "path": "assets/portfolio/freeliveyoga/images/05.png"
+                },
+                {
+                    "alt": "Free Live Yoga Screen Capture",
+                    "path": "assets/portfolio/freeliveyoga/images/06.png"
+                }
+            ],
+            "logo": "assets/portfolio/freeliveyoga/logo.png"
+        },
+        "name": "Free Live Yoga",
+        "platform": "Web",
+        "project" : "Design / Development",
+        "synopsis": "Free Live Yoga is the home to registered yoga students and new comers. Guests may gather information about Free Live Yoga's services, while registered students may check their schedule and or be notified of class changes."
+    },
+    {
+        "description": "Free Live Yoga is a responsive cms driven mobile friendly website. This allows students and new potential clients to access information on the go at anytime.\n\nFree Live Yoga's content comes from a custom built cms that allows the administrator of the website to make changes in content, images and even layout without the need to program.\n\nWhen worked started with Free Live Yoga, a logo was needed. The idea behind the origami style logo is to complement the nature of bending in yoga. The bird was used to complement Free Live Yoga as an acronym (FLY).\n\nThe goal of Free Live Yoga's ui/ux is to match the flow of how a class operates. With easing and a layout that falls into place while browsing.",
+        "languages": "The front-end of the website is built using HTML5/CSS3, jQuery, and AJAX.The backend is powered by PHP(PDO) and MySQL.",
+        "link": {
+            "title": "visit site",
+            "path": "https://fly.matthewsullivan.media/"
+        },
+        "media": {
+            "images": [
+                {
+                    "alt": "Free Live Yoga Screen Capture",
+                    "path": "assets/portfolio/freeliveyoga/images/01.png"
+                },
+                {
+                    "alt": "Free Live Yoga Screen Capture",
+                    "path": "assets/portfolio/freeliveyoga/images/02.png"
+                },
+                {
+                    "alt": "Free Live Yoga Screen Capture",
+                    "path": "assets/portfolio/freeliveyoga/images/03.png"
+                },
+                {
+                    "alt": "Free Live Yoga Screen Capture",
+                    "path": "assets/portfolio/freeliveyoga/images/04.png"
+                }, 
+                {
+                    "alt": "Free Live Yoga Screen Capture",
+                    "path": "assets/portfolio/freeliveyoga/images/05.png"
+                },
+                {
+                    "alt": "Free Live Yoga Screen Capture",
+                    "path": "assets/portfolio/freeliveyoga/images/06.png"
+                }
+            ],
+            "logo": "assets/portfolio/freeliveyoga/logo.png"
+        },
+        "name": "Free Live Yoga",
+        "platform": "Web",
+        "project" : "Design / Development",
+        "synopsis": "Free Live Yoga is the home to registered yoga students and new comers. Guests may gather information about Free Live Yoga's services, while registered students may check their schedule and or be notified of class changes."
+    },
+    {
+        "description": "This site was built for a broker under Mortgage Alliance.\n\nThe client had a pre-existing brochure site and was looking to enhance the overall design, and bring the site to a modern-day look and feel.",
+        "languages": "HTML5/CSS3, jQuery, AJAX, JSON, PHP(PDO)/MySQL.",
+        "link": {
+            "title": "visit site",
+            "path": "https://www.mortgagealliance.matthewsullivan.media/"
+        },
+        "media": {
+            "images": [
+                {
+                    "alt": "Mortgage Alliance Screen Capture",
+                    "path": "assets/portfolio/mortgagealliance/images/01.png"
+                },
+                {
+                    "alt": "Mortgage Alliance Screen Capture",
+                    "path": "assets/portfolio/mortgagealliance/images/02.png"
+                },
+                {
+                    "alt": "Mortgage Alliance Screen Capture",
+                    "path": "assets/portfolio/mortgagealliance/images/03.png"
+                },
+                {
+                    "alt": "Mortgage Alliance Screen Capture",
+                    "path": "assets/portfolio/mortgagealliance/images/04.png"
+                }, 
+                {
+                    "alt": "Mortgage Alliance Screen Capture",
+                    "path": "assets/portfolio/mortgagealliance/images/05.png"
+                }
+            ],
+            "logo": "assets/portfolio/mortgagealliance/logo.png"
+        },
+        "name": "Mortgage Alliance",
+        "platform": "Web",
+        "project" : "Design / Development",
+        "synopsis": "Mortage Alliance is an independent company that works with all major Canadian banks, lending institutions, and private lenders."
+    },
+    {
+        "description": "The soundscape and design of the game are to reflect a dark world where things just aren't quite right.\n\nSome of the challenges faced while creating this game was animating static content. All images provided from Hallowette needed to be broken into layers to be animated and brought into the gameplay environment.\n\nThere are various different levels that increase in difficulty. Each unlocking a piece of art as a reward. Each level has it's own theme that comes back to haunt the user in the final level.\n\nThe final level was what started the whole concept of this game. A zoom quilt style world where the level starts with one image and continually zooms deeper and deeper into it while revealing elements and gameplay pieces.",
+        "languages": "Actionscript 3.0 was used to program this game. There was a heavy use of Adobe Photoshop, Adobe Flash (now Animate), and Adobe After Effects as well.",
+        "link": {
+            "title": "Downalod Air App",
+            "path": "https://matthewsullivan.media/assets/downloads"
+        },
+        "media": {
+            "images": [
+                {
+                    "alt": "Hallowette's World Screen Capture",
+                    "path": "assets/portfolio/hallowettesworld/images/01.png"
+                },
+                {
+                    "alt": "Hallowette's World Screen Capture",
+                    "path": "assets/portfolio/hallowettesworld/images/02.png"
+                },
+                {
+                    "alt": "Hallowette's World Screen Capture",
+                    "path": "assets/portfolio/hallowettesworld/images/03.png"
+                },
+                {
+                    "alt": "Hallowette's World Screen Capture",
+                    "path": "assets/portfolio/hallowettesworld/images/04.png"
+                }, 
+                {
+                    "alt": "Hallowette's World Screen Capture",
+                    "path": "assets/portfolio/hallowettesworld/images/05.png"
+                },
+                {
+                    "alt": "Hallowette's World Screen Capture",
+                    "path": "assets/portfolio/hallowettesworld/images/06.png"
+                },
+                {
+                    "alt": "Hallowette's World Screen Capture",
+                    "path": "assets/portfolio/hallowettesworld/images/07.png"
+                }
+            ],
+            "logo": "assets/portfolio/mortgagealliance/logo.png"
+        },
+        "name": "Hallowette's World",
+        "platform": "Air App",
+        "project" : "Design / Development",
+        "synopsis": "Hallowette's World is an immersive air app game the brings Hallowette's art to life. The goal is for the end user to collect pieces of art that have fallen out of place in order to save Hallowette's world."
+    },
+]
