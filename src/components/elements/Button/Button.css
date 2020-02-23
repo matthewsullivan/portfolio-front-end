@@ -5,6 +5,7 @@
   backface-visibility: hidden;
   background-clip: padding-box;
   box-shadow: 0 0 1px transparent;
+  border: none;
   color: var(--palette-tertiary);
   cursor: pointer;
   display: inline-block;

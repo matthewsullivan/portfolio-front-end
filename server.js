@@ -4,8 +4,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
-// Mock Database
-const studies = require('./model/portfolio.json');
+const preview = require('./model/preview.json');
+const studies = require('./model/studies.json');
 
 const app = express();
 const port = 4444;
@@ -16,6 +16,16 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
 
 app.listen(port);
+
+app.get('/api/v1/studies', (req, res) => {
+  const studies = preview;
+
+  if (!studies) {
+    res.status(204);
+  }
+
+  res.json(studies);
+});
 
 app.get('/api/v1/study/:id', (req, res) => {
   const study = studies[req.params.id];

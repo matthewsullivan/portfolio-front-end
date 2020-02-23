@@ -296,47 +296,6 @@
         "synopsis": "Free Live Yoga is the home to registered yoga students and new comers. Guests may gather information about Free Live Yoga's services, while registered students may check their schedule and or be notified of class changes."
     },
     {
-        "description": "Free Live Yoga is a responsive cms driven mobile friendly website. This allows students and new potential clients to access information on the go at anytime.\n\nFree Live Yoga's content comes from a custom built cms that allows the administrator of the website to make changes in content, images and even layout without the need to program.\n\nWhen worked started with Free Live Yoga, a logo was needed. The idea behind the origami style logo is to complement the nature of bending in yoga. The bird was used to complement Free Live Yoga as an acronym (FLY).\n\nThe goal of Free Live Yoga's ui/ux is to match the flow of how a class operates. With easing and a layout that falls into place while browsing.",
-        "languages": "The front-end of the website is built using HTML5/CSS3, jQuery, and AJAX.The backend is powered by PHP(PDO) and MySQL.",
-        "link": {
-            "title": "visit site",
-            "path": "https://fly.matthewsullivan.media/"
-        },
-        "media": {
-            "images": [
-                {
-                    "alt": "Free Live Yoga Screen Capture",
-                    "path": "assets/portfolio/freeliveyoga/images/01.png"
-                },
-                {
-                    "alt": "Free Live Yoga Screen Capture",
-                    "path": "assets/portfolio/freeliveyoga/images/02.png"
-                },
-                {
-                    "alt": "Free Live Yoga Screen Capture",
-                    "path": "assets/portfolio/freeliveyoga/images/03.png"
-                },
-                {
-                    "alt": "Free Live Yoga Screen Capture",
-                    "path": "assets/portfolio/freeliveyoga/images/04.png"
-                }, 
-                {
-                    "alt": "Free Live Yoga Screen Capture",
-                    "path": "assets/portfolio/freeliveyoga/images/05.png"
-                },
-                {
-                    "alt": "Free Live Yoga Screen Capture",
-                    "path": "assets/portfolio/freeliveyoga/images/06.png"
-                }
-            ],
-            "logo": "assets/portfolio/freeliveyoga/logo.png"
-        },
-        "name": "Free Live Yoga",
-        "platform": "Web",
-        "project" : "Design / Development",
-        "synopsis": "Free Live Yoga is the home to registered yoga students and new comers. Guests may gather information about Free Live Yoga's services, while registered students may check their schedule and or be notified of class changes."
-    },
-    {
         "description": "This site was built for a broker under Mortgage Alliance.\n\nThe client had a pre-existing brochure site and was looking to enhance the overall design, and bring the site to a modern-day look and feel.",
         "languages": "HTML5/CSS3, jQuery, AJAX, JSON, PHP(PDO)/MySQL.",
         "link": {
@@ -411,7 +370,7 @@
                     "path": "assets/portfolio/hallowettesworld/images/07.png"
                 }
             ],
-            "logo": "assets/portfolio/mortgagealliance/logo.png"
+            "logo": "assets/portfolio/hallowettesworld/logo.png"
         },
         "name": "Hallowette's World",
         "platform": "Air App",

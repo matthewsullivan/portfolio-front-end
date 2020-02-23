@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 import axios from 'axios';
 
@@ -13,63 +13,19 @@ import Title from '../../elements/Title/Title';
 
 import './Folio.css';
 
-const studies = [
-  {
-    image: 'assets/portfolio/burgerdex/burgerdex.jpg',
-    name: 'Burgerdex',
-    type: 'iOS Application',
-  },
-  {
-    image: 'assets/portfolio/easyAisle/easyAisle.jpg',
-    name: 'easyAisle',
-    type: 'iOS Application',
-  },
-  {
-    image: 'assets/portfolio/gidme/gidme.jpg',
-    name: 'Gidme',
-    type: 'iOS Application',
-  },
-  {
-    image: 'assets/portfolio/bonterpolaris/bonterpolaris-dark.jpg',
-    name: 'Bonter Polaris',
-    type: 'Website / CMS',
-  },
-  {
-    image: 'assets/portfolio/freeliveyoga/freelive.jpg',
-    name: 'Free Live Yoga',
-    type: 'Website / CMS',
-  },
-  {
-    image: 'assets/portfolio/madxscape/madxscape.jpg',
-    name: 'Mad Xscape',
-    type: 'iOS Application',
-  },
-  {
-    image: 'assets/portfolio/mortgagealliance/mortgagealliance.jpg',
-    name: 'Mortgage Alliance',
-    type: 'Website',
-  },
-  {
-    image: 'assets/portfolio/stockgaming/stockgaming.jpg',
-    name: 'Stock Gaming',
-    type: 'Angular Application',
-  },
-  {
-    image: 'assets/portfolio/tracelogix/tracelogix.jpg',
-    name: 'Trace Logix',
-    type: 'Inventory System CMS',
-  },
-  {
-    image: 'assets/portfolio/villageinn/villageinn.jpg',
-    name: 'Village Inn',
-    type: 'Website',
-  },
-];
+let api = 'https://matthewsullivan.media';
+
+if (process.env.NODE_ENV === 'development') {
+  api = 'http://127.0.0.1:4444';
+} else if (process.env.NODE_ENV === 'staging') {
+  api = 'https://staging.matthewsullivan.media';
+}
 
 export default React.forwardRef(function Folio(props, ref) {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedSlide, setSelectedSlide] = useState(0);
   const [selectedStudy, setSelectedStudy] = useState();
+  const [studies, setStudies] = useState();
 
   const carouselOptions = {
     buttonsDisabled: true,
@@ -93,30 +49,24 @@ export default React.forwardRef(function Folio(props, ref) {
     visible: modalOpen,
   };
 
-  /**
-   * Get Studies
-   * @return {JSX}
-   */
-  const getStudies = () => {
-    console.log('got here');
-    return studies.map((study, index) => {
-      return (
-        <div
-          className="item"
-          data-study={index}
-          key={study.name}
-          onClick={() => handleStudySelection(index)}
-        >
-          <img alt="Portfolio Clip" className="item__image" src={study.image} />
+  useEffect(() => {
+    fetchStudies();
+  }, []);
 
-          <div className="item__content">
-            <h2 className="item__chapter">{`0${index + 1}`}</h2>
-            <h2 className="item__title">{study.name}</h2>
-            <h3 className="item__subheading">{study.type}</h3>
-          </div>
-        </div>
-      );
-    });
+  /**
+   * Fetch Studies
+   */
+  const fetchStudies = () => {
+    axios
+      .get(`${api}/api/v1/studies`)
+      .then((res) => {
+        if (res.status === 204) throw Error('No case studies found.');
+
+        setStudies(res.data);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
   };
 
   /**
@@ -132,14 +82,6 @@ export default React.forwardRef(function Folio(props, ref) {
    * @param {number} study
    */
   const handleStudySelection = (study) => {
-    let api = 'https://matthewsullivan.media';
-
-    if (process.env.NODE_ENV === 'development') {
-      api = 'http://127.0.0.1:4444';
-    } else if (process.env.NODE_ENV === 'staging') {
-      api = 'https://staging.matthewsullivan.media';
-    }
-
     axios
       .get(`${api}/api/v1/study/${study}`)
       .then((res) => {
@@ -164,9 +106,36 @@ export default React.forwardRef(function Folio(props, ref) {
       />
 
       <div className="preview" ref={ref}>
-        <Scroller>
-          <div className="preview__container">{getStudies()}</div>
-        </Scroller>
+        {studies ? (
+          <Scroller>
+            <div className="preview__container">
+              {studies.map((study, index) => {
+                return (
+                  <div
+                    className="item"
+                    data-study={index}
+                    key={study.name}
+                    onClick={() => handleStudySelection(index)}
+                  >
+                    <img
+                      alt="Portfolio Clip"
+                      className="item__image"
+                      src={study.image}
+                    />
+
+                    <div className="item__content">
+                      <h2 className="item__chapter">{`0${index + 1}`}</h2>
+                      <h2 className="item__title">{study.name}</h2>
+                      <h3 className="item__subheading">{study.type}</h3>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </Scroller>
+        ) : (
+          <br />
+        )}
       </div>
 
       {selectedStudy ? (

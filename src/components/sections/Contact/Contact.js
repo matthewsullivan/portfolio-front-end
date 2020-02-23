@@ -12,6 +12,14 @@ import Title from '../../elements/Title/Title';
 
 import './Contact.css';
 
+let api = 'https://matthewsullivan.media';
+
+if (process.env.NODE_ENV === 'development') {
+  api = 'http://127.0.0.1:4444';
+} else if (process.env.NODE_ENV === 'staging') {
+  api = 'https://staging.matthewsullivan.media';
+}
+
 export default function Contact() {
   const [email, setEmail] = useState('');
   const [label, setLabel] = useState('Submit');
@@ -26,14 +34,6 @@ export default function Contact() {
    */
   const handleSubmitForm = (event) => {
     event.preventDefault();
-
-    let api = 'https://matthewsullivan.media';
-
-    if (process.env.NODE_ENV === 'development') {
-      api = 'http://127.0.0.1:4444';
-    } else if (process.env.NODE_ENV === 'staging') {
-      api = 'https://staging.matthewsullivan.media';
-    }
 
     const data = {
       userName: name,

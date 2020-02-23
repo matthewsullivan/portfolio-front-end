@@ -21,7 +21,7 @@ Update Mail Server Credentials
 
     $ vim ecosystem.config.js
     
-Start Mail Server
+Start Server
 
     $ pm2 start ecosystem.config.js
 

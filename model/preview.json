@@ -1,0 +1,52 @@
+[
+    {
+        "image": "assets/portfolio/burgerdex/burgerdex.jpg",
+        "name": "Burgerdex",
+        "type": "iOS Application"
+    },
+    {
+        "image": "assets/portfolio/gidme/gidme.jpg",
+        "name": "Gidme",
+        "type": "iOS Application"
+    },
+    {
+        "image": "assets/portfolio/bonterpolaris/bonterpolaris-dark.jpg",
+        "name": "Bonter Polaris",
+        "type": "Website / CMS"
+    },
+    {
+        "image": "assets/portfolio/madxscape/madxscape.jpg",
+        "name": "Mad Xscape",
+        "type": "iOS Application"
+    },
+    {
+        "image": "assets/portfolio/tracelogix/tracelogix.jpg",
+        "name": "Trace Logix",
+        "type": "Inventory System CMS"
+    },
+    {
+        "image": "assets/portfolio/easyAisle/easyAisle.jpg",
+        "name": "easyAisle",
+        "type": "iOS Application"
+    },
+    {
+        "image": "assets/portfolio/stockgaming/stockgaming.jpg",
+        "name": "Stock Gaming",
+        "type": "Angular Application"
+    },
+    {
+        "image": "assets/portfolio/freeliveyoga/freelive.jpg",
+        "name": "Free Live Yoga",
+        "type": "Website / CMS"
+    },
+    {
+        "image": "assets/portfolio/mortgagealliance/mortgagealliance.jpg",
+        "name": "Mortgage Alliance",
+        "type": "Website"
+    },
+    {
+        "image": "assets/portfolio/hallowettesworld/hallowette.jpg",
+        "name": "Hallowette's World",
+        "type": "Air App"
+    }
+]

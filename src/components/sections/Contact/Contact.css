@@ -54,6 +54,7 @@
 .form__input {
   background: #efefef;
   border: none;
+  border-radius: unset;
   box-sizing: border-box;
   color: #756f6f;
   font-size: 14px;
