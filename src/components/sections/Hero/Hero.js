@@ -13,10 +13,14 @@ export default function Hero() {
   const [selected, setSelected] = useState(0);
 
   const options = {
+    autoPlay: true,
+    autoPlayInterval: 4000,
     buttonsDisabled: true,
+    disableAutoPlayOnAction: true,
     dotsDisabled: true,
     handleOnDragStart: (e) => e.preventDefault(),
     mouseTrackingEnabled: true,
+    stopAutoPlayOnHover: true,
   };
 
   let carousel;

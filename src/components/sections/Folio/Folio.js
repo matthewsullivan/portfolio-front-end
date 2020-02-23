@@ -8,6 +8,7 @@ import IosClose from 'react-ionicons/lib/IosClose';
 import ScrollLock from 'react-scrolllock';
 import Rodal from 'rodal';
 
+import Card from '../../elements/Card/Card';
 import Scroller from '../../elements/Scroller/Scroller';
 import Title from '../../elements/Title/Title';
 
@@ -28,10 +29,14 @@ export default function Folio() {
   const [studies, setStudies] = useState();
 
   const carouselOptions = {
+    autoPlay: true,
+    autoPlayInterval: 4000,
     buttonsDisabled: true,
+    disableAutoPlayOnAction: true,
     dotsDisabled: true,
     handleOnDragStart: (e) => e.preventDefault(),
     mouseTrackingEnabled: true,
+    stopAutoPlayOnHover: true,
   };
 
   const modalOptions = {
@@ -45,7 +50,14 @@ export default function Folio() {
       top: 'auto',
       width: 'auto',
     },
-    onClose: () => setModalOpen(!modalOpen),
+    onClose: () => {
+      setModalOpen(!modalOpen);
+    },
+    onAnimationEnd: () => {
+      setSelectedSlide(0);
+
+      window.dispatchEvent(new Event('resize'));
+    },
     visible: modalOpen,
   };
 
@@ -82,6 +94,8 @@ export default function Folio() {
    * @param {number} study
    */
   const handleStudySelection = (study) => {
+    console.log('got here');
+
     axios
       .get(`${api}/api/v1/study/${study}`)
       .then((res) => {
@@ -112,22 +126,11 @@ export default function Folio() {
               {studies.map((study, index) => {
                 return (
                   <div
-                    className="item"
-                    data-study={index}
-                    key={study.name}
+                    className="preview__item"
                     onClick={() => handleStudySelection(index)}
+                    key={study.name}
                   >
-                    <img
-                      alt="Portfolio Clip"
-                      className="item__image"
-                      src={study.image}
-                    />
-
-                    <div className="item__content">
-                      <h2 className="item__chapter">{`0${index + 1}`}</h2>
-                      <h2 className="item__title">{study.name}</h2>
-                      <h3 className="item__subheading">{study.type}</h3>
-                    </div>
+                    <Card study={study} />
                   </div>
                 );
               })}
@@ -208,7 +211,7 @@ export default function Folio() {
                                   ? 'study-controls__dot--selected'
                                   : ''
                               }`}
-                              key={index}
+                              key={`${media}-${index}`}
                             ></span>
                           );
                         })}
