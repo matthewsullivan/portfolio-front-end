@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
 
-import PropTypes from 'prop-types';
-
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Headroom from 'react-headroom';
 import IosClose from 'react-ionicons/lib/IosClose';
@@ -65,13 +63,7 @@ const getNavigation = (element) => {
   );
 };
 
-Navigation.propTypes = {
-  pinned: PropTypes.bool,
-};
-
-export default function Navigation(props) {
-  const {pinned} = props;
-
+export default function Navigation() {
   const [drawerOpen, setDrawerState] = useState(false);
 
   return (
@@ -106,7 +98,7 @@ export default function Navigation(props) {
         </ScrollLock>
       </SlidingPanel>
       <Headroom
-        className={`headroom ${pinned ? 'headroom--hide' : 'headroom--show'}`}
+        className="headroom"
         disableInlineStyles
         pinStart={192}
         wrapperStyle={{marginTop: -88}}

@@ -87,14 +87,7 @@
   z-index: 1;
 }
 
-.headroom--hide {
-  opacity: 0;
-}
 
-.headroom--show {
-  display: inherit;
-  opacity: 1;
-}
 
 .headroom--unfixed {
   transform: translateY(-100%);

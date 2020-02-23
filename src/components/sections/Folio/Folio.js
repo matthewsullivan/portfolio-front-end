@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === 'development') {
   api = 'https://staging.matthewsullivan.media';
 }
 
-export default React.forwardRef(function Folio(props, ref) {
+export default function Folio() {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedSlide, setSelectedSlide] = useState(0);
   const [selectedStudy, setSelectedStudy] = useState();
@@ -105,7 +105,7 @@ export default React.forwardRef(function Folio(props, ref) {
         title="Works"
       />
 
-      <div className="preview" ref={ref}>
+      <div className="preview">
         {studies ? (
           <Scroller>
             <div className="preview__container">
@@ -244,4 +244,4 @@ export default React.forwardRef(function Folio(props, ref) {
       )}
     </section>
   );
-});
+}

@@ -30,11 +30,11 @@ const calculateHeight = (objectWidth) => {
 };
 
 /**
- * Handle Height
+ * Set Height
  * @param {object} ref
  * @param {function} setDynamicHeight
  */
-const handleHeight = (ref, setDynamicHeight) => {
+const setHeight = (ref, setDynamicHeight) => {
   const objectWidth = ref.current.scrollWidth;
 
   const dynamicHeight = calculateHeight(objectWidth);
@@ -75,11 +75,11 @@ export default function Scroller(props) {
    * Handle Resize
    */
   const handleResize = () => {
-    handleHeight(objectRef, setDynamicHeight);
+    setHeight(objectRef, setDynamicHeight);
   };
 
   useEffect(() => {
-    handleHeight(objectRef, setDynamicHeight);
+    setHeight(objectRef, setDynamicHeight);
 
     window.addEventListener('resize', handleResize);
 

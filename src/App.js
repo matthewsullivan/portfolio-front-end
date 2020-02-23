@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-import {useInView} from 'react-intersection-observer';
+// import {useInView} from 'react-intersection-observer';
 
 import Navigation from './components/elements/Navigation/Navigation';
 
@@ -16,20 +16,10 @@ import Vitae from './components/sections/Vitae/Vitae';
 import './App.css';
 
 export default function App() {
-  const [viewportHeight, setViewPortHeight] = useState(window.innerHeight);
-
-  window.addEventListener('resize', () =>
-    setViewPortHeight(window.innerHeight)
-  );
-
-  const [folio, inView] = useInView({
-    rootMargin: `0px 0px -${viewportHeight}px 0px`,
-  });
-
   return (
     <div className="app">
       <header>
-        <Navigation pinned={inView} />
+        <Navigation />
       </header>
       <section id="hero">
         <Hero />
@@ -48,7 +38,7 @@ export default function App() {
       </section>
 
       <section id="folio">
-        <Folio ref={folio} />
+        <Folio />
       </section>
 
       <section id="contact">
