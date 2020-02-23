@@ -37,7 +37,7 @@ export default function Button(props) {
   }
 
   return (
-    <AnchorLink className="button" href={`#${path}`} offset="88">
+    <AnchorLink className="button" href={`#${path}`}>
       {children}
     </AnchorLink>
   );
