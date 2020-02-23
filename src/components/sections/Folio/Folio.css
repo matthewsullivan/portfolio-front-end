@@ -10,13 +10,19 @@
 
 .preview__container {
   align-items: center;
+  background: var(--palette-tertiary);
   display: flex;
   height: 100%;
-  position: relative;
 }
 
 .preview__item {
-  height: inherit;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 88px 32px;
+  width: calc(100vw - 96px);
 }
 
 .study {
@@ -186,8 +192,9 @@
     padding: 72px 0;
   }
 
-  .item {
-    width: 484px;
+  .preview__item {
+    margin: 72px 24px 0;
+    width: 100%;
   }
 
   .study__content {

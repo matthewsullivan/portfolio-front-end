@@ -87,7 +87,7 @@ export default function Scroller(props) {
   }, []);
 
   return (
-    <div className="scroller">
+    <div style={{background: '#f9f9f9'}}>
       <div className="scroller__outer" style={{height: `${dynamicHeight}px`}}>
         <InnerContainer ref={containerRef}>
           <TranslateContainer translateX={translateX} ref={objectRef}>

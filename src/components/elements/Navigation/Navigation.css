@@ -87,8 +87,6 @@
   z-index: 1;
 }
 
-
-
 .headroom--unfixed {
   transform: translateY(-100%);
 }
