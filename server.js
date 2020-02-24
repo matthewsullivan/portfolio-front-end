@@ -15,17 +15,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
 
-if (
-  process.env.NODE_ENV === 'production' ||
-  process.env.NODE_ENV === 'staging'
-) {
-  app.use(express.static(path.join(__dirname, 'build')));
-
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-  });
-}
-
 app.get('/api/v1/studies', (req, res) => {
   const studies = preview;
 
@@ -85,5 +74,16 @@ app.post('/api/v1/send-email', (req, res) => {
     smtpTransport.close();
   });
 });
+
+if (
+  process.env.NODE_ENV === 'production' ||
+  process.env.NODE_ENV === 'staging'
+) {
+  app.use(express.static(path.join(__dirname, 'build')));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+  });
+}
 
 app.listen(port);
