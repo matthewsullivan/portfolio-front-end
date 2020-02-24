@@ -14,12 +14,12 @@ import Title from '../../elements/Title/Title';
 
 import './Folio.css';
 
-let api = 'https://staging.matthewsullivan.media';
+let api = 'https://matthewsullivan.media';
 
 if (process.env.NODE_ENV === 'development') {
   api = 'http://127.0.0.1:5000';
-} else if (process.env.NODE_ENV === 'production') {
-  api = 'https://matthewsullivan.media';
+} else if (process.env.NODE_ENV === 'staging') {
+  api = 'https://staging.matthewsullivan.media';
 }
 
 export default function Folio() {
