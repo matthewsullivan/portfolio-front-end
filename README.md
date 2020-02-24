@@ -1,13 +1,13 @@
 
 ## Demo
 
-In Development _staging_ :warning:
+In development _staging_ :warning:
 
     https://staging.matthewsullivan.media
 
 ## Install
 
-Install Project Dependencies
+Install project dependencies
 
     $ npm install
 
@@ -16,6 +16,12 @@ Install Project Dependencies
 Setup Environment
 
     $ export NODE_ENV=development
+
+## Server
+
+Start server
+
+    $ npm run start
 
 ## Serve
 
