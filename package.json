@@ -52,7 +52,6 @@
     "prettier": "^1.16.4"
   },
   "name": "portfolio-front-end",
-  "private": true,
   "proxy": "http://localhost:5000/",
   "scripts": {
     "start": "react-scripts start ",
