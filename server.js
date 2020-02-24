@@ -24,8 +24,6 @@ if (
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
   });
-} else {
-  process.env.PORT = port;
 }
 
 app.get('/', function(req, res) {
