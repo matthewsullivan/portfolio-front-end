@@ -22,6 +22,7 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "css-loader": "^3.4.2",
+    "env-cmd": "^10.1.0",
     "express": "^4.17.1",
     "install": "^0.13.0",
     "nodemailer": "^6.4.2",
@@ -51,6 +52,7 @@
     "eslint-plugin-prettier": "^3.0.1",
     "prettier": "^1.16.4"
   },
+  "homepage": ".",
   "name": "portfolio-front-end",
   "private": true,
   "proxy": "http://localhost:5000/",
@@ -58,6 +60,7 @@
     "start": "react-scripts start ",
     "mail-server": "node server.js",
     "build": "react-scripts build",
+    "build:staging": "env-cmd -f .env.staging npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
