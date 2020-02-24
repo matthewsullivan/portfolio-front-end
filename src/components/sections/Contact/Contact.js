@@ -12,12 +12,12 @@ import Title from '../../elements/Title/Title';
 
 import './Contact.css';
 
-let api = 'https://matthewsullivan.media';
+let api = 'https://www.matthewsullivan.media';
 
 if (process.env.NODE_ENV === 'development') {
   api = 'http://127.0.0.1:5000';
 } else if (process.env.REACT_APP_ENV === 'staging') {
-  api = 'https://staging.matthewsullivan.media';
+  api = 'https://www.staging.matthewsullivan.media';
 }
 
 export default function Contact() {
