@@ -22,7 +22,7 @@ module.exports = {
         URL_ORIGIN: 'https://staging.matthewsullivan.media',
       },
       instances: 1,
-      name: 'Mail Server',
+      name: 'Matthew Sullivan Media Server',
       max_memory_restart: '1G',
       script: 'server.js',
       watch: false,
