@@ -1,7 +1,7 @@
 
 ## Demo
 
-In Development :warning: staging :warning:
+In Development _staging_ :warning:
 
     https://staging.matthewsullivan.media
 
@@ -16,14 +16,6 @@ Install Project Dependencies
 Setup Environment
 
     $ export NODE_ENV=development
-
-Update Mail Server Credentials
-
-    $ vim ecosystem.config.js
-    
-Start Server
-
-    $ pm2 start ecosystem.config.js
 
 ## Serve
 
