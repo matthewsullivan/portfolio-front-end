@@ -53,6 +53,7 @@
   },
   "name": "portfolio-front-end",
   "private": true,
+  "proxy": "http://localhost:5000/",
   "scripts": {
     "start": "react-scripts start ",
     "mail-server": "node server.js",
