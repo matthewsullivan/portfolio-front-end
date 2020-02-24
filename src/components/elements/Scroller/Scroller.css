@@ -1,9 +1,3 @@
-@import "~/common/Template.module.css";
-
 .scroller {
-  background: 'red';
-}
-
-.scroller__outer {
   position: relative;
 }

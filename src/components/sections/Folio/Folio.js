@@ -161,7 +161,7 @@ export default function Folio() {
                   <h3 className="study__pre-title">{selectedStudy.platform}</h3>
                   <h2 className="study__title">{selectedStudy.project}</h2>
                   <div className="study__line" />
-                  <p className="study__summary">{selectedStudy.synopsis}</p>
+                  <p className="study__synopsis">{selectedStudy.synopsis}</p>
 
                   {selectedStudy.link ? (
                     <a
@@ -221,7 +221,7 @@ export default function Folio() {
                   <div className="study__information">
                     <h3 className="study__pre-title">{selectedStudy.name}</h3>
                     <h2 className="study__title">Task</h2>
-                    <p className="study__summary">
+                    <p className="study__synopsis">
                       {selectedStudy.description
                         .split('\n')
                         .map((item, key) => {
@@ -235,7 +235,7 @@ export default function Folio() {
                     </p>
 
                     <h2 className="study__title">Languages</h2>
-                    <p className="study__summary">{selectedStudy.languages}</p>
+                    <p className="study__synopsis">{selectedStudy.languages}</p>
                   </div>
                 </div>
               </div>

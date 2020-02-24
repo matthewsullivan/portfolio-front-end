@@ -26,7 +26,7 @@ const calculateHeight = (objectWidth) => {
   const vh = window.innerHeight;
   const vw = window.innerWidth;
 
-  return objectWidth - vw + vh + 150;
+  return objectWidth - vw + vh + 32;
 };
 
 /**
@@ -87,14 +87,12 @@ export default function Scroller(props) {
   }, []);
 
   return (
-    <div style={{background: '#f9f9f9'}}>
-      <div className="scroller__outer" style={{height: `${dynamicHeight}px`}}>
-        <InnerContainer ref={containerRef}>
-          <TranslateContainer translateX={translateX} ref={objectRef}>
-            {children}
-          </TranslateContainer>
-        </InnerContainer>
-      </div>
+    <div className="scroller" style={{height: `${dynamicHeight}px`}}>
+      <InnerContainer ref={containerRef}>
+        <TranslateContainer translateX={translateX} ref={objectRef}>
+          {children}
+        </TranslateContainer>
+      </InnerContainer>
     </div>
   );
 }
