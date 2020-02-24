@@ -1,7 +1,5 @@
 import React from 'react';
 
-// import {useInView} from 'react-intersection-observer';
-
 import Navigation from './components/elements/Navigation/Navigation';
 
 import About from './components/sections/About/About';
