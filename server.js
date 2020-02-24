@@ -1,5 +1,6 @@
 const cors = require('cors');
 const express = require('express');
+const path = require('path');
 
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
@@ -12,10 +13,15 @@ const port = 4444;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static(path.join(__dirname, 'build')));
 
 app.use(cors());
 
 app.listen(port);
+
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 app.get('/api/v1/studies', (req, res) => {
   const studies = preview;
