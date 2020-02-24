@@ -9,15 +9,24 @@ const preview = require('./model/preview.json');
 const studies = require('./model/studies.json');
 
 const app = express();
-const port = 4444;
+const port = 5000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static(path.join(__dirname, 'build')));
-
 app.use(cors());
 
-app.listen(port);
+if (
+  process.env.NODE_ENV === 'production' ||
+  process.env.NODE_ENV === 'staging'
+) {
+  app.use(express.static(path.join(__dirname, 'build')));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  });
+} else {
+  process.env.PORT = port;
+}
 
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
@@ -82,3 +91,5 @@ app.post('/api/v1/send-email', (req, res) => {
     smtpTransport.close();
   });
 });
+
+app.listen(port);
