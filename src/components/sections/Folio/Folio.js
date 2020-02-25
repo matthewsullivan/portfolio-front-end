@@ -45,8 +45,8 @@ export default function Folio() {
     <section className="folio">
       <Title
         body="Hand picked projects and case studies."
-        className="title"
         chapter="03"
+        className="title"
         title="Works"
       />
 
@@ -58,7 +58,7 @@ export default function Folio() {
                 return (
                   <div
                     className="preview__item"
-                    onClick={() => setSelectedStudy(index)}
+                    onClick={() => setSelectedStudy(study)}
                     key={study.name}
                   >
                     <Card study={study} />
@@ -72,7 +72,7 @@ export default function Folio() {
         )}
       </div>
 
-      {selectedStudy >= 0 ? (
+      {selectedStudy ? (
         <Study resetSelectedStudy={setSelectedStudy} study={selectedStudy} />
       ) : (
         ''

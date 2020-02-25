@@ -45,8 +45,7 @@
         },
         "name": "Burgerdex",
         "platform": "IOS",
-        "project" : "Design/Development",
-        "synopsis": "Burgerdex is the worlds first burger catalogue aiming to index different burgers around the globe."
+        "project" : "Design/Development"
     },
     {
         "description": "Gidme is a native service driven app that POSTs and receives information from a server in order to organize it visually for the end user. Custom services were created and stored locally within the app (when appropriate) via Core Data.\n\nAt the heart of Gidme is accurate data. The application needed to respond quickly while parsing and or loading large amounts of data. This was achieved by mapping out and reiterating a data modal that would withstand future changes. The local persistive store (Core Data) is modalar and fast and built in a relational manor.",
@@ -74,8 +73,7 @@
         },
         "name": "Gidme",
         "platform": "IOS",
-        "project" : "Design / Development",
-        "synopsis": "Gidme is an in-app directory for the venues, you love. Have you ever been faced with not knowing where a specific facility is within an indoor venue? Gidme fixes that. Gidme offers a micro-location based mapping solution that navigates you wherever you desire to be."
+        "project" : "Design / Development"
     },
     {
         "description": "Design and develop a new website to add and manage vehicle inventory.\n\nA custom CMS was built for the staff at Bonter Polaris to manage, upload, and archive inventory. A custom API was built specifically for the CMS and scalability. Multi-image uploading and record management were high priority items built into the CMS.\n\nThe front-end design is built with simplicity and user-experience in mind. Customers may view inventory with multiple filter controls, view featured items, view similar items based on the current inventory being viewed as well as see current deals.",
@@ -127,8 +125,7 @@
         },
         "name": "Bonter Polaris",
         "platform": "Web",
-        "project" : "Design/Development",
-        "synopsis": "Located in Marmora, Ontario, Bonter Marine services customers throughout the surrounding area. They focus on new and used vehicle sales, ongoing maintenance of customer’s vehicles and parts."
+        "project" : "Design/Development"
     },
     {
         "description": "The application allows team members to sign in and view their booking time of the escape room, easily contact other members, receive mission reminders, as well as view their standing on the escape room leaderboard.",
@@ -156,8 +153,7 @@
         },
         "name": "Mad Xscape",
         "platform": "IOS",
-        "project" : "Design / Development",
-        "synopsis": "The MAD Xscape app was built for Durham College's 50th Anniversary escape room."
+        "project" : "Design / Development"
     },
     {
         "description": "To build an inventory mangement system that allowed for internal employees to enter, update, and discard inventory records of on-hand, inbound, outband, and aging items.\n\nThe system also incorporates user-level access to filter specific capabilities and viewable items. For instance, a super-user may create employee and client accounts, while an employee may only edit and manage inventory records. Client users may only view inventory records related to their company.",
@@ -189,8 +185,7 @@
         },
         "name": "Tracelogix",
         "platform": "Web",
-        "project" : "Design / Development",
-        "synopsis": "Tracelogix is a service repair centre who work with clients such as Sobey's and Mcdonalds. Tracelogix needed a proprietary inventory management system."
+        "project" : "Design / Development"
     },
     {
         "description": "Easyaisle is a native service driven app that post's and receives information from a server in order to organize it visually for the end user. Custom services were created and stored locally within the app (when appropriate) via core data. The user may also sync their lists to the cloud for cross device communication.",
@@ -218,8 +213,7 @@
         },
         "name": "easyAisle",
         "platform": "Web",
-        "project" : "Design / Development",
-        "synopsis": "Easyaisle is an indoor navigation system that guides customers to products on their created shopping lists."
+        "project" : "Design / Development"
     },
     {
         "description": "When starting on Stock Gaming, the website needed a design overhaul. The website was already responsive, but had some layout issues. These issues were fixed and the mobile experience was enhanced.\n\nStock Gaming needed a new logo and a website redesign. The logo idea was to represent the ups and downs of the stock market. The website design had to appeal to Stock Gaming's client base by being clean, friendly, and encourage a competitive feel.\n\nWhen starting work on Stock Gaming, the website had a few browser compatibility issues (primarily, Internet Explorer). Compatibility was a must due to Stock Gaming's target audience being on older machines. A great amount of detail and time was spent to make this happen. The website is now fully functional from IE6 and up.",
@@ -255,8 +249,7 @@
         },
         "name": "Stock Gaming",
         "platform": "Web App",
-        "project" : "Re-design / Development",
-        "synopsis": "Stock Gaming is an online gaming website that allows users to make fake bets on real stock market trends."
+        "project" : "Re-design / Development"
     },
     {
         "description": "Free Live Yoga is a responsive cms driven mobile friendly website. This allows students and new potential clients to access information on the go at anytime.\n\nFree Live Yoga's content comes from a custom built cms that allows the administrator of the website to make changes in content, images and even layout without the need to program.\n\nWhen worked started with Free Live Yoga, a logo was needed. The idea behind the origami style logo is to complement the nature of bending in yoga. The bird was used to complement Free Live Yoga as an acronym (FLY).\n\nThe goal of Free Live Yoga's ui/ux is to match the flow of how a class operates. With easing and a layout that falls into place while browsing.",
@@ -296,8 +289,7 @@
         },
         "name": "Free Live Yoga",
         "platform": "Web",
-        "project" : "Design / Development",
-        "synopsis": "Free Live Yoga is the home to registered yoga students and new comers. Guests may gather information about Free Live Yoga's services, while registered students may check their schedule and or be notified of class changes."
+        "project" : "Design / Development"
     },
     {
         "description": "This site was built for a broker under Mortgage Alliance.\n\nThe client had a pre-existing brochure site and was looking to enhance the overall design, and bring the site to a modern-day look and feel.",
@@ -333,8 +325,7 @@
         },
         "name": "Mortgage Alliance",
         "platform": "Web",
-        "project" : "Design / Development",
-        "synopsis": "Mortage Alliance is an independent company that works with all major Canadian banks, lending institutions, and private lenders."
+        "project" : "Design / Development"
     },
     {
         "description": "The soundscape and design of the game are to reflect a dark world where things just aren't quite right.\n\nSome of the challenges faced while creating this game was animating static content. All images provided from Hallowette needed to be broken into layers to be animated and brought into the gameplay environment.\n\nThere are various different levels that increase in difficulty. Each unlocking a piece of art as a reward. Each level has it's own theme that comes back to haunt the user in the final level.\n\nThe final level was what started the whole concept of this game. A zoom quilt style world where the level starts with one image and continually zooms deeper and deeper into it while revealing elements and gameplay pieces.",
@@ -378,7 +369,6 @@
         },
         "name": "Hallowette's World",
         "platform": "Air App",
-        "project" : "Design / Development",
-        "synopsis": "Hallowette's World is an immersive air app game the brings Hallowette's art to life. The goal is for the end user to collect pieces of art that have fallen out of place in order to save Hallowette's world."
+        "project" : "Design / Development"
     }
 ]

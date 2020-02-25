@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === 'development') {
 
 Study.propTypes = {
   resetSelectedStudy: PropTypes.func,
-  study: PropTypes.number,
+  study: PropTypes.object,
 };
 
 export default function Study(props) {
@@ -33,23 +33,19 @@ export default function Study(props) {
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
-    const fetchStudy = (study) => {
-      axios
-        .get(`${api}/api/v1/study/${study}`)
-        .then((res) => {
-          if (res.status === 204) throw Error('No case study found.');
+    axios
+      .get(`${api}/api/v1/study/${study.id}`)
+      .then((res) => {
+        if (res.status === 204) throw Error('No case study found.');
 
-          setSelectedStudy(res.data);
+        setSelectedStudy(res.data);
 
-          setModalOpen(true);
-        })
-        .catch((e) => {
-          console.log(e);
-        });
-    };
-
-    fetchStudy(study);
-  }, [modalOpen, study]);
+        setModalOpen(true);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  }, [study]);
 
   const carouselOptions = {
     autoPlay: true,
@@ -99,7 +95,7 @@ export default function Study(props) {
     setSelectedSlide(event.slide);
   };
 
-  if (!modalOpen) {
+  if (!selectedStudy) {
     return '';
   }
 
@@ -120,7 +116,7 @@ export default function Study(props) {
               <h3 className="study__pre-title">{selectedStudy.platform}</h3>
               <h2 className="study__title">{selectedStudy.project}</h2>
               <div className="study__line" />
-              <p className="study__synopsis">{selectedStudy.synopsis}</p>
+              <p className="study__synopsis">{study.synopsis}</p>
 
               {selectedStudy.link ? (
                 <a
