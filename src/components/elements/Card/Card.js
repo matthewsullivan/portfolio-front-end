@@ -10,6 +10,7 @@ import './Card.css';
 
 const CardAvatar = styled.div`
   background: url(${(props) => props.study.icon}) no-repeat;
+  background-color: #fff;
   background-size: cover;
 `;
 
