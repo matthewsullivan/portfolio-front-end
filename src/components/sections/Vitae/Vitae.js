@@ -14,7 +14,10 @@ export default function Vitae() {
       />
 
       <div className="vitae__line" />
-      <Button external path="assets/cv/MatthewSullivanCV.pdf">
+      <Button
+        external
+        path="https://www.static.matthewsullivan.media/matthewsullivancv.pdf"
+      >
         Curriculum Vitae
       </Button>
       <p className="vitae__body">
