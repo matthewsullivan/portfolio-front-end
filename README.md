@@ -3,7 +3,7 @@
 
 In development _staging_ :warning:
 
-    https://staging.matthewsullivan.media
+https://staging.matthewsullivan.media
 
 ## Install
 
