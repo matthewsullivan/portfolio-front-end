@@ -10,14 +10,14 @@ module.exports = {
       },
       env_production: {
         NODE_ENV: 'production',
-        MAIL_USER: 'ADD CREDENTAILS',
-        MAIL_PASS: 'ADD CREDENTAILS',
+        MAIL_USER: '[ADD_CREDENTAILS]',
+        MAIL_PASS: '[ADD_CREDENTAILS]',
         URL_ORIGIN: 'https://www.matthewsullivan.media',
       },
       env_staging: {
         NODE_ENV: 'staging',
-        MAIL_USER: 'ADD CREDENTAILS',
-        MAIL_PASS: 'ADD CREDENTAILS',
+        MAIL_USER: '[ADD_CREDENTAILS]',
+        MAIL_PASS: '[ADD_CREDENTAILS]',
         URL_ORIGIN: 'https://www.staging.matthewsullivan.media',
       },
       instances: 1,
