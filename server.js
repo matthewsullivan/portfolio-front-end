@@ -9,7 +9,8 @@ const preview = require('./model/preview.json');
 const studies = require('./model/studies.json');
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port =
+  process.env.PORT || process.env.NODE_ENV === 'development' ? 80 : 443;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -87,6 +88,6 @@ if (
 }
 
 app.listen(port, () => {
-  console.log(`Server Port: ${process.env.PORT}`);
+  console.log(`Server Port: ${port}`);
   console.log(`Environment: ${process.env.NODE_ENV}`);
 });

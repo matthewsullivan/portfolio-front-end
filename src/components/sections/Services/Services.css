@@ -1,5 +1,3 @@
-@import "~/common/Template.module.css";
-
 .service {
   display: flex;
   flex-wrap: wrap;

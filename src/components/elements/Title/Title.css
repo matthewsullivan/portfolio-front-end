@@ -1,6 +1,3 @@
-@import "~/common/Template.module.css";
-
-
 .title {
   color: var(--palette-primary);
   display: flex;

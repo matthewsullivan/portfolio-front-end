@@ -24,7 +24,7 @@ module.exports = {
       instances: 1,
       name: 'MSM Server',
       max_memory_restart: '1G',
-      script: 'app.js',
+      script: 'server.js',
       watch: false,
     },
   ],
