@@ -1,7 +1,6 @@
 module.exports = {
   apps: [
     {
-      args: 'one two',
       autorestart: true,
       env: {
         NODE_ENV: 'development',
