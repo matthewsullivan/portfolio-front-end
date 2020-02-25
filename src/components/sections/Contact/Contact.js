@@ -67,7 +67,6 @@ export default function Contact() {
     setMessage('');
     setName('');
     setSent(false);
-    setResponse('');
   };
 
   return (
