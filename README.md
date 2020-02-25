@@ -21,7 +21,7 @@ Setup Environment
 
 Start server
 
-    $ npm run start
+    $ node server.js
 
 ## Serve
 
