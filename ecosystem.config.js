@@ -6,7 +6,7 @@ module.exports = {
         NODE_ENV: 'development',
         MAIL_USER: 'localhost@localhost.com',
         MAIL_PASS: 'letmein',
-        URL_ORIGIN: 'http://127.0.0.1:5000',
+        URL_ORIGIN: 'http://127.0.0.1:8080',
       },
       env_production: {
         NODE_ENV: 'production',
