@@ -19,6 +19,7 @@ export default function App() {
       <header>
         <Navigation />
       </header>
+
       <section id="hero">
         <Hero />
       </section>
