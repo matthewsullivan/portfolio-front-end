@@ -20,26 +20,22 @@ if (process.env.NODE_ENV === 'development') {
 export default function Folio() {
   const [selectedStudy, setSelectedStudy] = useState();
   const [studies, setStudies] = useState();
+  const [fetchError, setfetchError] = useState();
 
   useEffect(() => {
-    fetchStudies();
-  }, []);
-
-  /**
-   * Fetch Studies
-   */
-  const fetchStudies = () => {
     axios
       .get(`${api}/api/v1/studies`)
       .then((res) => {
-        if (res.status === 204) throw Error('No case studies found.');
+        if (res.status === 204) {
+          setfetchError('Unable to load case studies');
+        }
 
         setStudies(res.data);
       })
-      .catch((e) => {
-        console.log(e);
+      .catch(() => {
+        setfetchError('Unable to load case studies');
       });
-  };
+  }, []);
 
   return (
     <section className="folio">
@@ -54,7 +50,7 @@ export default function Folio() {
         {studies ? (
           <Scroller>
             <div className="preview__container">
-              {studies.map((study, index) => {
+              {studies.map((study) => {
                 return (
                   <div
                     className="preview__item"
@@ -68,15 +64,11 @@ export default function Folio() {
             </div>
           </Scroller>
         ) : (
-          <p>Unable to load media</p>
+          <p>{fetchError}</p>
         )}
       </div>
 
-      {selectedStudy ? (
-        <Study resetSelectedStudy={setSelectedStudy} study={selectedStudy} />
-      ) : (
-        ''
-      )}
+      <Study study={selectedStudy} />
     </section>
   );
 }

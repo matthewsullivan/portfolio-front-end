@@ -21,30 +21,24 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 Study.propTypes = {
-  resetSelectedStudy: PropTypes.func,
   study: PropTypes.object,
 };
 
 export default function Study(props) {
-  const {resetSelectedStudy, study} = props;
+  const {study} = props;
 
   const [selectedSlide, setSelectedSlide] = useState(0);
   const [selectedStudy, setSelectedStudy] = useState();
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
-    axios
-      .get(`${api}/api/v1/study/${study.id}`)
-      .then((res) => {
-        if (res.status === 204) throw Error('No case study found.');
+    if (!study) return;
 
-        setSelectedStudy(res.data);
+    axios.get(`${api}/api/v1/study/${study.id}`).then((res) => {
+      setSelectedStudy(res.data);
 
-        setModalOpen(true);
-      })
-      .catch((e) => {
-        console.log(e);
-      });
+      setModalOpen(true);
+    });
   }, [study]);
 
   const carouselOptions = {
@@ -79,15 +73,6 @@ export default function Study(props) {
   };
 
   /**
-   * Handle Close
-   */
-  const handleClose = () => {
-    setModalOpen(!modalOpen);
-
-    resetSelectedStudy();
-  };
-
-  /**
    * Handle Slide Changed
    * @param {object} event
    */
@@ -95,106 +80,111 @@ export default function Study(props) {
     setSelectedSlide(event.slide);
   };
 
-  if (!selectedStudy) {
-    return '';
-  }
-
   return (
-    <Rodal {...modalOptions}>
-      <ScrollLock isActive={modalOpen}>
-        <div className="study">
-          <div className="study__close" onClick={() => handleClose()}>
-            <IosClose color="#f9f9f9" fontSize="32" />
-          </div>
-          <div className="study__container">
-            <header className="study__header">
-              <img
-                alt="Study Logo"
-                className="study__image"
-                src={selectedStudy.media.logo}
-              />
-              <h3 className="study__pre-title">{selectedStudy.platform}</h3>
-              <h2 className="study__title">{selectedStudy.project}</h2>
-              <div className="study__line" />
-              <p className="study__synopsis">{study.synopsis}</p>
-
-              {selectedStudy.link ? (
-                <a
-                  className="study__link"
-                  href={selectedStudy.link.path}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  {selectedStudy.link.title}{' '}
-                  <IosArrowRoundForward fontSize="24" />
-                </a>
-              ) : (
-                <br />
-              )}
-            </header>
-            <div className="study__content">
-              <div className="study__showcase">
-                <AliceCarousel
-                  className="study-carousel"
-                  onSlideChanged={handleSlideChanged}
-                  {...carouselOptions}
-                >
-                  {selectedStudy.media.images.map((media, index) => {
-                    return (
-                      <div
-                        className="study-carousel__slide"
-                        key={index}
-                        onDragStart={carouselOptions.handleOnDragStart}
-                      >
-                        <img
-                          alt={media.alt}
-                          className="study-carousel__image"
-                          src={media.path}
-                        />
-                      </div>
-                    );
-                  })}
-                </AliceCarousel>
-
-                <nav className="study-controls">
-                  <div className="study-controls__dots">
-                    {selectedStudy.media.images.map((media, index) => {
-                      return (
-                        <span
-                          className={`study-controls__dot ${
-                            selectedSlide === index
-                              ? 'study-controls__dot--selected'
-                              : ''
-                          }`}
-                          key={`${media}-${index}`}
-                        ></span>
-                      );
-                    })}
-                  </div>
-                </nav>
+    <>
+      {selectedStudy && (
+        <Rodal {...modalOptions}>
+          <ScrollLock isActive={modalOpen}>
+            <div className="study">
+              <div
+                className="study__close"
+                onClick={() => setModalOpen(!modalOpen)}
+              >
+                <IosClose color="#f9f9f9" fontSize="32" />
               </div>
+              <div className="study__container">
+                <header className="study__header">
+                  <img
+                    alt="Study Logo"
+                    className="study__image"
+                    src={selectedStudy.media.logo}
+                  />
+                  <h3 className="study__pre-title">{selectedStudy.platform}</h3>
+                  <h2 className="study__title">{selectedStudy.project}</h2>
+                  <div className="study__line" />
+                  <p className="study__synopsis">{study.synopsis}</p>
 
-              <div className="study__information">
-                <h3 className="study__pre-title">{selectedStudy.name}</h3>
-                <h2 className="study__title">Task</h2>
-                <p className="study__synopsis">
-                  {selectedStudy.description.split('\n').map((item, key) => {
-                    return (
-                      <span key={key}>
-                        {item}
-                        <br />
-                      </span>
-                    );
-                  })}
-                </p>
+                  {selectedStudy.link ? (
+                    <a
+                      className="study__link"
+                      href={selectedStudy.link.path}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      {selectedStudy.link.title}{' '}
+                      <IosArrowRoundForward fontSize="24" />
+                    </a>
+                  ) : (
+                    <br />
+                  )}
+                </header>
+                <div className="study__content">
+                  <div className="study__showcase">
+                    <AliceCarousel
+                      className="study-carousel"
+                      onSlideChanged={handleSlideChanged}
+                      {...carouselOptions}
+                    >
+                      {selectedStudy.media.images.map((media, index) => {
+                        return (
+                          <div
+                            className="study-carousel__slide"
+                            key={index}
+                            onDragStart={carouselOptions.handleOnDragStart}
+                          >
+                            <img
+                              alt={media.alt}
+                              className="study-carousel__image"
+                              src={media.path}
+                            />
+                          </div>
+                        );
+                      })}
+                    </AliceCarousel>
 
-                <h2 className="study__title">Languages</h2>
-                <p className="study__synopsis">{selectedStudy.languages}</p>
+                    <nav className="study-controls">
+                      <div className="study-controls__dots">
+                        {selectedStudy.media.images.map((media, index) => {
+                          return (
+                            <span
+                              className={`study-controls__dot ${
+                                selectedSlide === index
+                                  ? 'study-controls__dot--selected'
+                                  : ''
+                              }`}
+                              key={`${media}-${index}`}
+                            ></span>
+                          );
+                        })}
+                      </div>
+                    </nav>
+                  </div>
+
+                  <div className="study__information">
+                    <h3 className="study__pre-title">{selectedStudy.name}</h3>
+                    <h2 className="study__title">Task</h2>
+                    <p className="study__synopsis">
+                      {selectedStudy.description
+                        .split('\n')
+                        .map((item, key) => {
+                          return (
+                            <span key={key}>
+                              {item}
+                              <br />
+                            </span>
+                          );
+                        })}
+                    </p>
+
+                    <h2 className="study__title">Languages</h2>
+                    <p className="study__synopsis">{selectedStudy.languages}</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </ScrollLock>
-    </Rodal>
+          </ScrollLock>
+        </Rodal>
+      )}
+    </>
   );
 }
