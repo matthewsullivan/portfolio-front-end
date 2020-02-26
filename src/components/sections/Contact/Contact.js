@@ -12,6 +12,7 @@ import Button from '../../elements/Button/Button';
 import Title from '../../elements/Title/Title';
 
 import './Contact.css';
+import {isCompositeComponent} from 'react-dom/test-utils';
 
 export default function Contact() {
   const [email, setEmail] = useState('');
@@ -39,14 +40,14 @@ export default function Contact() {
     axios
       .post(`${api}/api/v1/send-email`, data)
       .then((res) => {
-        setResponse(res.message);
+        setResponse(res.data);
         setSent(true);
 
         resetForm();
       })
       .catch((e) => {
         setLabel('Submit');
-        setResponse(e.message);
+        setResponse(e.data);
         setSent(false);
       });
   };

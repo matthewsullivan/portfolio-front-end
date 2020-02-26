@@ -4,6 +4,8 @@ import AliceCarousel from 'react-alice-carousel';
 
 import IosArrowBack from 'react-ionicons/lib/IosArrowBack';
 import IosArrowForward from 'react-ionicons/lib/IosArrowForward';
+import IosCafeOutline from 'react-ionicons/lib/IosCafeOutline';
+import IosLeafOutline from 'react-ionicons/lib/IosLeafOutline';
 
 import Button from '../../elements/Button/Button';
 
@@ -51,6 +53,7 @@ export default function Hero() {
           />
 
           <div className="carousel__content">
+            <IosCafeOutline color="#f9f9f9" fontSize="64" />
             <h1 className="carousel__title">Software Engineer</h1>
             <p className="carousel__body">
               More than just a Developer. I am a well rounded Media Specialist
@@ -70,6 +73,7 @@ export default function Hero() {
           />
 
           <div className="carousel__content">
+            <IosLeafOutline color="#f9f9f9" fontSize="64" />
             <h1 className="carousel__title">Passionate Teacher</h1>
             <p className="carousel__body">
               Not only building, and consulting, but teaching others the lingo
