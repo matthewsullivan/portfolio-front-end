@@ -18,9 +18,10 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 export default function Folio() {
-  const [selectedStudy, setSelectedStudy] = useState();
-  const [studies, setStudies] = useState();
   const [fetchError, setfetchError] = useState();
+  const [selectedStudy, setSelectedStudy] = useState();
+  const [showStudy, setShowStudy] = useState();
+  const [studies, setStudies] = useState();
 
   useEffect(() => {
     axios
@@ -36,6 +37,15 @@ export default function Folio() {
         setfetchError('Unable to load case studies');
       });
   }, []);
+
+  /**
+   * Handle Study Selection
+   * @param {object} study
+   */
+  const handleStudySelection = (study) => {
+    setSelectedStudy(study);
+    setShowStudy(true);
+  };
 
   return (
     <section className="folio">
@@ -54,7 +64,7 @@ export default function Folio() {
                 return (
                   <div
                     className="preview__item"
-                    onClick={() => setSelectedStudy(study)}
+                    onClick={() => handleStudySelection(study)}
                     key={study.name}
                   >
                     <Card study={study} />
@@ -68,7 +78,7 @@ export default function Folio() {
         )}
       </div>
 
-      <Study study={selectedStudy} />
+      {showStudy && <Study setShowStudy={setShowStudy} study={selectedStudy} />}
     </section>
   );
 }

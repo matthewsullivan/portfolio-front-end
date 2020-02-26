@@ -21,11 +21,12 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 Study.propTypes = {
+  setShowStudy: PropTypes.func,
   study: PropTypes.object,
 };
 
 export default function Study(props) {
-  const {study} = props;
+  const {setShowStudy, study} = props;
 
   const [selectedSlide, setSelectedSlide] = useState(0);
   const [selectedStudy, setSelectedStudy] = useState();
@@ -80,16 +81,21 @@ export default function Study(props) {
     setSelectedSlide(event.slide);
   };
 
+  /**
+   * Handle Study Close
+   */
+  const handleStudyClose = () => {
+    setModalOpen(!modalOpen);
+    setShowStudy(false);
+  };
+
   return (
     <>
       {selectedStudy && (
         <Rodal {...modalOptions}>
           <ScrollLock isActive={modalOpen}>
             <div className="study">
-              <div
-                className="study__close"
-                onClick={() => setModalOpen(!modalOpen)}
-              >
+              <div className="study__close" onClick={() => handleStudyClose()}>
                 <IosClose color="#f9f9f9" fontSize="32" />
               </div>
               <div className="study__container">
