@@ -5,6 +5,36 @@
   position: relative;
 }
 
+.error {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.error__title {
+  color: var(--palette-primary);
+  font-family: var(--typography-primary);
+  font-size: 16px;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+.error__text {
+  color: var(--palette-primary);
+  font-family: var(--typography-primary);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin: 4px 0;
+  text-transform: uppercase;
+}
+
+.error__links {
+  margin: 8px 0;
+}
+
 .preview__container {
   align-items: center;
   background: var(--palette-tertiary);

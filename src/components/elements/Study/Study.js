@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
 import axios from 'axios';
-
 import AliceCarousel from 'react-alice-carousel';
 import IosArrowRoundForward from 'react-ionicons/lib/IosArrowRoundForward';
 import IosClose from 'react-ionicons/lib/IosClose';

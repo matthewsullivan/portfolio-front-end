@@ -2,7 +2,12 @@ import React, {useEffect, useState} from 'react';
 
 import axios from 'axios';
 
+import LogoGithub from 'react-ionicons/lib/LogoGithub';
+import LogoLinkedin from 'react-ionicons/lib/LogoLinkedin';
+import MdUmbrella from 'react-ionicons/lib/MdUmbrella';
+
 import api from '../../../api/api';
+
 import Card from '../../elements/Card/Card';
 import Scroller from '../../elements/Scroller/Scroller';
 import Study from '../../elements/Study/Study';
@@ -22,6 +27,8 @@ export default function Folio() {
       .then((res) => {
         if (res.status === 204) {
           setfetchError('Unable to load case studies');
+
+          return;
         }
 
         setStudies(res.data);
@@ -67,7 +74,30 @@ export default function Folio() {
             </div>
           </Scroller>
         ) : (
-          <p>{fetchError}</p>
+          <div className="error">
+            <MdUmbrella color="#2ecc71" fontSize="48" shake={true} />
+
+            <h1 className="error__title">{fetchError}</h1>
+            <p className="error__text">
+              Until this is fixed, feel free to checkout out:
+            </p>
+            <div className="error__links">
+              <a
+                href="https://www.linkedin.com/in/matthew-sullivan/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <LogoLinkedin color="#070a21" fontSize="24" />
+              </a>
+              <a
+                href="https://github.com/matthewsullivan/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <LogoGithub color="#070a21" fontSize="24" />
+              </a>
+            </div>
+          </div>
         )}
       </div>
 
