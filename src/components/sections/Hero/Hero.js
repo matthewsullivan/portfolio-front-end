@@ -53,7 +53,11 @@ export default function Hero() {
           />
 
           <div className="carousel__content">
-            <IosCafeOutline color="#f9f9f9" fontSize="64" />
+            <IosCafeOutline
+              className="carousel__icon"
+              color="#f9f9f9"
+              fontSize="32"
+            />
             <h1 className="carousel__title">Software Engineer</h1>
             <p className="carousel__body">
               More than just a Developer. I am a well rounded Media Specialist
@@ -73,7 +77,11 @@ export default function Hero() {
           />
 
           <div className="carousel__content">
-            <IosLeafOutline color="#f9f9f9" fontSize="64" />
+            <IosLeafOutline
+              className="carousel__icon"
+              color="#f9f9f9"
+              fontSize="32"
+            />
             <h1 className="carousel__title">Passionate Teacher</h1>
             <p className="carousel__body">
               Not only building, and consulting, but teaching others the lingo

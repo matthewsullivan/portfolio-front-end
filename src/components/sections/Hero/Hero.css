@@ -30,6 +30,10 @@
   width: 100%;
 }
 
+.carousel__icon {
+  margin-bottom: 16px;
+}
+
 .carousel__title {
   color: var(--palette-tertiary);
   font-family: var(--typography-primary);

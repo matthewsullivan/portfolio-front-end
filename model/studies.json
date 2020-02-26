@@ -10,38 +10,38 @@
             "images": [
                 {
                     "alt": "Burgerdex Screen Capture",
-                    "path": "assets/portfolio/burgerdex/images/01.png"
+                    "path": "assets/folio/burgerdex/images/01.png"
                 },
                 {
                     "alt": "Burgerdex Screen Capture",
-                    "path": "assets/portfolio/burgerdex/images/02.png"
+                    "path": "assets/folio/burgerdex/images/02.png"
                 },
                 {
                     "alt": "Burgerdex Screen Capture",
-                    "path": "assets/portfolio/burgerdex/images/03.png"
+                    "path": "assets/folio/burgerdex/images/03.png"
                 },
                 {
                     "alt": "Burgerdex Screen Capture",
-                    "path": "assets/portfolio/burgerdex/images/04.png"
+                    "path": "assets/folio/burgerdex/images/04.png"
                 },
                 {
                     "alt": "Burgerdex Screen Capture",
-                    "path": "assets/portfolio/burgerdex/images/05.png"
+                    "path": "assets/folio/burgerdex/images/05.png"
                 },
                 {
                     "alt": "Burgerdex Screen Capture",
-                    "path": "assets/portfolio/burgerdex/images/06.png"
+                    "path": "assets/folio/burgerdex/images/06.png"
                 },
                 {
                     "alt": "Burgerdex Screen Capture",
-                    "path": "assets/portfolio/burgerdex/images/07.png"
+                    "path": "assets/folio/burgerdex/images/07.png"
                 },
                 {
                     "alt": "Burgerdex Screen Capture",
-                    "path": "assets/portfolio/burgerdex/images/08.png"
+                    "path": "assets/folio/burgerdex/images/08.png"
                 }
             ],
-            "logo": "assets/portfolio/burgerdex/logo.png"
+            "logo": "assets/folio/burgerdex/logo.png"
         },
         "name": "Burgerdex",
         "platform": "IOS",
@@ -54,22 +54,22 @@
             "images": [
                 {
                     "alt": "Gidme Screen Capture",
-                    "path": "assets/portfolio/gidme/images/01.png"
+                    "path": "assets/folio/gidme/images/01.png"
                 },
                 {
                     "alt": "Gidme Screen Capture",
-                    "path": "assets/portfolio/gidme/images/02.png"
+                    "path": "assets/folio/gidme/images/02.png"
                 },
                 {
                     "alt": "Gidme Screen Capture",
-                    "path": "assets/portfolio/gidme/images/03.png"
+                    "path": "assets/folio/gidme/images/03.png"
                 },
                 {
                     "alt": "Gidme Screen Capture",
-                    "path": "assets/portfolio/gidme/images/04.png"
+                    "path": "assets/folio/gidme/images/04.png"
                 }
             ],
-            "logo": "assets/portfolio/gidme/logo.png"
+            "logo": "assets/folio/gidme/logo.png"
         },
         "name": "Gidme",
         "platform": "IOS",
@@ -86,42 +86,42 @@
             "images": [
                 {
                     "alt": "Bonter Polaris Screen Capture",
-                    "path": "assets/portfolio/bonterpolaris/images/01.png"
+                    "path": "assets/folio/bonterpolaris/images/01.png"
                 },
                 {
                     "alt": "Bonter Polaris Screen Capture",
-                    "path": "assets/portfolio/bonterpolaris/images/02.png"
+                    "path": "assets/folio/bonterpolaris/images/02.png"
                 },
                 {
                     "alt": "Bonter Polaris Screen Capture",
-                    "path": "assets/portfolio/bonterpolaris/images/03.png"
+                    "path": "assets/folio/bonterpolaris/images/03.png"
                 },
                 {
                     "alt": "Bonter Polaris Screen Capture",
-                    "path": "assets/portfolio/bonterpolaris/images/04.png"
+                    "path": "assets/folio/bonterpolaris/images/04.png"
                 },
                 {
                     "alt": "Bonter Polaris Screen Capture",
-                    "path": "assets/portfolio/bonterpolaris/images/05.png"
+                    "path": "assets/folio/bonterpolaris/images/05.png"
                 },
                 {
                     "alt": "Bonter Polaris Screen Capture",
-                    "path": "assets/portfolio/bonterpolaris/images/06.png"
+                    "path": "assets/folio/bonterpolaris/images/06.png"
                 },
                 {
                     "alt": "Bonter Polaris Screen Capture",
-                    "path": "assets/portfolio/bonterpolaris/images/07.png"
+                    "path": "assets/folio/bonterpolaris/images/07.png"
                 },
                 {
                     "alt": "Bonter Polaris Screen Capture",
-                    "path": "assets/portfolio/bonterpolaris/images/08.png"
+                    "path": "assets/folio/bonterpolaris/images/08.png"
                 },
                 {
                     "alt": "Bonter Polaris Screen Capture",
-                    "path": "assets/portfolio/bonterpolaris/images/09.png"
+                    "path": "assets/folio/bonterpolaris/images/09.png"
                 }
             ],
-            "logo": "assets/portfolio/bonterpolaris/logo.png"
+            "logo": "assets/folio/bonterpolaris/logo.png"
         },
         "name": "Bonter Polaris",
         "platform": "Web",
@@ -138,18 +138,18 @@
             "images": [
                 {
                     "alt": "Mad Xscape Screen Capture",
-                    "path": "assets/portfolio/madxscape/images/01.png"
+                    "path": "assets/folio/madxscape/images/01.png"
                 },
                 {
                     "alt": "Mad Xscape Screen Capture",
-                    "path": "assets/portfolio/madxscape/images/02.png"
+                    "path": "assets/folio/madxscape/images/02.png"
                 },
                 {
                     "alt": "Mad Xscape Screen Capture",
-                    "path": "assets/portfolio/madxscape/images/03.png"
+                    "path": "assets/folio/madxscape/images/03.png"
                 }
             ],
-            "logo": "assets/portfolio/madxscape/logo.png"
+            "logo": "assets/folio/madxscape/logo.png"
         },
         "name": "Mad Xscape",
         "platform": "IOS",
@@ -162,26 +162,26 @@
             "images": [
                 {
                     "alt": "Tracelogix Screen Capture",
-                    "path": "assets/portfolio/tracelogix/images/01.png"
+                    "path": "assets/folio/tracelogix/images/01.png"
                 },
                 {
                     "alt": "Tracelogix Screen Capture",
-                    "path": "assets/portfolio/tracelogix/images/02.png"
+                    "path": "assets/folio/tracelogix/images/02.png"
                 },
                 {
                     "alt": "Tracelogix Screen Capture",
-                    "path": "assets/portfolio/tracelogix/images/03.png"
+                    "path": "assets/folio/tracelogix/images/03.png"
                 },
                 {
                     "alt": "Tracelogix Screen Capture",
-                    "path": "assets/portfolio/tracelogix/images/04.png"
+                    "path": "assets/folio/tracelogix/images/04.png"
                 },
                 {
                     "alt": "Tracelogix Screen Capture",
-                    "path": "assets/portfolio/tracelogix/images/05.png"
+                    "path": "assets/folio/tracelogix/images/05.png"
                 }
             ],
-            "logo": "assets/portfolio/tracelogix/logo.png"
+            "logo": "assets/folio/tracelogix/logo.png"
         },
         "name": "Tracelogix",
         "platform": "Web",
@@ -194,22 +194,22 @@
             "images": [
                 {
                     "alt": "Tracelogix Screen Capture",
-                    "path": "assets/portfolio/easyaisle/images/01.png"
+                    "path": "assets/folio/easyaisle/images/01.png"
                 },
                 {
                     "alt": "Tracelogix Screen Capture",
-                    "path": "assets/portfolio/easyaisle/images/02.png"
+                    "path": "assets/folio/easyaisle/images/02.png"
                 },
                 {
                     "alt": "Tracelogix Screen Capture",
-                    "path": "assets/portfolio/easyaisle/images/03.png"
+                    "path": "assets/folio/easyaisle/images/03.png"
                 },
                 {
                     "alt": "Tracelogix Screen Capture",
-                    "path": "assets/portfolio/easyaisle/images/04.png"
+                    "path": "assets/folio/easyaisle/images/04.png"
                 }
             ],
-            "logo": "assets/portfolio/easyaisle/logo.png"
+            "logo": "assets/folio/easyaisle/logo.png"
         },
         "name": "easyAisle",
         "platform": "Web",
@@ -222,30 +222,30 @@
             "images": [
                 {
                     "alt": "Stock Gaming Screen Capture",
-                    "path": "assets/portfolio/stockgaming/images/01.png"
+                    "path": "assets/folio/stockgaming/images/01.png"
                 },
                 {
                     "alt": "Stock Gaming Screen Capture",
-                    "path": "assets/portfolio/stockgaming/images/02.png"
+                    "path": "assets/folio/stockgaming/images/02.png"
                 },
                 {
                     "alt": "Stock Gaming Screen Capture",
-                    "path": "assets/portfolio/stockgaming/images/03.png"
+                    "path": "assets/folio/stockgaming/images/03.png"
                 },
                 {
                     "alt": "Stock Gaming Screen Capture",
-                    "path": "assets/portfolio/stockgaming/images/04.png"
+                    "path": "assets/folio/stockgaming/images/04.png"
                 },
                 {
                     "alt": "Stock Gaming Screen Capture",
-                    "path": "assets/portfolio/stockgaming/images/05.png"
+                    "path": "assets/folio/stockgaming/images/05.png"
                 },
                 {
                     "alt": "Stock Gaming Screen Capture",
-                    "path": "assets/portfolio/stockgaming/images/06.png"
+                    "path": "assets/folio/stockgaming/images/06.png"
                 }
             ],
-            "logo": "assets/portfolio/stockgaming/logo.png"
+            "logo": "assets/folio/stockgaming/logo.png"
         },
         "name": "Stock Gaming",
         "platform": "Web App",
@@ -262,30 +262,30 @@
             "images": [
                 {
                     "alt": "Free Live Yoga Screen Capture",
-                    "path": "assets/portfolio/freeliveyoga/images/01.png"
+                    "path": "assets/folio/freeliveyoga/images/01.png"
                 },
                 {
                     "alt": "Free Live Yoga Screen Capture",
-                    "path": "assets/portfolio/freeliveyoga/images/02.png"
+                    "path": "assets/folio/freeliveyoga/images/02.png"
                 },
                 {
                     "alt": "Free Live Yoga Screen Capture",
-                    "path": "assets/portfolio/freeliveyoga/images/03.png"
+                    "path": "assets/folio/freeliveyoga/images/03.png"
                 },
                 {
                     "alt": "Free Live Yoga Screen Capture",
-                    "path": "assets/portfolio/freeliveyoga/images/04.png"
+                    "path": "assets/folio/freeliveyoga/images/04.png"
                 }, 
                 {
                     "alt": "Free Live Yoga Screen Capture",
-                    "path": "assets/portfolio/freeliveyoga/images/05.png"
+                    "path": "assets/folio/freeliveyoga/images/05.png"
                 },
                 {
                     "alt": "Free Live Yoga Screen Capture",
-                    "path": "assets/portfolio/freeliveyoga/images/06.png"
+                    "path": "assets/folio/freeliveyoga/images/06.png"
                 }
             ],
-            "logo": "assets/portfolio/freeliveyoga/logo.png"
+            "logo": "assets/folio/freeliveyoga/logo.png"
         },
         "name": "Free Live Yoga",
         "platform": "Web",
@@ -302,26 +302,26 @@
             "images": [
                 {
                     "alt": "Mortgage Alliance Screen Capture",
-                    "path": "assets/portfolio/mortgagealliance/images/01.png"
+                    "path": "assets/folio/mortgagealliance/images/01.png"
                 },
                 {
                     "alt": "Mortgage Alliance Screen Capture",
-                    "path": "assets/portfolio/mortgagealliance/images/02.png"
+                    "path": "assets/folio/mortgagealliance/images/02.png"
                 },
                 {
                     "alt": "Mortgage Alliance Screen Capture",
-                    "path": "assets/portfolio/mortgagealliance/images/03.png"
+                    "path": "assets/folio/mortgagealliance/images/03.png"
                 },
                 {
                     "alt": "Mortgage Alliance Screen Capture",
-                    "path": "assets/portfolio/mortgagealliance/images/04.png"
+                    "path": "assets/folio/mortgagealliance/images/04.png"
                 }, 
                 {
                     "alt": "Mortgage Alliance Screen Capture",
-                    "path": "assets/portfolio/mortgagealliance/images/05.png"
+                    "path": "assets/folio/mortgagealliance/images/05.png"
                 }
             ],
-            "logo": "assets/portfolio/mortgagealliance/logo.png"
+            "logo": "assets/folio/mortgagealliance/logo.png"
         },
         "name": "Mortgage Alliance",
         "platform": "Web",
@@ -338,34 +338,34 @@
             "images": [
                 {
                     "alt": "Hallowette's World Screen Capture",
-                    "path": "assets/portfolio/hallowettesworld/images/01.png"
+                    "path": "assets/folio/hallowettesworld/images/01.png"
                 },
                 {
                     "alt": "Hallowette's World Screen Capture",
-                    "path": "assets/portfolio/hallowettesworld/images/02.png"
+                    "path": "assets/folio/hallowettesworld/images/02.png"
                 },
                 {
                     "alt": "Hallowette's World Screen Capture",
-                    "path": "assets/portfolio/hallowettesworld/images/03.png"
+                    "path": "assets/folio/hallowettesworld/images/03.png"
                 },
                 {
                     "alt": "Hallowette's World Screen Capture",
-                    "path": "assets/portfolio/hallowettesworld/images/04.png"
+                    "path": "assets/folio/hallowettesworld/images/04.png"
                 }, 
                 {
                     "alt": "Hallowette's World Screen Capture",
-                    "path": "assets/portfolio/hallowettesworld/images/05.png"
+                    "path": "assets/folio/hallowettesworld/images/05.png"
                 },
                 {
                     "alt": "Hallowette's World Screen Capture",
-                    "path": "assets/portfolio/hallowettesworld/images/06.png"
+                    "path": "assets/folio/hallowettesworld/images/06.png"
                 },
                 {
                     "alt": "Hallowette's World Screen Capture",
-                    "path": "assets/portfolio/hallowettesworld/images/07.png"
+                    "path": "assets/folio/hallowettesworld/images/07.png"
                 }
             ],
-            "logo": "assets/portfolio/hallowettesworld/logo.png"
+            "logo": "assets/folio/hallowettesworld/logo.png"
         },
         "name": "Hallowette's World",
         "platform": "Air App",
