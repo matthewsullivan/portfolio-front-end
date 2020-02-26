@@ -37,7 +37,6 @@ function Card(props) {
         <h2 className="card__title">{study.name}</h2>
         <div className="card__line" />
         <p className="card__synopsis">{study.synopsis}</p>
-
         <p className="card__link">
           View Case Study <IosArrowRoundForward fontSize="24" />
         </p>
