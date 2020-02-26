@@ -104,7 +104,7 @@ export default function Study(props) {
                   <div className="study__line" />
                   <p className="study__synopsis">{study.synopsis}</p>
 
-                  {selectedStudy.link ? (
+                  {selectedStudy.link && (
                     <a
                       className="study__link"
                       href={selectedStudy.link.path}
@@ -114,10 +114,9 @@ export default function Study(props) {
                       {selectedStudy.link.title}{' '}
                       <IosArrowRoundForward fontSize="24" />
                     </a>
-                  ) : (
-                    <br />
                   )}
                 </header>
+
                 <div className="study__content">
                   <div className="study__showcase">
                     <AliceCarousel
@@ -163,7 +162,7 @@ export default function Study(props) {
                   <div className="study__information">
                     <h3 className="study__pre-title">{selectedStudy.name}</h3>
                     <h2 className="study__title">Task</h2>
-                    <p className="study__synopsis">
+                    <p className="study__body">
                       {selectedStudy.description
                         .split('\n')
                         .map((item, key) => {
@@ -177,7 +176,7 @@ export default function Study(props) {
                     </p>
 
                     <h2 className="study__title">Languages</h2>
-                    <p className="study__synopsis">{selectedStudy.languages}</p>
+                    <p className="study__body">{selectedStudy.languages}</p>
                   </div>
                 </div>
               </div>
