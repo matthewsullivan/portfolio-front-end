@@ -17,7 +17,7 @@
   padding: 32px;
 }
 
-.about__title{
+.about__title {
   color: var(--palette-primary);
   font-family: var(--typography-primary);
   margin: 8px 0;

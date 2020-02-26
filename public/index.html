@@ -2,16 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <!--[if lte IE 9]>
+      <link href="disabled.css" rel="stylesheet" type="text/css">
+
+      <div class="disabled">
+        <img alt="logo" class="disabled__logo" src="https://static.matthewsullivan.media/logo.png"/>
+        <h2 class="disabled__title">Old Browser Detected</h2>
+        <p class="disabled__body">It appears you are on an old browser. For the full viewing experience please update your browser by going to:</p>
+        <a class="disabled__link" target="_blank" href="https://browsehappy.com/">Browse Happy</a>
+        <p class="disabled__body">Feel free to view my CV while you are here:</p>
+        <a class="disabled__link" target="_blank" href="https://static.matthewsullivan.media/matthewsullivancv.pdf">Curriculum Vitae</a>
+        <p>Contact me at: <a class="disabled__link" href="mailTo:contact@matthewsullivan.media">contact@matthewsullivan.media</a></p>
+      </div>
+    <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#070a21" />
+
     <title>Matthew Sullivan | Software Engineer</title>
+
     <meta name="description" content="I am a media expert who is dedicated to helping your idea come to life. Specializing in Web Design/Development and Motion Graphics.">
     <meta name="keywords" content="portfolio, creative, developer, ios">
     <meta name="author" content="Matthew Sullivan | Media Expert">
 
     <!-- Favicons
     ================================================== -->
+    <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-touch-icon-72x72.png">
@@ -44,8 +60,8 @@
     <!-- Facebook
     ================================================== -->
     <meta property="og:title" content="Matthew Sullivan - Software Engineer" />
-    <meta property="og:url" content="http://matthewsullivan.media" />
-    <meta property="og:image" content="https://matthewsullivan.media/about/cover.png" />
+    <meta property="og:url" content="https://matthewsullivan.media" />
+    <meta property="og:image" content="https://static.matthewsullivan.media/cover.png" />
     <meta property="og:site_name" content="Media Portfolio" />
     <meta property="og:description" content="Software Engineer & Passionate Teacher." />
 
@@ -54,21 +70,33 @@
     <meta name="twitter:card" content="I am a software engineer who is dedicated to helping your idea come to life. Specializing in Web Design/Development and Motion Graphics." />
     <meta name="twitter:title" content="Matthew Sullivan - Software Engineer" />
     <meta name="twitter:description" content="Software Engineer & Passionate Teacher." />
-    <meta name="twitter:image" content="https://matthewsullivan.media/about/cover.png" />
+    <meta name="twitter:image" content="https://static.matthewsullivan.media/cover.png" />
     
     <!-- Other Open Graph Tags
     ================================================== -->
-    <meta property="og:url" content="http://matthewsullivan.media">
+    <meta property="og:url" content="https://matthewsullivan.media">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Matthew Sullivan Portfolio">
     <meta property="og:description" content="Software Engineer & Passionate Teacher.">
-    <meta property="og:image" content="https://matthewsullivan.media/about/cover.png">
+    <meta property="og:image" content="https://static.matthewsullivan.media/cover.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
   </head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <link href="disabled.css" rel="stylesheet" type="text/css">
+
+      <div class="disabled">
+        <img alt="logo" class="disabled__logo" src="https://static.matthewsullivan.media/logo.png"/>
+        <h2 class="disabled__title">Javascript Disabled</h2>
+        <p class="disabled__body">Javascript rendering disabled. For the full viewing experience of this site please turn on Javascript. <br /> Feel free to look at my CV instead.</p>
+        <a class="disabled__link" target="_blank" href="https://static.matthewsullivan.media/matthewsullivancv.pdf">Curriculum Vitae</a>
+        <p>Contact me at: <a class="disabled__link" href="mailTo:contact@matthewsullivan.media">contact@matthewsullivan.media</a></p>
+      </div>
+    </noscript>
+
     <div id="root"></div>
     
     <script>
@@ -79,7 +107,6 @@
     
       ga('create', 'UA-83714838-1', 'auto');
       ga('send', 'pageview');
-    
     </script>
   </body>
 </html>
