@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
 import axios from 'axios';
-
 import LogoGithub from 'react-ionicons/lib/LogoGithub';
 import LogoLinkedin from 'react-ionicons/lib/LogoLinkedin';
 import MdUmbrella from 'react-ionicons/lib/MdUmbrella';
