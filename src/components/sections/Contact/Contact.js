@@ -7,18 +7,11 @@ import IosPerson from 'react-ionicons/lib/IosPerson';
 import MdCreate from 'react-ionicons/lib/MdCreate';
 import MdRemove from 'react-ionicons/lib/MdRemove';
 
+import api from '../../../api/api';
 import Button from '../../elements/Button/Button';
 import Title from '../../elements/Title/Title';
 
 import './Contact.css';
-
-let api = 'https://www.matthewsullivan.media';
-
-if (process.env.NODE_ENV === 'development') {
-  api = 'http://127.0.0.1:8080';
-} else if (process.env.REACT_APP_ENV === 'staging') {
-  api = 'https://www.staging.matthewsullivan.media';
-}
 
 export default function Contact() {
   const [email, setEmail] = useState('');

@@ -2,20 +2,13 @@ import React, {useEffect, useState} from 'react';
 
 import axios from 'axios';
 
+import api from '../../../api/api';
 import Card from '../../elements/Card/Card';
 import Scroller from '../../elements/Scroller/Scroller';
 import Study from '../../elements/Study/Study';
 import Title from '../../elements/Title/Title';
 
 import './Folio.css';
-
-let api = 'https://www.matthewsullivan.media';
-
-if (process.env.NODE_ENV === 'development') {
-  api = 'http://127.0.0.1:8080';
-} else if (process.env.REACT_APP_ENV === 'staging') {
-  api = 'https://www.staging.matthewsullivan.media';
-}
 
 export default function Folio() {
   const [fetchError, setfetchError] = useState();
