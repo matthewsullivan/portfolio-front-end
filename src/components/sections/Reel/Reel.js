@@ -23,6 +23,7 @@ export default function Reel() {
 
         <div className="reel__line" />
       </header>
+
       <section className="reel__content">
         <ReactPlayer className="reel__video" {...options} />
       </section>

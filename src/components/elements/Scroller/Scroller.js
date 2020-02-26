@@ -64,7 +64,7 @@ export default function Scroller(props) {
   `;
 
   const TranslateContainer = styled.div.attrs(({translateX}) => ({
-    style: {transform: `translateX(${translateX}px)`},
+    style: {transform: `translate3d(${translateX}px, 0, 0)`},
   }))`
     height: 100%;
     position: absolute;
@@ -87,7 +87,7 @@ export default function Scroller(props) {
   }, []);
 
   return (
-    <div className="scroller" style={{height: `${dynamicHeight}px`}}>
+    <div style={{height: `${dynamicHeight}px`}}>
       <InnerContainer ref={containerRef}>
         <TranslateContainer translateX={translateX} ref={objectRef}>
           {children}

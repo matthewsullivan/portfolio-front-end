@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import AliceCarousel from 'react-alice-carousel';
-
+import ScrollAnimation from 'react-animate-on-scroll';
 import IosArrowBack from 'react-ionicons/lib/IosArrowBack';
 import IosArrowForward from 'react-ionicons/lib/IosArrowForward';
 import IosCafeOutline from 'react-ionicons/lib/IosCafeOutline';
@@ -37,90 +37,94 @@ export default function Hero() {
 
   return (
     <section className="carousel">
-      <AliceCarousel
-        onSlideChanged={handleSlideChanged}
-        ref={(el) => (carousel = el)}
-        {...options}
-      >
-        <div
-          className="carousel__slide"
-          onDragStart={options.handleOnDragStart}
+      <ScrollAnimation animateIn="fadeIn" animateOnce>
+        <AliceCarousel
+          onSlideChanged={handleSlideChanged}
+          ref={(el) => (carousel = el)}
+          {...options}
         >
-          <img
-            alt="Carousel Slide Forest Background"
-            className="carousel__image"
-            src="assets/carousel/carousel-a.jpg"
-          />
-
-          <div className="carousel__content">
-            <IosCafeOutline
-              className="carousel__icon"
-              color="#f9f9f9"
-              fontSize="32"
+          <div
+            className="carousel__slide"
+            onDragStart={options.handleOnDragStart}
+          >
+            <img
+              alt="Carousel Slide Forest Background"
+              className="carousel__image"
+              src="assets/carousel/carousel-a.jpg"
             />
-            <h1 className="carousel__title">Software Engineer</h1>
-            <p className="carousel__body">
-              More than just a Developer. I am a well rounded Media Specialist
-              who has a keen interest in leadership.
-            </p>
-            <Button path="folio">Portfolio</Button>
-          </div>
-        </div>
-        <div
-          className="carousel__slide"
-          onDragStart={options.handleOnDragStart}
-        >
-          <img
-            alt="Carousel Slide Forest Background with Sun"
-            className="carousel__image"
-            src="assets/carousel/carousel-b.jpg"
-          />
 
-          <div className="carousel__content">
-            <IosLeafOutline
-              className="carousel__icon"
-              color="#f9f9f9"
-              fontSize="32"
+            <div className="carousel__content">
+              <IosCafeOutline
+                className="carousel__icon"
+                color="#f9f9f9"
+                fontSize="32"
+              />
+              <h1 className="carousel__title">Software Engineer</h1>
+              <p className="carousel__body">
+                More than just a Developer. I am a well rounded Media Specialist
+                who has a keen interest in leadership.
+              </p>
+              <ScrollAnimation animateIn="fadeInUp" animateOnce>
+                <Button path="folio">Portfolio</Button>
+              </ScrollAnimation>
+            </div>
+          </div>
+          <div
+            className="carousel__slide"
+            onDragStart={options.handleOnDragStart}
+          >
+            <img
+              alt="Carousel Slide Forest Background with Sun"
+              className="carousel__image"
+              src="assets/carousel/carousel-b.jpg"
             />
-            <h1 className="carousel__title">Passionate Teacher</h1>
-            <p className="carousel__body">
-              Not only building, and consulting, but teaching others the lingo
-              of the web and media.
-            </p>
-            <Button path="cv">Curriculum Vitae</Button>
+
+            <div className="carousel__content">
+              <IosLeafOutline
+                className="carousel__icon"
+                color="#f9f9f9"
+                fontSize="32"
+              />
+              <h1 className="carousel__title">Passionate Teacher</h1>
+              <p className="carousel__body">
+                Not only building, and consulting, but teaching others the lingo
+                of the web and media.
+              </p>
+              <Button path="cv">Curriculum Vitae</Button>
+            </div>
           </div>
-        </div>
-      </AliceCarousel>
+        </AliceCarousel>
 
-      <nav className="controls">
-        <div
-          className="controls__button controls__button--prev"
-          onClick={() => carousel.slidePrev()}
-        >
-          <IosArrowBack color="#fff" />
-        </div>
-        <div
-          className="controls__button controls__button--next"
-          onClick={() => carousel.slideNext()}
-        >
-          <IosArrowForward color="#fff" />
-        </div>
+        <nav className="controls">
+          <div
+            className="controls__button controls__button--prev"
+            onClick={() => carousel.slidePrev()}
+          >
+            <IosArrowBack color="#fff" />
+          </div>
+          <div
+            className="controls__button controls__button--next"
+            onClick={() => carousel.slideNext()}
+          >
+            <IosArrowForward color="#fff" />
+          </div>
 
-        <div className="controls__dots">
-          <span
-            className={`controls__dot ${
-              selected === 0 ? 'controls__dot--selected' : ''
-            }`}
-            onClick={() => carousel.slideTo(0)}
-          ></span>
-          <span
-            className={`controls__dot ${
-              selected === 1 ? 'controls__dot--selected' : ''
-            }`}
-            onClick={() => carousel.slideTo(1)}
-          ></span>
-        </div>
-      </nav>
+          <div className="controls__dots">
+            <span
+              className={`controls__dot ${
+                selected === 0 ? 'controls__dot--selected' : ''
+              }`}
+              onClick={() => carousel.slideTo(0)}
+            ></span>
+            <span
+              className={`controls__dot ${
+                selected === 1 ? 'controls__dot--selected' : ''
+              }`}
+              onClick={() => carousel.slideTo(1)}
+            ></span>
+          </div>
+        </nav>
+      </ScrollAnimation>
     </section>
   );
 }

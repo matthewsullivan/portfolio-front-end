@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 
 import axios from 'axios';
+import ScrollAnimation from 'react-animate-on-scroll';
 import IosMail from 'react-ionicons/lib/IosMail';
 import IosMailOutline from 'react-ionicons/lib/IosMailOutline';
 import IosPerson from 'react-ionicons/lib/IosPerson';
@@ -12,7 +13,6 @@ import Button from '../../elements/Button/Button';
 import Title from '../../elements/Title/Title';
 
 import './Contact.css';
-import {isCompositeComponent} from 'react-dom/test-utils';
 
 export default function Contact() {
   const [email, setEmail] = useState('');
@@ -72,15 +72,21 @@ export default function Contact() {
       />
 
       <div className="contact__content">
-        <IosMailOutline color="#070a21" fontSize="64" />
-        <h2 className="contact__title">E-Mail</h2>
-        <a
-          className="contact__link"
-          href="mailTo:contact@matthewsullivan.media"
-        >
-          contact@matthewsullivan.media
-        </a>
-        <MdRemove color="#070a21" />
+        <ScrollAnimation animateIn="fadeInUp" animateOnce>
+          <IosMailOutline color="#070a21" fontSize="64" />
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInUp" animateOnce>
+          <h2 className="contact__title">E-Mail</h2>
+          <a
+            className="contact__link"
+            href="mailTo:contact@matthewsullivan.media"
+          >
+            contact@matthewsullivan.media
+          </a>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInUp" animateOnce>
+          <MdRemove color="#070a21" />
+        </ScrollAnimation>
       </div>
 
       <div className="contact__form">
