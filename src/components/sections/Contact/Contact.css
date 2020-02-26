@@ -12,6 +12,7 @@
 
 .contact__content {
   padding: 32px 0;
+  word-break: break-word;
 }
 
 .contact__title {

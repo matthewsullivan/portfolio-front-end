@@ -30,7 +30,7 @@
 
 .title__heading {
   font-family: var(--typography-primary);
-  font-size: 40px;
+  font-size: 8vw;
   font-weight: 900;
   line-height: 0.8;
   margin: 0;
@@ -40,4 +40,10 @@
 .title__body {
   font-family: var(--typography-primary);
   margin: 8px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .title__heading {
+    font-size: 40px;
+  }
 }
