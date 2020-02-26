@@ -19,8 +19,8 @@ export default function Contact() {
   const [label, setLabel] = useState('Submit');
   const [message, setMessage] = useState('');
   const [name, setName] = useState('');
-  const [sent, setSent] = useState(false);
   const [response, setResponse] = useState('* Please fill all the fields');
+  const [sent, setSent] = useState(false);
 
   /**
    * Handle Submit Form
@@ -75,6 +75,7 @@ export default function Contact() {
         <ScrollAnimation animateIn="fadeInUp" animateOnce>
           <IosMailOutline color="#070a21" fontSize="64" />
         </ScrollAnimation>
+
         <ScrollAnimation animateIn="fadeInUp" animateOnce>
           <h2 className="contact__title">E-Mail</h2>
           <a
@@ -84,6 +85,7 @@ export default function Contact() {
             contact@matthewsullivan.media
           </a>
         </ScrollAnimation>
+
         <ScrollAnimation animateIn="fadeInUp" animateOnce>
           <MdRemove color="#070a21" />
         </ScrollAnimation>
@@ -93,6 +95,7 @@ export default function Contact() {
         <form className="form" onSubmit={(event) => handleSubmitForm(event)}>
           <div className="form__group">
             <IosPerson className="form__icon" color="#2ecc71" fontSize="24" />
+
             <input
               className="form__input"
               name="name"
@@ -106,6 +109,7 @@ export default function Contact() {
 
           <div className="form__group">
             <IosMail className="form__icon" color="#2ecc71" fontSize="24" />
+
             <input
               className="form__input"
               name="email"
@@ -119,6 +123,7 @@ export default function Contact() {
 
           <div className="form__group">
             <MdCreate className="form__icon" color="#2ecc71" fontSize="24" />
+
             <textarea
               className="form__input form__input--textarea"
               name="message"
@@ -131,7 +136,6 @@ export default function Contact() {
           </div>
 
           <p className="form__response">{response}</p>
-
           <Button type="submit">{sent ? 'Submit Another' : label}</Button>
         </form>
       </div>

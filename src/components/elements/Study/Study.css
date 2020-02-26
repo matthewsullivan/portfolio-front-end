@@ -143,8 +143,8 @@
 }
 
 .study-controls__dots {
-  color: var(--palette-secondary);
   align-items: center;
+  color: var(--palette-secondary);
   display: flex;
   height: 48px;
   justify-content: center;

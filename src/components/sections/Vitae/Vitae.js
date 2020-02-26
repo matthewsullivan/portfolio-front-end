@@ -14,12 +14,14 @@ export default function Vitae() {
       />
 
       <div className="vitae__line" />
+
       <Button
         external
         path="https://www.static.matthewsullivan.media/matthewsullivancv.pdf"
       >
         Curriculum Vitae
       </Button>
+
       <p className="vitae__body">
         Avaliable for full time work as well as consultation work.
       </p>

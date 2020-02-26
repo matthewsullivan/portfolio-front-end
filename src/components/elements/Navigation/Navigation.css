@@ -6,10 +6,10 @@
 .drawer__content {
   background: var(--palette-primary);
   border-right: 8px solid var(--palette-secondary);
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
   padding-left: 32px;
-  height: 100vh;
 }
 
 .drawer__header {
@@ -35,8 +35,8 @@
 }
 
 .drawer-navigation {
-  font-family: var(--typography-primary);
   display: inline-block;
+  font-family: var(--typography-primary);
   width: 272px;
 }
 
@@ -80,8 +80,8 @@
   position: fixed;
   right: 0;
   top: 0;
-  width: 72px;
   transition: 0.2s ease-in-out;
+  width: 72px;
   z-index: 1;
 }
 

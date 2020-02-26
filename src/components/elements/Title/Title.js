@@ -1,8 +1,7 @@
 import React from 'react';
 
-import MdRemove from 'react-ionicons/lib/MdRemove';
-
 import PropTypes from 'prop-types';
+import MdRemove from 'react-ionicons/lib/MdRemove';
 
 import './Title.css';
 
@@ -25,6 +24,7 @@ export default function Title(props) {
         <p className="chapter__content">{chapter}</p>
         <MdRemove color={color} fontSize="16" />
       </div>
+
       <h2 className="title__heading">{title}</h2>
       <p className="title__body">{body}</p>
     </section>

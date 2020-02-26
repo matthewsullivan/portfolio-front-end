@@ -1,7 +1,7 @@
 .footer {
   align-items: center;
-  display: flex;
   background: var(--palette-primary);
+  display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 24px 8px 0;

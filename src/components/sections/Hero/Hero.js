@@ -69,6 +69,7 @@ export default function Hero() {
               </ScrollAnimation>
             </div>
           </div>
+
           <div
             className="carousel__slide"
             onDragStart={options.handleOnDragStart}
@@ -102,6 +103,7 @@ export default function Hero() {
           >
             <IosArrowBack color="#fff" />
           </div>
+
           <div
             className="controls__button controls__button--next"
             onClick={() => carousel.slideNext()}
@@ -116,6 +118,7 @@ export default function Hero() {
               }`}
               onClick={() => carousel.slideTo(0)}
             ></span>
+
             <span
               className={`controls__dot ${
                 selected === 1 ? 'controls__dot--selected' : ''

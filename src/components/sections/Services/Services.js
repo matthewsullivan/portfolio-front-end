@@ -24,12 +24,12 @@ export default function Services() {
         <div className="service">
           <Gem
             className="service__item"
-            label="iOS Development"
             icon={
               <ScrollAnimation animateIn="rotateIn" animateOnce>
                 <IosPhonePortrait color="#070a21" fontSize="64px" />
               </ScrollAnimation>
             }
+            label="iOS Development"
           >
             Starting in Objective-C in 2014, I now have a core understanding of
             iOS development and the Xcode environment. I am very familiar with
@@ -37,12 +37,12 @@ export default function Services() {
           </Gem>
           <Gem
             className="service__item"
-            label="Web Development"
             icon={
               <ScrollAnimation animateIn="rotateIn" animateOnce delay={150}>
                 <IosLaptop color="#070a21" fontSize="64px" />
               </ScrollAnimation>
             }
+            label="Web Development"
           >
             A true web developer who knows how to get things done without
             Wordpress. Both front-end and back-end. From JavaScript to PHP - I
@@ -50,24 +50,24 @@ export default function Services() {
           </Gem>
           <Gem
             className="service__item"
-            label="Design"
             icon={
               <ScrollAnimation animateIn="rotateIn" animateOnce delay={300}>
                 <IosColorFillOutline color="#070a21" fontSize="64px" />
               </ScrollAnimation>
             }
+            label="Design"
           >
             The Adobe Suite? No problem. I have the knowledge to create a
             beautiful logo, all the way to a complete application design.
           </Gem>
           <Gem
             className="service__item"
-            label="Consultation"
             icon={
               <ScrollAnimation animateIn="rotateIn" animateOnce delay={450}>
                 <IosChatbubblesOutline color="#070a21" fontSize="64px" />
               </ScrollAnimation>
             }
+            label="Consultation"
           >
             I am available to aid in the process of UI/UX design as well as help
             design the architecture of new or old platforms. High standards in
@@ -88,6 +88,7 @@ export default function Services() {
               src="assets/services/brian.jpg"
             />
           </div>
+
           <ScrollAnimation animateIn="fadeIn" animateOnce>
             <p className="review__body">
               368 Durham has used Matthew as a consult for web design and
@@ -96,7 +97,9 @@ export default function Services() {
               proven to be a great asset in all various aspects.
             </p>
           </ScrollAnimation>
+
           <div className="review__line--small" />
+
           <ScrollAnimation animateIn="fadeInUp" animateOnce>
             <p className="review__author">Brian Rutherford</p>
             <p className="review__company">368 Durham</p>

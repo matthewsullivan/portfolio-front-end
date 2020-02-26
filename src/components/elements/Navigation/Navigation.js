@@ -70,8 +70,8 @@ export default function Navigation() {
     <>
       <SlidingPanel
         backdropClicked={() => setDrawerState(!drawerOpen)}
-        panelClassName="drawer"
         isOpen={drawerOpen}
+        panelClassName="drawer"
         size={80}
         type={'right'}
       >

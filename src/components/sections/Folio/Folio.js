@@ -6,7 +6,6 @@ import LogoLinkedin from 'react-ionicons/lib/LogoLinkedin';
 import MdUmbrella from 'react-ionicons/lib/MdUmbrella';
 
 import api from '../../../api/api';
-
 import Card from '../../elements/Card/Card';
 import Scroller from '../../elements/Scroller/Scroller';
 import Study from '../../elements/Study/Study';

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 
 import axios from 'axios';
+import PropTypes from 'prop-types';
 import AliceCarousel from 'react-alice-carousel';
 import IosArrowRoundForward from 'react-ionicons/lib/IosArrowRoundForward';
 import IosClose from 'react-ionicons/lib/IosClose';
@@ -8,8 +9,6 @@ import ScrollLock from 'react-scrolllock';
 import Rodal from 'rodal';
 
 import api from '../../../api/api';
-
-import PropTypes from 'prop-types';
 
 import './Study.css';
 
@@ -91,6 +90,7 @@ export default function Study(props) {
               <div className="study__close" onClick={() => handleStudyClose()}>
                 <IosClose color="#f9f9f9" fontSize="32" />
               </div>
+
               <div className="study__container">
                 <header className="study__header">
                   <img
