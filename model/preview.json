@@ -58,7 +58,7 @@
     {
         "icon" : "assets/folio/freeliveyoga/icon.jpg",
         "id" : 7,
-        "image": "assets/folio/freeliveyoga/freelive.jpg",
+        "image": "assets/folio/freeliveyoga/freeliveyoga.jpg",
         "name": "Free Live Yoga",
         "synopsis": "Free Live Yoga is the home to registered yoga students and new comers. Guests may gather information about Free Live Yoga's services, while registered students may check their schedule and or be notified of class changes.",
         "type": "Website / CMS"
@@ -74,7 +74,7 @@
     {
         "icon" : "assets/folio/hallowettesworld/icon.jpg",
         "id" : 9,
-        "image": "assets/folio/hallowettesworld/hallowette.jpg",
+        "image": "assets/folio/hallowettesworld/hallowettesworld.jpg",
         "name": "Hallowette's World",
         "synopsis": "Hallowette's World is an immersive air app game the brings Hallowette's art to life. The goal is for the end user to collect pieces of art that have fallen out of place in order to save Hallowette's world.",
         "type": "Air App"

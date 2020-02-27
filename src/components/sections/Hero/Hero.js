@@ -54,7 +54,7 @@ export default function Hero() {
             />
 
             <div className="carousel__content">
-              <IosCafeOutline
+              <IosLeafOutline
                 className="carousel__icon"
                 color="#f9f9f9"
                 fontSize="32"
@@ -81,7 +81,7 @@ export default function Hero() {
             />
 
             <div className="carousel__content">
-              <IosLeafOutline
+              <IosCafeOutline
                 className="carousel__icon"
                 color="#f9f9f9"
                 fontSize="32"
