@@ -28,7 +28,7 @@ export default function About() {
           <ScrollAnimation animateIn="fadeInUp" animateOnce>
             <p className="about__body">
               My name is Matthew Sullivan. I am a Software Engineer, Team Lead,
-              and Multimedia Specialist who is fascinated in all aspects of
+              and Multimedia Specialist who is fascinated by all aspects of
               media production.
             </p>
           </ScrollAnimation>
@@ -77,9 +77,9 @@ export default function About() {
           <ScrollAnimation animateIn="fadeInUp" animateOnce>
             <p className="about__body">
               Time management plays a huge roll in my day to day life. Late is
-              not an option for me. I have the ability to handle a lot of work
-              at once, and I enjoy learning new things while problem solving.
-              Outside of work I enjoy:
+              not an option for me. I can manage a lot of work at once, and I
+              enjoy learning new things while problem-solving. Outside of work I
+              enjoy:
             </p>
           </ScrollAnimation>
 

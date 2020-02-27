@@ -1,10 +1,10 @@
 import React from 'react';
 
 import ScrollAnimation from 'react-animate-on-scroll';
-import IosLaptop from 'react-ionicons/lib/IosLaptop';
+import IosCodeWorking from 'react-ionicons/lib/IosCodeWorking';
+import IosLeafOutline from 'react-ionicons/lib/IosLeafOutline';
 import IosColorFillOutline from 'react-ionicons/lib/IosColorFillOutline';
 import IosChatbubblesOutline from 'react-ionicons/lib/IosChatbubblesOutline';
-import IosPhonePortrait from 'react-ionicons/lib/IosPhonePortrait';
 
 import Gem from '../../elements/Gem/Gem';
 import Title from '../../elements/Title/Title';
@@ -26,27 +26,28 @@ export default function Services() {
             className="service__item"
             icon={
               <ScrollAnimation animateIn="rotateIn" animateOnce>
-                <IosPhonePortrait color="#070a21" fontSize="64px" />
+                <IosCodeWorking color="#070a21" fontSize="64px" />
               </ScrollAnimation>
             }
-            label="iOS Development"
+            label="Development"
           >
-            Starting in Objective-C in 2014, I now have a core understanding of
-            iOS development and the Xcode environment. I am very familiar with
-            Objective-C and Swift.
+            Providing elegant, maintainable, and simple solutions to complex
+            problems. From native applications to web development, I bring many
+            years of experience to the table. There has not been a problem I
+            could not solve.
           </Gem>
           <Gem
             className="service__item"
             icon={
               <ScrollAnimation animateIn="rotateIn" animateOnce delay={150}>
-                <IosLaptop color="#070a21" fontSize="64px" />
+                <IosLeafOutline color="#070a21" fontSize="64px" />
               </ScrollAnimation>
             }
-            label="Web Development"
+            label="Team Lead"
           >
-            A true web developer who knows how to get things done without
-            Wordpress. Both front-end and back-end. From JavaScript to PHP - I
-            am capable of small to large scale projects.
+            A passionate leader and instructor who actively engages and instills
+            a healthy environment. I am able to receive and give constructive
+            criticism to produce highly efficient development teams.
           </Gem>
           <Gem
             className="service__item"
@@ -55,10 +56,12 @@ export default function Services() {
                 <IosColorFillOutline color="#070a21" fontSize="64px" />
               </ScrollAnimation>
             }
-            label="Design"
+            label="UX Design"
           >
-            The Adobe Suite? No problem. I have the knowledge to create a
-            beautiful logo, all the way to a complete application design.
+            The Adobe Suite? No problem. I can create anything from simple,
+            effective logos, all the way to complete application design. With
+            unparelled attention to detail, I can produce highly effective
+            interfaces.
           </Gem>
           <Gem
             className="service__item"

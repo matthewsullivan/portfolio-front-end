@@ -86,10 +86,10 @@ export default function Hero() {
                 color="#f9f9f9"
                 fontSize="32"
               />
-              <h1 className="carousel__title">Passionate Teacher</h1>
+              <h1 className="carousel__title">Natural Leader</h1>
               <p className="carousel__body">
-                Not only building, and consulting, but teaching others the lingo
-                of the web and media.
+                Not only building, and consulting, but instructing and leading
+                developers.
               </p>
               <Button path="cv">Curriculum Vitae</Button>
             </div>

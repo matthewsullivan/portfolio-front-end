@@ -12,7 +12,7 @@
         "id" : 1,
         "image": "assets/folio/gidme/gidme.jpg",
         "name": "Gidme",
-        "synopsis": "Gidme is an in-app directory for the venues, you love. Have you ever been faced with not knowing where a specific facility is within an indoor venue? Gidme fixes that. Gidme offers a micro-location based mapping solution that navigates you wherever you desire to be.",
+        "synopsis": "Gidme is an in-app directory for the venues, you love. Gidme offers a micro-location based mapping solution that navigates you wherever you desire to be.",
         "type": "iOS Application"
     },
     {
@@ -36,7 +36,7 @@
         "id" : 4,
         "image": "assets/folio/tracelogix/tracelogix.jpg",
         "name": "Tracelogix",
-        "synopsis": "Tracelogix is a service repair centre who work with clients such as Sobey's and Mcdonalds. Tracelogix needed a proprietary inventory management system.",
+        "synopsis": "Tracelogix is a service repair centre who works with clients such as Sobey's and Mcdonalds. Tracelogix needed a proprietary inventory management system.",
         "type": "Inventory System CMS"
     },
     {
@@ -44,7 +44,7 @@
         "id" : 5,
         "image": "assets/folio/easyaisle/easyaisle.jpg",
         "name": "easyAisle",
-        "synopsis": "Easyaisle is an indoor navigation system that guides customers to products on their created shopping lists.",
+        "synopsis": "easyAisle is an indoor navigation system that guides customers to products on their created shopping lists.",
         "type": "iOS Application"
     },
     {
@@ -60,7 +60,7 @@
         "id" : 7,
         "image": "assets/folio/freeliveyoga/freeliveyoga.jpg",
         "name": "Free Live Yoga",
-        "synopsis": "Free Live Yoga is the home to registered yoga students and new comers. Guests may gather information about Free Live Yoga's services, while registered students may check their schedule and or be notified of class changes.",
+        "synopsis": "Free Live Yoga is the home to registered yoga students and newcomers. Guests may gather information about Free Live Yoga's services, while registered students may check their schedule and or be notified of class changes.",
         "type": "Website / CMS"
     },
     {
@@ -68,7 +68,7 @@
         "id" : 8,
         "image": "assets/folio/mortgagealliance/mortgagealliance.jpg",
         "name": "Mortgage Alliance",
-        "synopsis": "Mortage Alliance is an independent company that works with all major Canadian banks, lending institutions, and private lenders.",
+        "synopsis": "Mortgage Alliance is an independent company that works with all major Canadian banks, lending institutions, and private lenders.",
         "type": "Website"
     },
     {
@@ -76,7 +76,7 @@
         "id" : 9,
         "image": "assets/folio/hallowettesworld/hallowettesworld.jpg",
         "name": "Hallowette's World",
-        "synopsis": "Hallowette's World is an immersive air app game the brings Hallowette's art to life. The goal is for the end user to collect pieces of art that have fallen out of place in order to save Hallowette's world.",
+        "synopsis": "Hallowette's World is an immersive air app game the brings Hallowette's art to life. The goal is for the end-user to collect pieces of art that have fallen out of place to save Hallowette's world.",
         "type": "Air App"
     }
 ]
