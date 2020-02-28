@@ -7,20 +7,12 @@ import styled from 'styled-components';
  * Add Scroll Listener
  * @param {object} ref
  * @param {function} setTranslateX
- * @param {function} setScrolling
  */
-const addScrollListener = (ref, setTranslateX, setScrolling) => {
-  let timer;
-
+const addScrollListener = (ref, setTranslateX) => {
   window.addEventListener('scroll', () => {
     const offsetTop = -ref.current.offsetTop;
 
-    setScrolling(true);
     setTranslateX(offsetTop);
-
-    window.clearTimeout(timer);
-
-    timer = setTimeout(() => setScrolling(false), 100);
   });
 };
 
@@ -57,7 +49,6 @@ export default function Scroller(props) {
   const {children} = props;
 
   const [dynamicHeight, setDynamicHeight] = useState(null);
-  const [scrolling, setScrolling] = useState(false);
   const [translateX, setTranslateX] = useState(0);
 
   const containerRef = useRef(null);
@@ -91,16 +82,11 @@ export default function Scroller(props) {
 
     window.addEventListener('resize', handleResize);
 
-    addScrollListener(containerRef, setTranslateX, setScrolling);
+    addScrollListener(containerRef, setTranslateX);
   }, []);
 
   return (
-    <div
-      style={{
-        height: `${dynamicHeight}px`,
-        pointerEvents: scrolling ? 'none' : 'auto',
-      }}
-    >
+    <div style={{height: `${dynamicHeight}px`}}>
       <InnerContainer ref={containerRef}>
         <TranslateContainer translateX={translateX} ref={objectRef}>
           {children}
