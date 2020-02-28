@@ -157,7 +157,7 @@
     },
     {
         "description": "To build an inventory management system that allowed for internal employees to enter, update, and discard inventory records of on-hand, inbound, outbound, and aging items.\n\nThe system also incorporates user-level access to filter specific capabilities and viewable items. For instance, a super-user may create employee and client accounts, while an employee may only edit and manage inventory records. Client users may only view inventory records related to their company.",
-        "languages": "Tracelogix was built using HTML5/CSS3, Bootstrap, JavaScript, jQuery, JSON, PHP (PDO) and MySQL.",
+        "languages": "Tracelogix was built using HTML5/CSS3, Bootstrap, JavaScript, jQuery, JSON, PHP(PDO), and MySQL.",
         "media": {
             "images": [
                 {
@@ -216,7 +216,7 @@
         "project" : "Design/Development"
     },
     {
-        "description": "When starting on Stock Gaming, the website needed a design overhaul. The website was already responsive but had some layout issues. These issues were fixed and the mobile experience was enhanced.\n\nStock Gaming needed a new logo and a website redesign. The logo idea was to represent the ups and downs of the stock market. The website design had to appeal to Stock Gaming's client base by being clean, friendly, and encourage a competitive feel.\n\nWhen starting work on Stock Gaming, the website had a few browser compatibility issues (primarily, Internet Explorer). Compatibility was a must due to Stock Gaming's target audience being on older machines. A great amount of detail and time was spent to make this happen. The website is now fully functional from IE6 and up.",
+        "description": "When starting on Stock Gaming, the website needed a design overhaul. The website was already responsive but had some layout issues. These issues were fixed and the mobile experience was enhanced.\n\nStock Gaming needed a new logo and a website redesign. The logo idea was to represent the ups and downs of the stock market. The website design had to appeal to Stock Gaming's client base by being clean, friendly, and encourage a competitive feel.\n\nUpon commencement of work on Stock Gaming, the website had a few browser compatibility issues (primarily, Internet Explorer). Compatibility was a must due to Stock Gaming's target audience being on older machines. A great amount of detail and time was spent to make this happen. The website is now fully functional from IE6 and up.",
         "languages": "Stock Gaming was built using HTML/CSS3, Angular.js, jQuery and PHP. Bootstrap was utilized for the foundation of this web-app.",
         "media": {
             "images": [
@@ -252,7 +252,7 @@
         "project" : "Re-design/Development"
     },
     {
-        "description": "Free Live Yoga is a responsive CMS driven mobile-friendly website. This allows students and potential clients to access information on the go at any time .\n\nFree Live Yoga's content comes from a custom-built CMS that allows administrators to make changes in content, images, and even layout without the need to program.\n\nWhen worked commenced with Free Live Yoga, a logo was needed. The idea behind the origami-style logo is to complement the nature of bending in yoga. The bird was used to complement Free Live Yoga as an acronym (FLY).\n\nThe goal of Free Live Yoga's UI/UX is to match the flow of how a class operates. With easing and a layout that falls into place while browsing.",
+        "description": "Free Live Yoga is a responsive CMS driven mobile-friendly website. This allows students and potential clients to access information on the go at any time.\n\nFree Live Yoga's content comes from a custom-built CMS that allows administrators to make changes in content, images, and even layout without the need to program.\n\nWhen worked commenced with Free Live Yoga, a logo was needed. The idea behind the origami-style logo is to complement the nature of bending in yoga. The bird was used to complement Free Live Yoga as an acronym (FLY).\n\nThe goal of Free Live Yoga's UI/UX is to match the flow of how a class operates. With easing and a layout that falls into place while browsing.",
         "languages": "The front-end of the website is built using HTML5/CSS3, jQuery, and AJAX.The back-end is powered by PHP(PDO) and MySQL.",
         "link": {
             "title": "visit site",
