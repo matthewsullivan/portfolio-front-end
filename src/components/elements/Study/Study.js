@@ -6,6 +6,7 @@ import AliceCarousel from 'react-alice-carousel';
 import IosArrowRoundForward from 'react-ionicons/lib/IosArrowRoundForward';
 import IosClose from 'react-ionicons/lib/IosClose';
 import ScrollLock from 'react-scrolllock';
+import BarLoader from 'react-spinners/BarLoader';
 import Rodal from 'rodal';
 
 import api from '../../../api/api';
@@ -20,12 +21,15 @@ Study.propTypes = {
 export default function Study(props) {
   const {setShowStudy, study} = props;
 
+  const [loading, setLoading] = useState(true);
   const [selectedSlide, setSelectedSlide] = useState(0);
   const [selectedStudy, setSelectedStudy] = useState();
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
     if (!study) return;
+
+    setLoading(true);
 
     axios.get(`${api}/api/v1/study/${study.id}`).then((res) => {
       setSelectedStudy(res.data);
@@ -58,6 +62,7 @@ export default function Study(props) {
     },
     onClose: () => {},
     onAnimationEnd: () => {
+      setLoading(false);
       setSelectedSlide(0);
 
       window.dispatchEvent(new Event('resize'));
@@ -117,46 +122,54 @@ export default function Study(props) {
                 </header>
 
                 <div className="study__content">
-                  <div className="study__showcase">
-                    <AliceCarousel
-                      className="study-carousel"
-                      onSlideChanged={handleSlideChanged}
-                      {...carouselOptions}
-                    >
-                      {selectedStudy.media.images.map((media, index) => {
-                        return (
-                          <div
-                            className="study-carousel__slide"
-                            key={index}
-                            onDragStart={carouselOptions.handleOnDragStart}
-                          >
-                            <img
-                              alt={media.alt}
-                              className="study-carousel__image"
-                              src={media.path}
-                            />
-                          </div>
-                        );
-                      })}
-                    </AliceCarousel>
-
-                    <nav className="study-controls">
-                      <div className="study-controls__dots">
+                  {loading ? (
+                    <BarLoader
+                      css="margin: auto; width: 136px;"
+                      color={'#2ecc71'}
+                      loading={loading}
+                    />
+                  ) : (
+                    <div className="study__showcase">
+                      <AliceCarousel
+                        className="study-carousel"
+                        onSlideChanged={handleSlideChanged}
+                        {...carouselOptions}
+                      >
                         {selectedStudy.media.images.map((media, index) => {
                           return (
-                            <span
-                              className={`study-controls__dot ${
-                                selectedSlide === index
-                                  ? 'study-controls__dot--selected'
-                                  : ''
-                              }`}
-                              key={`${media}-${index}`}
-                            ></span>
+                            <div
+                              className="study-carousel__slide"
+                              key={index}
+                              onDragStart={carouselOptions.handleOnDragStart}
+                            >
+                              <img
+                                alt={media.alt}
+                                className="study-carousel__image"
+                                src={media.path}
+                              />
+                            </div>
                           );
                         })}
-                      </div>
-                    </nav>
-                  </div>
+                      </AliceCarousel>
+
+                      <nav className="study-controls">
+                        <div className="study-controls__dots">
+                          {selectedStudy.media.images.map((media, index) => {
+                            return (
+                              <span
+                                className={`study-controls__dot ${
+                                  selectedSlide === index
+                                    ? 'study-controls__dot--selected'
+                                    : ''
+                                }`}
+                                key={`${media}-${index}`}
+                              ></span>
+                            );
+                          })}
+                        </div>
+                      </nav>
+                    </div>
+                  )}
 
                   <div className="study__information">
                     <h3 className="study__pre-title">{selectedStudy.name}</h3>
