@@ -1,7 +1,6 @@
-
 ## Demo
 
-In development _staging_ :warning:
+:warning In development _staging_:
 
 https://staging.matthewsullivan.media
 
@@ -13,7 +12,7 @@ Install project dependencies
 
 ## Setup
 
-Setup Environment
+Set environment
 
     $ export NODE_ENV=development
 

@@ -1,10 +1,10 @@
 import React from 'react';
 
 import ScrollAnimation from 'react-animate-on-scroll';
-import IosCodeWorking from 'react-ionicons/lib/IosCodeWorking';
-import IosLeafOutline from 'react-ionicons/lib/IosLeafOutline';
-import IosColorFillOutline from 'react-ionicons/lib/IosColorFillOutline';
 import IosChatbubblesOutline from 'react-ionicons/lib/IosChatbubblesOutline';
+import IosCodeWorking from 'react-ionicons/lib/IosCodeWorking';
+import IosColorFillOutline from 'react-ionicons/lib/IosColorFillOutline';
+import IosLeafOutline from 'react-ionicons/lib/IosLeafOutline';
 
 import Gem from '../../elements/Gem/Gem';
 import Title from '../../elements/Title/Title';
