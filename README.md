@@ -1,6 +1,8 @@
+<img src="https://static.matthewsullivan.media/logo--circle.png" height="72" width="72">
+
 ## Demo
 
-:warning In development _staging_:
+:warning: In development _staging_:
 
 https://staging.matthewsullivan.media
 
@@ -25,3 +27,11 @@ Start server
 ## Serve
 
     $ npm run start
+
+## Technologies
+
+* React (CRA)
+* Node (Express)
+* HTML5 / CSS3 (BEM) 
+* Webpack 
+
