@@ -1,7 +1,8 @@
+<img src="https://static.matthewsullivan.media/logo--circle.png" height="72" width="72">
 
 ## Demo
 
-In development _staging_ :warning:
+:warning: In development _staging_:
 
 https://staging.matthewsullivan.media
 
@@ -13,7 +14,7 @@ Install project dependencies
 
 ## Setup
 
-Setup Environment
+Set environment
 
     $ export NODE_ENV=development
 
@@ -26,3 +27,11 @@ Start server
 ## Serve
 
     $ npm run start
+
+## Technologies
+
+* React (CRA)
+* Node (Express)
+* HTML5 / CSS3 (BEM) 
+* Webpack 
+
