@@ -1,8 +1,8 @@
 <img src="https://static.matthewsullivan.media/logo--circle.png" height="72" width="72">
 
-:warning: _staging_:
+:warning: _staging_: https://staging.matthewsullivan.media
 
-https://staging.matthewsullivan.media
+<hr>
 
 ## Install
 
