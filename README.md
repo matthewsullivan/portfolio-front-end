@@ -1,8 +1,6 @@
 <img src="https://static.matthewsullivan.media/logo--circle.png" height="72" width="72">
 
-## Demo
-
-:warning: In development _staging_:
+:warning: _staging_:
 
 https://staging.matthewsullivan.media
 
