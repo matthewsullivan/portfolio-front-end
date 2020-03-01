@@ -62,8 +62,8 @@ export default function Folio() {
                 return (
                   <div
                     className="preview__item"
-                    onClick={() => handleStudySelection(study)}
                     key={study.name}
+                    onClick={() => handleStudySelection(study)}
                   >
                     <Card study={study} />
                   </div>
@@ -73,7 +73,7 @@ export default function Folio() {
           </Scroller>
         ) : (
           <div className="error">
-            <MdUmbrella color="#2ecc71" fontSize="48" shake={true} />
+            <MdUmbrella color="#2ecc71" fontSize="48" shake />
 
             <h1 className="error__title">{fetchError}</h1>
             <p className="error__text">

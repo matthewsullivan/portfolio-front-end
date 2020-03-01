@@ -101,8 +101,8 @@ export default function Contact() {
               name="name"
               onChange={(e) => setName(e.target.value)}
               placeholder="Name"
-              type="text"
               required
+              type="text"
               value={name}
             />
           </div>
@@ -115,8 +115,8 @@ export default function Contact() {
               name="email"
               onChange={(e) => setEmail(e.target.value)}
               placeholder="E-mail"
-              type="email"
               required
+              type="email"
               value={email}
             />
           </div>

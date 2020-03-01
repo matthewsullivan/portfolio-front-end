@@ -97,6 +97,7 @@ export default function Navigation() {
           </section>
         </ScrollLock>
       </SlidingPanel>
+
       <Headroom
         className="headroom"
         disableInlineStyles
@@ -117,6 +118,7 @@ export default function Navigation() {
         />
         {getNavigation('headroom')}
       </Headroom>
+
       <header className="header">
         <AnchorLink href="#hero" offset="208">
           <img
@@ -125,6 +127,7 @@ export default function Navigation() {
             src="assets/logo/logo--square.png"
           />
         </AnchorLink>
+
         <IosMenu
           className="header__drawer-icon"
           color="#070a21"

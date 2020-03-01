@@ -1,7 +1,7 @@
 import React from 'react';
 
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import PropTypes from 'prop-types';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import './Button.css';
 

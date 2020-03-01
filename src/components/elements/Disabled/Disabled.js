@@ -10,6 +10,7 @@ export default function Disabled() {
         className="disabled__logo"
         src="https://static.matthewsullivan.media/logo.png"
       />
+
       <h2 className="disabled__title">Old Browser Detected</h2>
       <p className="disabled__body">
         It appears you are on an old browser. For the full viewing experience
@@ -23,6 +24,7 @@ export default function Disabled() {
       >
         Browse Happy
       </a>
+
       <p className="disabled__body">
         Feel free to view my CV while you are here:
       </p>

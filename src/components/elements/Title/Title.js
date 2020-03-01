@@ -19,7 +19,7 @@ export default function Title(props) {
 
   return (
     <section className={`title ${light ? 'title--light' : ''}`}>
-      <div className={chapter ? 'chapter' : 'chapter--hidden'} hidden={true}>
+      <div className={chapter ? 'chapter' : 'chapter--hidden'}>
         <MdRemove color={color} fontSize="16" />
         <p className="chapter__content">{chapter}</p>
         <MdRemove color={color} fontSize="16" />
