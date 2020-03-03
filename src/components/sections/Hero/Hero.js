@@ -11,7 +11,7 @@ import Button from '../../elements/Button/Button';
 
 import './Hero.css';
 
-export default function Hero() {
+const Hero = () => {
   const [selected, setSelected] = useState(0);
 
   const options = {
@@ -130,4 +130,6 @@ export default function Hero() {
       </ScrollAnimation>
     </section>
   );
-}
+};
+
+export default Hero;

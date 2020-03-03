@@ -14,7 +14,7 @@ import Title from '../../elements/Title/Title';
 
 import './Contact.css';
 
-export default function Contact() {
+const Contact = () => {
   const [email, setEmail] = useState('');
   const [label, setLabel] = useState('Submit');
   const [message, setMessage] = useState('');
@@ -141,4 +141,6 @@ export default function Contact() {
       </div>
     </section>
   );
-}
+};
+
+export default Contact;

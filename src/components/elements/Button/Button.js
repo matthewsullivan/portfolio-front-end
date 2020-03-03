@@ -5,14 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import './Button.css';
 
-Button.propTypes = {
-  children: PropTypes.string,
-  external: PropTypes.bool,
-  path: PropTypes.string,
-  type: PropTypes.string,
-};
-
-export default function Button(props) {
+const Button = (props) => {
   const {children, external, path, type} = props;
 
   if (type) {
@@ -41,4 +34,13 @@ export default function Button(props) {
       {children}
     </AnchorLink>
   );
-}
+};
+
+Button.propTypes = {
+  children: PropTypes.string,
+  external: PropTypes.bool,
+  path: PropTypes.string,
+  type: PropTypes.string,
+};
+
+export default Button;

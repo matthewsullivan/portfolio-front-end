@@ -49,11 +49,7 @@ const setHeight = (ref, setDynamicHeight) => {
   setDynamicHeight(dynamicHeight);
 };
 
-Scroller.propTypes = {
-  children: PropTypes.object,
-};
-
-export default function Scroller(props) {
+const Scroller = (props) => {
   const {children} = props;
 
   const [dynamicHeight, setDynamicHeight] = useState(null);
@@ -108,4 +104,10 @@ export default function Scroller(props) {
       </InnerContainer>
     </div>
   );
-}
+};
+
+Scroller.propTypes = {
+  children: PropTypes.object,
+};
+
+export default Scroller;

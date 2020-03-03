@@ -9,7 +9,7 @@ import Title from '../../elements/Title/Title';
 
 import './About.css';
 
-export default function About() {
+const About = () => {
   return (
     <section className="about">
       <Title
@@ -98,4 +98,6 @@ export default function About() {
       </div>
     </section>
   );
-}
+};
+
+export default About;

@@ -11,7 +11,7 @@ import Title from '../../elements/Title/Title';
 
 import './Services.css';
 
-export default function Services() {
+const Services = () => {
   return (
     <section className="services">
       <Title
@@ -111,4 +111,6 @@ export default function Services() {
       </section>
     </section>
   );
-}
+};
+
+export default Services;

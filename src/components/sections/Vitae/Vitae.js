@@ -5,7 +5,7 @@ import Title from '../../elements/Title/Title';
 
 import './Vitae.css';
 
-export default function Vitae() {
+const Vitae = () => {
   return (
     <section className="vitae">
       <Title
@@ -27,4 +27,6 @@ export default function Vitae() {
       </p>
     </section>
   );
-}
+};
+
+export default Vitae;

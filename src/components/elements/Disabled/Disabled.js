@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Disabled.css';
 
-export default function Disabled() {
+const Disabled = () => {
   return (
     <div className="disabled">
       <img
@@ -47,4 +47,6 @@ export default function Disabled() {
       </p>
     </div>
   );
-}
+};
+
+export default Disabled;

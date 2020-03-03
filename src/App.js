@@ -12,7 +12,7 @@ import Vitae from './components/sections/Vitae/Vitae';
 
 import './App.css';
 
-export default function App() {
+const App = () => {
   return (
     <div className="app">
       <header>
@@ -52,4 +52,6 @@ export default function App() {
       </section>
     </div>
   );
-}
+};
+
+export default App;

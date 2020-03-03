@@ -13,7 +13,7 @@ import Title from '../../elements/Title/Title';
 
 import './Folio.css';
 
-export default function Folio() {
+const Folio = () => {
   const [fetchError, setfetchError] = useState();
   const [selectedStudy, setSelectedStudy] = useState();
   const [showStudy, setShowStudy] = useState();
@@ -102,4 +102,6 @@ export default function Folio() {
       {showStudy && <Study setShowStudy={setShowStudy} study={selectedStudy} />}
     </section>
   );
-}
+};
+
+export default Folio;

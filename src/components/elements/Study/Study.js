@@ -13,12 +13,7 @@ import api from '../../../api/api';
 
 import './Study.css';
 
-Study.propTypes = {
-  setShowStudy: PropTypes.func,
-  study: PropTypes.object,
-};
-
-export default function Study(props) {
+const Study = (props) => {
   const {setShowStudy, study} = props;
 
   const [loading, setLoading] = useState(true);
@@ -198,4 +193,11 @@ export default function Study(props) {
       )}
     </>
   );
-}
+};
+
+Study.propTypes = {
+  setShowStudy: PropTypes.func,
+  study: PropTypes.object,
+};
+
+export default Study;

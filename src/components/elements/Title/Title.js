@@ -5,14 +5,7 @@ import MdRemove from 'react-ionicons/lib/MdRemove';
 
 import './Title.css';
 
-Title.propTypes = {
-  body: PropTypes.string,
-  chapter: PropTypes.string,
-  light: PropTypes.bool,
-  title: PropTypes.string,
-};
-
-export default function Title(props) {
+const Title = (props) => {
   const {body, chapter, light, title} = props;
 
   const color = light ? '#f9f9f9' : '#070a21';
@@ -29,4 +22,13 @@ export default function Title(props) {
       <p className="title__body">{body}</p>
     </section>
   );
-}
+};
+
+Title.propTypes = {
+  body: PropTypes.string,
+  chapter: PropTypes.string,
+  light: PropTypes.bool,
+  title: PropTypes.string,
+};
+
+export default Title;

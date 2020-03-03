@@ -5,7 +5,7 @@ import LogoLinkedin from 'react-ionicons/lib/LogoLinkedin';
 
 import './Footer.css';
 
-export default function Footer() {
+const Footer = () => {
   const date = new Date();
 
   return (
@@ -32,4 +32,6 @@ export default function Footer() {
       </p>
     </section>
   );
-}
+};
+
+export default Footer;

@@ -17,11 +17,7 @@ const CardHeader = styled.div`
   background-size: cover;
 `;
 
-Card.propTypes = {
-  study: PropTypes.object,
-};
-
-function Card(props) {
+const Card = (props) => {
   const {study} = props;
 
   return (
@@ -43,6 +39,10 @@ function Card(props) {
       </div>
     </div>
   );
-}
+};
+
+Card.propTypes = {
+  study: PropTypes.object,
+};
 
 export default React.memo(Card);

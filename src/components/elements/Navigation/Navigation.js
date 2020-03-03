@@ -63,7 +63,7 @@ const getNavigation = (element) => {
   );
 };
 
-export default function Navigation() {
+const Navigation = () => {
   const [drawerOpen, setDrawerState] = useState(false);
 
   return (
@@ -137,4 +137,6 @@ export default function Navigation() {
       </header>
     </>
   );
-}
+};
+
+export default Navigation;

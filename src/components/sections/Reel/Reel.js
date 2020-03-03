@@ -6,7 +6,7 @@ import Title from '../../elements/Title/Title';
 
 import './Reel.css';
 
-export default function Reel() {
+const Reel = () => {
   const options = {
     url: 'https://youtu.be/nQa72e_cC5I',
   };
@@ -29,4 +29,6 @@ export default function Reel() {
       </section>
     </section>
   );
-}
+};
+
+export default Reel;
