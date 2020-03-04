@@ -9,7 +9,7 @@ const preview = require('./model/preview.json');
 const studies = require('./model/studies.json');
 
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.NODE_ENV === 'production' ? 8888 : 8080;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
