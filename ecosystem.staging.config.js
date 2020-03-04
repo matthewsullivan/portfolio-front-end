@@ -10,7 +10,7 @@ module.exports = {
       },
       instances: 1,
       max_memory_restart: '1G',
-      name: 'MSM Server',
+      name: 'MSM Staging',
       script: 'server.js',
       watch: false,
     },
