@@ -79,7 +79,7 @@ const About = () => {
               Time management plays a major role in my day to day life. Late is
               not an option. I possess the ability to manage a lot of work at
               once, and I enjoy learning new things while problem-solving. Some
-              of my interests outside of work are:
+              of my interests outside of work include:
             </p>
           </ScrollAnimation>
 
