@@ -30,4 +30,4 @@ if (blacklist.includes(name)) {
 
 ReactDOM.render(component, document.getElementById('root'));
 
-serviceWorker.unregister();
+serviceWorker.register();
