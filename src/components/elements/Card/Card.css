@@ -76,7 +76,7 @@
 
 .card__link {
   align-items: center;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.4), rgba(255,255,255,1));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 1));
   bottom: 0;
   box-sizing: border-box;
   color: var(--palette-primary);
@@ -101,7 +101,7 @@
   }
 
   .card:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.22), 0 8px 8px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22), 0 8px 8px rgba(0, 0, 0, 0.22);
     transform: translate3d(0, -8px, 0);
   }
 
