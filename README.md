@@ -1,25 +1,6 @@
-<<<<<<< HEAD
-
-
-## Demo
-
-Production
-
-https://matthewsullivan.media
-
-## Technology
-
-2018 portfolio built using:
-
-    • HTML5
-    • CSS3
-    • Bootstrap
-    • jQuery
-    • PHP
-=======
 <img src="https://static.matthewsullivan.media/logo--circle.png" height="72" width="72">
 
-:warning: _staging_: https://staging.matthewsullivan.media
+https://staging.matthewsullivan.media
 
 <hr>
 
@@ -51,5 +32,3 @@ Start server
 * Node (Express)
 * HTML5 / CSS3 (BEM) 
 * Webpack 
-
->>>>>>> develop
