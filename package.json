@@ -1,0 +1,70 @@
+{
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "ie > 9",
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "animate.css": "^3.7.2",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "bowser": "^2.9.0",
+    "cors": "^2.8.5",
+    "css-loader": "^3.4.2",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "nodemailer": "^6.4.2",
+    "opensans-npm-webfont": "^1.0.0",
+    "react": "^16.12.0",
+    "react-alice-carousel": "^1.17.3",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-app-polyfill": "^1.0.6",
+    "react-dom": "^16.12.0",
+    "react-headroom": "^3.0.0",
+    "react-ionicons": "^3.1.4",
+    "react-player": "^1.15.2",
+    "react-scripts": "3.4.0",
+    "react-scrolllock": "^5.0.1",
+    "react-sliding-side-panel": "^1.0.10",
+    "react-spinners": "^0.8.0",
+    "rodal": "^1.8.1",
+    "style-loader": "^1.1.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-config-google": "^0.12.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "homepage": ".",
+  "name": "portfolio-front-end",
+  "proxy": "http://localhost:3000/",
+  "scripts": {
+    "start": "react-scripts start ",
+    "mail-server": "node server.js",
+    "build": "react-scripts build",
+    "build:staging": "env-cmd -f .env.staging npm run build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "version": "2.0.0"
+}

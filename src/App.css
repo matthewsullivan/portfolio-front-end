@@ -1,0 +1,11 @@
+:root {
+  --palette-primary: #070a21;
+  --palette-secondary: #2ecc71;
+  --palette-tertiary: #f9f9f9;
+  --typography-primary: 'Open Sans', sans-serif;
+}
+
+.app {
+  background: #fff;
+  border: 16px solid var(--palette-primary);
+}

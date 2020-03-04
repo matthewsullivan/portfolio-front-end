@@ -1,0 +1,31 @@
+.vitae {
+  align-items: center;
+  background: var(--palette-tertiary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 8px;
+  text-align: center;
+}
+
+.vitae__line {
+  background: var(--palette-primary);
+  height: 24px;
+  margin: 16px 0;
+  opacity: 0.2;
+  width: 1px;
+}
+
+.vitae__body {
+  color: var(--palette-primary);
+  font-family: var(--typography-primary);
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 768px) {
+  .vitae {
+    padding: 72px 44px;
+  }
+}

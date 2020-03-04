@@ -1,0 +1,37 @@
+.gem {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.gem__icon {
+  margin-bottom: 8px;
+}
+
+.gem__label {
+  color: var(--palette-primary);
+  font-family: var(--typography-primary);
+  font-size: 22px;
+  line-height: 0.8;
+  margin: 8px 0;
+}
+
+.gem__body {
+  color: var(--palette-primary);
+  font-family: var(--typography-primary);
+  font-size: 16px;
+  line-height: 32px;
+  margin: 16px 0 24px;
+  max-width: 90%;
+  opacity: 0.7;
+  text-align: justify;
+}
+
+@media only screen and (min-width: 768px) {
+ .gem {
+   max-width: 264px;
+   padding: 0 16px;
+ }
+}
