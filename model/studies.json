@@ -44,7 +44,7 @@
             "logo": "assets/folio/burgerdex/logo.png"
         },
         "name": "Burgerdex",
-        "platform": "IOS",
+        "platform": "iOS",
         "project" : "Design/Development"
     },
     {
@@ -72,7 +72,7 @@
             "logo": "assets/folio/gidme/logo.png"
         },
         "name": "Gidme",
-        "platform": "IOS",
+        "platform": "iOS",
         "project" : "Design/Development"
     },
     {
@@ -128,7 +128,7 @@
         "project" : "Design/Development"
     },
     {
-        "description": "The application allows team members to sign in and view their booking time of the escape room, easily contact other members, receive mission reminders, as well as view their standing on the escape room leaderboard.",
+        "description": "The application allows team members to sign in and view their booking time for the escape room, easily contact other members, receive mission reminders, as well as view their standing on the escape room leaderboard.",
         "languages": "The MAD Xscape room app was built with Objective-C and utilizes a RESTful JSON API.",
         "link": {
             "title": "Download the app",
@@ -152,7 +152,7 @@
             "logo": "assets/folio/madxscape/logo.png"
         },
         "name": "Mad Xscape",
-        "platform": "IOS",
+        "platform": "iOS",
         "project" : "Design/Development"
     },
     {
@@ -188,7 +188,7 @@
         "project" : "Design/Development"
     },
     {
-        "description": "easyAisle is a native service-driven app that posts and receives information from a server to organize it visually for the end-user. Custom services were created and stored locally within the app (when appropriate) via core data. The user may also sync their lists to the cloud for cross-device communication.",
+        "description": "easyAisle is a native service-driven app that POSTs and receives information from a server to organize it visually for the end-user. Custom services were created and stored locally within the app (when appropriate) via Core Data. The user may also sync their lists to the cloud for cross-device communication.",
         "languages": "easyAisle is built with Objecitve-C using JSON for it's web services. The app can also generate PLIST files for easy printing of shopping lists.",
         "media": {
             "images": [
@@ -212,12 +212,12 @@
             "logo": "assets/folio/easyaisle/logo.png"
         },
         "name": "easyAisle",
-        "platform": "Web",
+        "platform": "iOS",
         "project" : "Design/Development"
     },
     {
-        "description": "When starting on Stock Gaming, the website needed a design overhaul. The website was already responsive but had some layout issues. These issues were fixed and the mobile experience was enhanced.\n\nStock Gaming needed a new logo and a website redesign. The logo idea was to represent the ups and downs of the stock market. The website design had to appeal to Stock Gaming's client base by being clean, friendly, and encourage a competitive feel.\n\nUpon commencement of work on Stock Gaming, the website had a few browser compatibility issues (primarily, Internet Explorer). Compatibility was a must due to Stock Gaming's target audience being on older machines. A great amount of detail and time was spent to make this happen. The website is now fully functional from IE6 and up.",
-        "languages": "Stock Gaming was built using HTML/CSS3, Angular.js, jQuery and PHP. Bootstrap was utilized for the foundation of this web-app.",
+        "description": "When starting on Stock Gaming, the website needed a design overhaul. The website was already responsive but had various layout issues. These issues were fixed and the mobile experience was enhanced.\n\nStock Gaming needed a new logo and a website redesign. The logo idea was to represent the ups and downs of the stock market. The website design had to appeal to Stock Gaming's client base by being clean, friendly, and induce a competitive feeling.\n\nUpon commencement of work on Stock Gaming, the website had multiple browser compatibility issues (primarily with Internet Explorer). Compatibility was a must due to Stock Gaming's target audience being on older machines. A great amount of detail and time was spent to ensure the application functioned as expected on older browsers. The website is now fully functional from IE6 and up.",
+        "languages": "Stock Gaming was built using HTML5/CSS3, Angular.js, jQuery and PHP. Bootstrap was utilized for the foundation of this web-app.",
         "media": {
             "images": [
                 {
@@ -252,8 +252,8 @@
         "project" : "Re-design/Development"
     },
     {
-        "description": "Free Live Yoga is a responsive CMS driven mobile-friendly website. This allows students and potential clients to access information on the go at any time.\n\nFree Live Yoga's content comes from a custom-built CMS that allows administrators to make changes in content, images, and even layout without the need to program.\n\nWhen worked commenced with Free Live Yoga, a logo was needed. The idea behind the origami-style logo is to complement the nature of bending in yoga. The bird was used to complement Free Live Yoga as an acronym (FLY).\n\nThe goal of Free Live Yoga's UI/UX is to match the flow of how a class operates. With easing and a layout that falls into place while browsing.",
-        "languages": "The front-end of the website is built using HTML5/CSS3, jQuery, and AJAX.The back-end is powered by PHP(PDO) and MySQL.",
+        "description": "Free Live Yoga is a responsive CMS driven mobile-friendly website. This allows students and potential clients to access information on the go at any time.\n\nFree Live Yoga's content comes from a custom-built CMS that allows administrators to make changes to content, images, and layout without the need to program.\n\nWhen work commenced with Free Live Yoga, a logo was needed. The idea behind the origami-style logo is to complement the nature of bending in yoga. The bird was used as a representation of Free Live Yoga as an acronym (FLY).\n\nThe goal of Free Live Yoga's UI/UX is to match the flow of how a class operates. With easing and a layout that falls into place while browsing.",
+        "languages": "The front-end of the website was built using HTML5/CSS3, jQuery, and AJAX. The back-end is powered by PHP(PDO) and MySQL.",
         "link": {
             "title": "visit site",
             "path": "https://fly.matthewsullivan.media"
@@ -292,7 +292,7 @@
         "project" : "Design/Development"
     },
     {
-        "description": "This site was built for a broker under Mortgage Alliance.\n\nThe client had a pre-existing brochure site and was looking to enhance the overall design, and bring the site to a modern-day look and feel.",
+        "description": "This site was built for a broker under Mortgage Alliance.\n\nThe client had a pre-existing brochure site and was looking to enhance the overall design, and add a modern-day look and feel.",
         "languages": "HTML5/CSS3, jQuery, AJAX, JSON, PHP(PDO), and MySQL.",
         "link": {
             "title": "visit site",
@@ -328,10 +328,10 @@
         "project" : "Design/Development"
     },
     {
-        "description": "The soundscape and design of the game are to reflect a dark world where things just aren't quite right.\n\nSome of the challenges faced while creating this game was animating static content. All images provided from Hallowette needed to be broken into layers to be animated and brought into the gameplay environment.\n\nThere are various levels that increase in difficulty. Each unlocking a piece of art as a reward. Each level has it's own theme that comes back to haunt the user in the final level.\n\nThe final level was what started the whole concept of this game. A zoom quilt style world where the level starts with one image and continually zooms deeper and deeper into it while revealing elements and gameplay pieces.",
+        "description": "The soundscape and design of the game are to reflect a dark world where things just aren't quite right.\n\nSome of the challenges faced while creating this game was animating static content. All images provided from Hallowette needed to be broken into layers to be animated and brought into the gameplay environment.\n\nThere are various levels that increase in difficulty. Each unlocking a piece of art as a reward. Each level has it's own theme that comes back to haunt the user in the final level.\n\nThe final level was what started the concept of this game. A zoom quilt style world where the level starts with one image and continually zooms deeper and deeper into it while revealing elements and gameplay pieces.",
         "languages": "Actionscript 3.0 was used to program this game. There was a heavy use of Adobe Photoshop, Adobe Flash (now Animate), and Adobe After Effects as well.",
         "link": {
-            "title": "Downalod Air App",
+            "title": "Downalod Air Application",
             "path": "https://www.static.matthewsullivan.media/hallowettesworld.zip"
         },
         "media": {
@@ -368,7 +368,7 @@
             "logo": "assets/folio/hallowettesworld/logo.png"
         },
         "name": "Hallowette's World",
-        "platform": "Air App",
+        "platform": "Adobe Air",
         "project" : "Design/Development"
     }
 ]

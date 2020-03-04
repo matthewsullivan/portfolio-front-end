@@ -88,7 +88,7 @@ const Hero = () => {
               />
               <h1 className="carousel__title">Natural Leader</h1>
               <p className="carousel__body">
-                Not only building, and consulting, but instructing and leading
+                Not only building and consulting, but instructing and leading
                 developers.
               </p>
               <Button path="cv">Curriculum Vitae</Button>

@@ -76,10 +76,10 @@ const About = () => {
 
           <ScrollAnimation animateIn="fadeInUp" animateOnce>
             <p className="about__body">
-              Time management plays a huge roll in my day to day life. Late is
-              not an option for me. I can manage a lot of work at once, and I
-              enjoy learning new things while problem-solving. Outside of work I
-              enjoy:
+              Time management plays a major role in my day to day life. Late is
+              not an option. I possess the ability to manage a lot of work at
+              once, and I enjoy learning new things while problem-solving. Some
+              of my interests outside of work are:
             </p>
           </ScrollAnimation>
 

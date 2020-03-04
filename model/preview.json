@@ -37,7 +37,7 @@
         "image": "assets/folio/tracelogix/tracelogix.jpg",
         "name": "Tracelogix",
         "synopsis": "Tracelogix is a service repair centre who works with clients such as Sobey's and Mcdonalds. Tracelogix needed a proprietary inventory management system.",
-        "type": "Inventory System CMS"
+        "type": "Inventory System"
     },
     {
         "icon" : "assets/folio/easyaisle/icon.jpg",
@@ -77,6 +77,6 @@
         "image": "assets/folio/hallowettesworld/hallowettesworld.jpg",
         "name": "Hallowette's World",
         "synopsis": "Hallowette's World is an immersive air app game the brings Hallowette's art to life. The goal is for the end-user to collect pieces of art that have fallen out of place to save Hallowette's world.",
-        "type": "Air App"
+        "type": "Air Application"
     }
 ]
