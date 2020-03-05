@@ -97,6 +97,14 @@
   display: none;
 }
 
+.headroom__drawer {
+  align-items: center;
+  display: flex;
+  height: inherit;
+  justify-content: center;
+  width: inherit;
+}
+
 .header {
   align-items: center;
   background: #fff;
@@ -116,14 +124,6 @@
 .header__icon {
   cursor: pointer;
   display: block;
-}
-
-.headroom__drawer {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 72px;
-  width: 72px;
 }
 
 .navigation{
