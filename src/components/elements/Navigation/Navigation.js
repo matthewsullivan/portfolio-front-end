@@ -120,11 +120,13 @@ const Navigation = () => {
             src="assets/logo/logo--square.png"
           />
         </AnchorLink>
-        <IosMenu
-          className="headroom__drawer-icon"
-          color="#f9f9f9"
+
+        <div
+          className="headroom__drawer"
           onClick={() => setDrawerState(!drawerOpen)}
-        />
+        >
+          <IosMenu className="headroom__icon" color="#f9f9f9" />
+        </div>
         {getNavigation('headroom')}
       </Headroom>
 
@@ -138,7 +140,7 @@ const Navigation = () => {
         </AnchorLink>
 
         <IosMenu
-          className="header__drawer-icon"
+          className="header__icon"
           color="#070a21"
           onClick={() => setDrawerState(!drawerOpen)}
         />
