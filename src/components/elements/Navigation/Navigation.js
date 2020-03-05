@@ -13,16 +13,21 @@ import './Navigation.css';
 /**
  * Get Navigation
  * @param {string} element
+ * @param {function} setDrawerState
  * @return {JSX}
  */
-const getNavigation = (element) => {
+const getNavigation = (element, setDrawerState) => {
   const sections = ['about', 'services', 'folio', 'contact'];
 
   if (element === 'drawer') {
     const navigation = sections.map((section) => {
       return (
         <li className="drawer-navigation__item" key={section}>
-          <AnchorLink className="drawer-navigation__link" href={`#${section}`}>
+          <AnchorLink
+            className="drawer-navigation__link"
+            href={`#${section}`}
+            onClick={() => setDrawerState(false)}
+          >
             {section}
           </AnchorLink>
         </li>
@@ -93,7 +98,7 @@ const Navigation = () => {
                 <IosClose color="#f9f9f9" fontSize="32" />
               </div>
             </header>
-            {getNavigation('drawer')}
+            {getNavigation('drawer', setDrawerState)}
           </section>
         </ScrollLock>
       </SlidingPanel>
