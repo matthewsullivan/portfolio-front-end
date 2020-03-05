@@ -97,6 +97,14 @@
   display: none;
 }
 
+.headroom__drawer {
+  align-items: center;
+  display: flex;
+  height: inherit;
+  justify-content: center;
+  width: inherit;
+}
+
 .header {
   align-items: center;
   background: #fff;
@@ -113,12 +121,8 @@
   width: 72px;
 }
 
-.header__drawer-icon {
+.header__icon {
   cursor: pointer;
-  display: block;
-}
-
-.headroom__drawer-icon {
   display: block;
 }
 
@@ -142,10 +146,6 @@
     width: 72px;
   }
 
-  .headroom__drawer-icon {
-    display: none;
-  }
-
   .header {
     box-sizing: border-box;
     flex-direction: column;
@@ -159,7 +159,8 @@
     width: 96px;
   }
 
-  .header__drawer-icon {
+  .headroom__drawer,
+  .header__icon {
     display: none;
   }
 

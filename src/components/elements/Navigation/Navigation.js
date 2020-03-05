@@ -13,16 +13,21 @@ import './Navigation.css';
 /**
  * Get Navigation
  * @param {string} element
+ * @param {function} setDrawerState
  * @return {JSX}
  */
-const getNavigation = (element) => {
+const getNavigation = (element, setDrawerState) => {
   const sections = ['about', 'services', 'folio', 'contact'];
 
   if (element === 'drawer') {
     const navigation = sections.map((section) => {
       return (
         <li className="drawer-navigation__item" key={section}>
-          <AnchorLink className="drawer-navigation__link" href={`#${section}`}>
+          <AnchorLink
+            className="drawer-navigation__link"
+            href={`#${section}`}
+            onClick={() => setDrawerState(false)}
+          >
             {section}
           </AnchorLink>
         </li>
@@ -78,7 +83,11 @@ const Navigation = () => {
         <ScrollLock isActive={drawerOpen}>
           <section className="drawer__content">
             <header className="drawer__header">
-              <AnchorLink href="#hero" offset="128">
+              <AnchorLink
+                href="#hero"
+                offset="128"
+                onClick={() => setDrawerState(false)}
+              >
                 <img
                   alt="Header Logo"
                   className="drawer__image"
@@ -93,7 +102,7 @@ const Navigation = () => {
                 <IosClose color="#f9f9f9" fontSize="32" />
               </div>
             </header>
-            {getNavigation('drawer')}
+            {getNavigation('drawer', setDrawerState)}
           </section>
         </ScrollLock>
       </SlidingPanel>
@@ -111,11 +120,13 @@ const Navigation = () => {
             src="assets/logo/logo--square.png"
           />
         </AnchorLink>
-        <IosMenu
-          className="headroom__drawer-icon"
-          color="#f9f9f9"
+
+        <div
+          className="headroom__drawer"
           onClick={() => setDrawerState(!drawerOpen)}
-        />
+        >
+          <IosMenu className="headroom__icon" color="#f9f9f9" />
+        </div>
         {getNavigation('headroom')}
       </Headroom>
 
@@ -129,7 +140,7 @@ const Navigation = () => {
         </AnchorLink>
 
         <IosMenu
-          className="header__drawer-icon"
+          className="header__icon"
           color="#070a21"
           onClick={() => setDrawerState(!drawerOpen)}
         />
