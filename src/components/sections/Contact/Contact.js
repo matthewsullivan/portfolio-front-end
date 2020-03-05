@@ -30,9 +30,9 @@ const Contact = () => {
     event.preventDefault();
 
     const data = {
-      userName: name,
       userEmail: email,
       userMessage: message,
+      userName: name,
     };
 
     setLabel('Sending...');

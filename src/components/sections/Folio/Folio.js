@@ -77,7 +77,7 @@ const Folio = () => {
 
             <h1 className="error__title">{fetchError}</h1>
             <p className="error__text">
-              Until this is fixed, feel free to checkout out:
+              Until this is fixed, feel free to checkout:
             </p>
             <div className="error__links">
               <a
