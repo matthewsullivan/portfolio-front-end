@@ -4,6 +4,17 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 /**
+ * Add Resize Listener
+ * @param {object} ref
+ * @param {function} setDynamicHeight
+ */
+const addResizeListener = (ref, setDynamicHeight) => {
+  window.addEventListener('resize', () => {
+    setHeight(ref, setDynamicHeight);
+  });
+};
+
+/**
  * Add Scroll Listener
  * @param {object} ref
  * @param {function} setTranslateX
@@ -75,18 +86,10 @@ const Scroller = (props) => {
     will-change: transform;
   `;
 
-  /**
-   * Handle Resize
-   */
-  const handleResize = () => {
-    setHeight(objectRef, setDynamicHeight);
-  };
-
   useEffect(() => {
     setHeight(objectRef, setDynamicHeight);
 
-    window.addEventListener('resize', handleResize);
-
+    addResizeListener(objectRef, setDynamicHeight);
     addScrollListener(containerRef, setTranslateX, setScrolling);
   }, []);
 
