@@ -51,7 +51,7 @@ const Study = (props) => {
       bottom: 'auto',
       height: '100%',
       overflow: 'scroll',
-      padding: '0',
+      padding: 0,
       top: 'auto',
       width: 'auto',
     },

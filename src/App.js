@@ -47,9 +47,9 @@ const App = () => {
         <Vitae />
       </section>
 
-      <section id="footer">
+      <footer id="footer">
         <Footer />
-      </section>
+      </footer>
     </div>
   );
 };

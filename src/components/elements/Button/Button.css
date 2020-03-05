@@ -30,9 +30,9 @@
   transition-property: top, right, bottom, left;
 }
 
-.button:hover:before,
+.button:active:before,
 .button:focus:before,
-.button:active:before {
+.button:hover:before {
   bottom: -2px;
   left: -2px;
   right: -2px;
