@@ -83,7 +83,11 @@ const Navigation = () => {
         <ScrollLock isActive={drawerOpen}>
           <section className="drawer__content">
             <header className="drawer__header">
-              <AnchorLink href="#hero" offset="128">
+              <AnchorLink
+                href="#hero"
+                offset="128"
+                onClick={() => setDrawerState(false)}
+              >
                 <img
                   alt="Header Logo"
                   className="drawer__image"
