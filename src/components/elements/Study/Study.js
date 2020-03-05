@@ -21,18 +21,6 @@ const Study = (props) => {
   const [selectedStudy, setSelectedStudy] = useState();
   const [modalOpen, setModalOpen] = useState(false);
 
-  useEffect(() => {
-    if (!study) return;
-
-    setLoading(true);
-
-    axios.get(`${api}/api/v1/study/${study.id}`).then((res) => {
-      setSelectedStudy(res.data);
-
-      setModalOpen(true);
-    });
-  }, [study]);
-
   const carouselOptions = {
     autoPlay: true,
     autoPlayInterval: 4000,
@@ -64,6 +52,18 @@ const Study = (props) => {
     },
     visible: modalOpen,
   };
+
+  useEffect(() => {
+    if (!study) return;
+
+    setLoading(true);
+
+    axios.get(`${api}/api/v1/study/${study.id}`).then((res) => {
+      setSelectedStudy(res.data);
+
+      setModalOpen(true);
+    });
+  }, [study]);
 
   /**
    * Handle Slide Changed
