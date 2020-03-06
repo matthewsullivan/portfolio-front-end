@@ -69,9 +69,17 @@
   width: 4px;
 }
 
-.about__image {
-  object-fit: contain;
+.about__container {
+  background: var(--palette-primary);
+  height: 320px;
+  margin-bottom: 16px;
   width: 100%;
+}
+
+.about__image {
+  object-fit: cover;
+  height: inherit;
+  width: inherit;
 }
 
 @media only screen and (min-width: 768px) {
@@ -89,10 +97,9 @@
     min-width: 328px;
     width: 360px;
   }
-  
-  .about__image {
+
+  .about__container {
     height: 544px;
-    object-fit: cover;
     max-width: 360px;
   }
 }

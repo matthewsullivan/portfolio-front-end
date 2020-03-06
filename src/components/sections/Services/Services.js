@@ -5,6 +5,7 @@ import IosChatbubblesOutline from 'react-ionicons/lib/IosChatbubblesOutline';
 import IosCodeWorking from 'react-ionicons/lib/IosCodeWorking';
 import IosColorFillOutline from 'react-ionicons/lib/IosColorFillOutline';
 import IosLeafOutline from 'react-ionicons/lib/IosLeafOutline';
+import LazyLoad from 'react-lazyload';
 
 import Gem from '../../elements/Gem/Gem';
 import Title from '../../elements/Title/Title';
@@ -85,11 +86,13 @@ const Services = () => {
         <div className="review__line" />
         <div className="review__review">
           <div className="review__avatar">
-            <img
-              alt="Review Avatar"
-              className="review__avatar-img"
-              src="assets/services/brian.jpg"
-            />
+            <LazyLoad offset={184} once>
+              <img
+                alt="Review Avatar"
+                className="review__avatar-img"
+                src="assets/services/brian.jpg"
+              />
+            </LazyLoad>
           </div>
 
           <ScrollAnimation animateIn="fadeIn" animateOnce>
