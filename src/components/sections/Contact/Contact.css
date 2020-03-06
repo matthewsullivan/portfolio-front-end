@@ -57,7 +57,7 @@
   border: none;
   border-radius: unset;
   box-sizing: border-box;
-  color: #756f6f;
+  color: var(--palette-primary);
   font-size: 14px;
   height: 40px;
   margin: 16px 0;
