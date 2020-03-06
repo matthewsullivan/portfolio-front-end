@@ -97,6 +97,7 @@ const Contact = () => {
             <IosPerson className="form__icon" color="#2ecc71" fontSize="24" />
 
             <input
+              aria-label="Name"
               className="form__input"
               name="name"
               onChange={(e) => setName(e.target.value)}
@@ -111,6 +112,7 @@ const Contact = () => {
             <IosMail className="form__icon" color="#2ecc71" fontSize="24" />
 
             <input
+              aria-label="E-mail"
               className="form__input"
               name="email"
               onChange={(e) => setEmail(e.target.value)}
@@ -125,6 +127,7 @@ const Contact = () => {
             <MdCreate className="form__icon" color="#2ecc71" fontSize="24" />
 
             <textarea
+              aria-label="Message"
               className="form__input form__input--textarea"
               name="message"
               onChange={(e) => setMessage(e.target.value)}
