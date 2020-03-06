@@ -4,6 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import ScrollAnimation from 'react-animate-on-scroll';
 import IosArrowRoundForward from 'react-ionicons/lib/IosArrowRoundForward';
 import MdRemove from 'react-ionicons/lib/MdRemove';
+import LazyLoad from 'react-lazyload';
 
 import Title from '../../elements/Title/Title';
 
@@ -50,22 +51,40 @@ const About = () => {
           </ScrollAnimation>
         </div>
 
-        <ScrollAnimation animateIn="fadeIn" animateOnce>
-          <img
-            alt="About Coffee"
-            className="about__image"
-            src="assets/about/image-a.jpg"
-          />
+        <ScrollAnimation
+          animateIn="fadeIn"
+          animateOnce
+          className="about__container"
+        >
+          <LazyLoad offset={184} once>
+            <picture>
+              <source srcSet="assets/about/image-a.webp" type="image/webp" />
+              <img
+                alt="About office scene"
+                className="about__image"
+                src="assets/about/image-a.jpg"
+              />
+            </picture>
+          </LazyLoad>
         </ScrollAnimation>
       </div>
 
       <div className="about__content">
-        <ScrollAnimation animateIn="fadeIn" animateOnce>
-          <img
-            alt="About Coffee"
-            className="about__image"
-            src="assets/about/image-b.jpg"
-          />
+        <ScrollAnimation
+          animateIn="fadeIn"
+          animateOnce
+          className="about__container"
+        >
+          <LazyLoad offset={184} once>
+            <picture>
+              <source srcSet="assets/about/image-b.webp" type="image/webp" />
+              <img
+                alt="About forest scene"
+                className="about__image"
+                src="assets/about/image-b.jpg"
+              />
+            </picture>
+          </LazyLoad>
         </ScrollAnimation>
 
         <div className="about__text">

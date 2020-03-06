@@ -1,6 +1,6 @@
 .button {
   backface-visibility: hidden;
-  background: var(--palette-secondary);
+  background: var(--palette-primary);
   background-clip: padding-box;
   box-shadow: 0 0 1px transparent;
   border: none;
@@ -19,20 +19,17 @@
 }
 
 .button:before {
-  border: var(--palette-secondary) solid 1px;
   bottom: 0;
   content: '';
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
-  transition-duration: 0.2s;
-  transition-property: top, right, bottom, left;
+  transition: all 0.2s ease-in-out;
 }
 
-.button:active:before,
-.button:focus:before,
 .button:hover:before {
+  border: var(--palette-secondary) solid 1px;
   bottom: -2px;
   left: -2px;
   right: -2px;

@@ -12,6 +12,7 @@ const Footer = () => {
     <section className="footer">
       <div className="footer__icons">
         <a
+          aria-label="Navigate to LinkedIn profile"
           href="https://www.linkedin.com/in/matthew-sullivan/"
           rel="noopener noreferrer"
           target="_blank"
@@ -19,6 +20,7 @@ const Footer = () => {
           <LogoLinkedin color="#f9f9f9" />
         </a>
         <a
+          aria-label="Navigate to Github profile"
           href="https://github.com/matthewsullivan/"
           rel="noopener noreferrer"
           target="_blank"

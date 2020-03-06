@@ -14,6 +14,7 @@ const CardAvatar = styled.div`
 
 const CardHeader = styled.div`
   background: url(${(props) => props.study.image}) no-repeat;
+  background-color: #070a21;
   background-size: cover;
 `;
 
