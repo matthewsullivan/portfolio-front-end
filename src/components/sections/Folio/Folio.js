@@ -81,6 +81,7 @@ const Folio = () => {
             </p>
             <div className="error__links">
               <a
+                aria-label="Navigate to LinkedIn profile"
                 href="https://www.linkedin.com/in/matthew-sullivan/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -88,6 +89,7 @@ const Folio = () => {
                 <LogoLinkedin color="#070a21" fontSize="24" />
               </a>
               <a
+                aria-label="Navigate to Github profile"
                 href="https://github.com/matthewsullivan/"
                 rel="noopener noreferrer"
                 target="_blank"

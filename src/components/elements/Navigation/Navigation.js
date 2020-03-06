@@ -84,6 +84,7 @@ const Navigation = () => {
           <section className="drawer__content">
             <header className="drawer__header">
               <AnchorLink
+                aria-label="Close navigation drawer"
                 href="#hero"
                 offset="128"
                 onClick={() => setDrawerState(false)}
@@ -113,7 +114,7 @@ const Navigation = () => {
         pinStart={192}
         wrapperStyle={{marginTop: -88}}
       >
-        <AnchorLink href="#hero" offset="208">
+        <AnchorLink aria-label="Scroll page to top" href="#hero" offset="208">
           <img
             alt="Header Logo"
             className="headroom__image"
@@ -131,7 +132,7 @@ const Navigation = () => {
       </Headroom>
 
       <header className="header">
-        <AnchorLink href="#hero" offset="208">
+        <AnchorLink aria-label="Scroll page to top" href="#hero" offset="208">
           <img
             alt="Header Logo"
             className="header__image"
