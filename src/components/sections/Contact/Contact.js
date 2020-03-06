@@ -94,7 +94,7 @@ const Contact = () => {
       <div className="contact__form">
         <form className="form" onSubmit={(event) => handleSubmitForm(event)}>
           <div className="form__group">
-            <IosPerson className="form__icon" color="#2ecc71" fontSize="24" />
+            <IosPerson className="form__icon" color="#070a21" fontSize="24" />
 
             <input
               aria-label="Name"
@@ -109,7 +109,7 @@ const Contact = () => {
           </div>
 
           <div className="form__group">
-            <IosMail className="form__icon" color="#2ecc71" fontSize="24" />
+            <IosMail className="form__icon" color="#070a21" fontSize="24" />
 
             <input
               aria-label="E-mail"
@@ -124,7 +124,7 @@ const Contact = () => {
           </div>
 
           <div className="form__group">
-            <MdCreate className="form__icon" color="#2ecc71" fontSize="24" />
+            <MdCreate className="form__icon" color="#070a21" fontSize="24" />
 
             <textarea
               aria-label="Message"
