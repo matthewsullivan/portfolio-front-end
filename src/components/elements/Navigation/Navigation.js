@@ -84,15 +84,22 @@ const Navigation = () => {
           <section className="drawer__content">
             <header className="drawer__header">
               <AnchorLink
+                aria-label="Close navigation drawer"
                 href="#hero"
                 offset="128"
                 onClick={() => setDrawerState(false)}
               >
-                <img
-                  alt="Header Logo"
-                  className="drawer__image"
-                  src="assets/logo/logo--square.png"
-                />
+                <picture>
+                  <source
+                    srcSet="assets/logo/logo--square.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    alt="Header Logo"
+                    className="drawer__image"
+                    src="assets/logo/logo--square.png"
+                  />
+                </picture>
               </AnchorLink>
 
               <div
@@ -113,12 +120,15 @@ const Navigation = () => {
         pinStart={192}
         wrapperStyle={{marginTop: -88}}
       >
-        <AnchorLink href="#hero" offset="208">
-          <img
-            alt="Header Logo"
-            className="headroom__image"
-            src="assets/logo/logo--square.png"
-          />
+        <AnchorLink aria-label="Scroll page to top" href="#hero" offset="208">
+          <picture>
+            <source srcSet="assets/logo/logo--square.webp" type="image/webp" />
+            <img
+              alt="Header Logo"
+              className="headroom__image"
+              src="assets/logo/logo--square.png"
+            />
+          </picture>
         </AnchorLink>
 
         <div
@@ -131,12 +141,15 @@ const Navigation = () => {
       </Headroom>
 
       <header className="header">
-        <AnchorLink href="#hero" offset="208">
-          <img
-            alt="Header Logo"
-            className="header__image"
-            src="assets/logo/logo--square.png"
-          />
+        <AnchorLink aria-label="Scroll page to top" href="#hero" offset="208">
+          <picture>
+            <source srcSet="assets/logo/logo--square.webp" type="image/webp" />
+            <img
+              alt="Header Logo"
+              className="header__image"
+              src="assets/logo/logo--square.png"
+            />
+          </picture>
         </AnchorLink>
 
         <IosMenu
