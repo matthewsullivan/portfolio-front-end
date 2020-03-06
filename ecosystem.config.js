@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       autorestart: true,
-      env: {
+      env_production: {
         MAIL_USER: '[ADD_CREDENTAILS]',
         MAIL_PASS: '[ADD_CREDENTAILS]',
         NODE_ENV: 'production',
@@ -16,7 +16,7 @@ module.exports = {
     },
     {
       autorestart: true,
-      env: {
+      env_staging: {
         MAIL_USER: '[ADD_CREDENTAILS]',
         MAIL_PASS: '[ADD_CREDENTAILS]',
         NODE_ENV: 'staging',
