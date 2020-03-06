@@ -47,11 +47,17 @@ const Hero = () => {
             className="carousel__slide"
             onDragStart={options.handleOnDragStart}
           >
-            <img
-              alt="Carousel Slide Forest Background"
-              className="carousel__image"
-              src="assets/carousel/carousel-a.jpg"
-            />
+            <picture>
+              <source
+                srcSet="assets/carousel/carousel-a.webp"
+                type="image/webp"
+              />
+              <img
+                alt="Carousel Slide Forest Background"
+                className="carousel__image"
+                src="assets/carousel/carousel-a.jpg"
+              />
+            </picture>
 
             <div className="carousel__content">
               <IosLeafOutline
@@ -74,11 +80,17 @@ const Hero = () => {
             className="carousel__slide"
             onDragStart={options.handleOnDragStart}
           >
-            <img
-              alt="Carousel Slide Forest Background with Sun"
-              className="carousel__image"
-              src="assets/carousel/carousel-b.jpg"
-            />
+            <picture>
+              <source
+                srcSet="assets/carousel/carousel-b.webp"
+                type="image/webp"
+              />
+              <img
+                alt="Carousel Slide Forest Background with Sun"
+                className="carousel__image"
+                src="assets/carousel/carousel-b.jpg"
+              />
+            </picture>
 
             <div className="carousel__content">
               <IosCafeOutline

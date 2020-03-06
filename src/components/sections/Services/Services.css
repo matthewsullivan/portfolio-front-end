@@ -35,7 +35,7 @@
 }
 
 .review__avatar {
-  background: var(--palette-tertiary);
+  background: var();
   border-radius: 50%;
   display: inline-block;
   height: 64px;

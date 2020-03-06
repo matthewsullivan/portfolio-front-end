@@ -87,11 +87,14 @@ const Services = () => {
         <div className="review__review">
           <div className="review__avatar">
             <LazyLoad offset={184} once>
-              <img
-                alt="Review Avatar"
-                className="review__avatar-img"
-                src="assets/services/brian.jpg"
-              />
+              <picture>
+                <source srcSet="assets/services/brian.webp" type="image/webp" />
+                <img
+                  alt="Review Avatar"
+                  className="review__avatar-img"
+                  src="assets/services/brian.jpg"
+                />
+              </picture>
             </LazyLoad>
           </div>
 

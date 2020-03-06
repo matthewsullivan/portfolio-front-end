@@ -57,11 +57,14 @@ const About = () => {
           className="about__container"
         >
           <LazyLoad offset={184} once>
-            <img
-              alt="About Coffee"
-              className="about__image"
-              src="assets/about/image-a.jpg"
-            />
+            <picture>
+              <source srcSet="assets/about/image-a.webp" type="image/webp" />
+              <img
+                alt="About office scene"
+                className="about__image"
+                src="assets/about/image-a.jpg"
+              />
+            </picture>
           </LazyLoad>
         </ScrollAnimation>
       </div>
@@ -73,11 +76,14 @@ const About = () => {
           className="about__container"
         >
           <LazyLoad offset={184} once>
-            <img
-              alt="About Coffee"
-              className="about__image"
-              src="assets/about/image-b.jpg"
-            />
+            <picture>
+              <source srcSet="assets/about/image-b.webp" type="image/webp" />
+              <img
+                alt="About forest scene"
+                className="about__image"
+                src="assets/about/image-b.jpg"
+              />
+            </picture>
           </LazyLoad>
         </ScrollAnimation>
 
