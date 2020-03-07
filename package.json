@@ -37,6 +37,7 @@
     "react-ionicons": "^3.1.4",
     "react-lazyload": "^2.6.5",
     "react-player": "^1.15.2",
+    "react-responsive-picture": "^3.2.2",
     "react-scripts": "3.4.0",
     "react-scrolllock": "^5.0.1",
     "react-sliding-side-panel": "^1.0.10",
