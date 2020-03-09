@@ -49,13 +49,9 @@ const Hero = () => {
           >
             <picture>
               <source
-                srcSet="assets/carousel/carousel-a.webp"
-                type="image/webp"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcSet="assets/carousel/carousel-a@2x.webp"
-                type="image/webp"
+                sizes="(min-width: 768px) 1600px, 800px"
+                srcSet="assets/carousel/carousel-a@2x.webp 1600w,
+                        assets/carousel/carousel-a.webp 800w"
               />
               <img
                 alt="Carousel slide forest background"
@@ -87,13 +83,9 @@ const Hero = () => {
           >
             <picture>
               <source
-                srcSet="assets/carousel/carousel-b.webp"
-                type="image/webp"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcSet="assets/carousel/carousel-b@2x.webp"
-                type="image/webp"
+                sizes="(min-width: 768px) 1600px, 800px"
+                srcSet="assets/carousel/carousel-b@2x.webp 1600w,
+                        assets/carousel/carousel-b.webp 800w"
               />
               <img
                 alt="Carousel slide rorest background with sun"
