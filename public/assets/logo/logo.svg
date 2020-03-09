@@ -1,4 +1,4 @@
-<svg preserveAspectRatio="xMinYMin meet" viewBox="-22 -30 96 96" xmlns="http://www.w3.org/2000/svg">
+<svg preserveAspectRatio="xMinYMin meet" viewBox="-21 -30 96 96" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter filterUnits="userSpaceOnUse" height="32.178" id="filter-a" width="27.077" x="0" y="2.865" >
       <feOffset dx="1.273" input="SourceAlpha"/>
