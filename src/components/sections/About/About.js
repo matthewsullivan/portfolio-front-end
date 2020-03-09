@@ -59,10 +59,15 @@ const About = () => {
           <LazyLoad offset={184} once>
             <picture>
               <source srcSet="assets/about/image-a.webp" type="image/webp" />
+              <source
+                media="(min-width: 768px)"
+                srcSet="assets/about/image-a@2x.webp"
+                type="image/webp"
+              />
               <img
                 alt="About office scene"
                 className="about__image"
-                src="assets/about/image-a.jpg"
+                src="assets/about/image-a@2x.jpg"
               />
             </picture>
           </LazyLoad>
@@ -78,10 +83,15 @@ const About = () => {
           <LazyLoad offset={184} once>
             <picture>
               <source srcSet="assets/about/image-b.webp" type="image/webp" />
+              <source
+                media="(min-width: 768px)"
+                srcSet="assets/about/image-b@2x.webp"
+                type="image/webp"
+              />
               <img
                 alt="About forest scene"
                 className="about__image"
-                src="assets/about/image-b.jpg"
+                src="assets/about/image-b@2x.jpg"
               />
             </picture>
           </LazyLoad>

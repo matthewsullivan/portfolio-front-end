@@ -52,10 +52,15 @@ const Hero = () => {
                 srcSet="assets/carousel/carousel-a.webp"
                 type="image/webp"
               />
+              <source
+                media="(min-width: 768px)"
+                srcSet="assets/carousel/carousel-a@2x.webp"
+                type="image/webp"
+              />
               <img
                 alt="Carousel Slide Forest Background"
                 className="carousel__image"
-                src="assets/carousel/carousel-a.jpg"
+                src="assets/carousel/carousel-a@2x.jpg"
               />
             </picture>
 
@@ -85,10 +90,20 @@ const Hero = () => {
                 srcSet="assets/carousel/carousel-b.webp"
                 type="image/webp"
               />
+              <source
+                media="(min-width: 768px)"
+                srcSet="assets/carousel/carousel-b@2x.webp"
+                type="image/webp"
+              />
               <img
-                alt="Carousel Slide Forest Background with Sun"
+                alt="Carousel Slide Forest Background With Sun"
                 className="carousel__image"
                 src="assets/carousel/carousel-b.jpg"
+              />
+              <img
+                alt="Carousel Slide Forest Background With Sun"
+                className="carousel__image"
+                src="assets/carousel/carousel-b@2x.jpg"
               />
             </picture>
 
