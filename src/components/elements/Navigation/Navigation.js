@@ -97,7 +97,7 @@ const Navigation = () => {
                     type="image/webp"
                   />
                   <img
-                    alt="Header Logo"
+                    alt="Header logo"
                     className="drawer__image"
                     src="assets/logo/logo@2x.png"
                   />
@@ -131,7 +131,7 @@ const Navigation = () => {
               type="image/webp"
             />
             <img
-              alt="Header Logo"
+              alt="Header logo"
               className="headroom__image"
               src="assets/logo/logo@2x.png"
             />
@@ -157,7 +157,7 @@ const Navigation = () => {
               type="image/webp"
             />
             <img
-              alt="Header Logo"
+              alt="Header logo"
               className="header__image"
               src="assets/logo/logo@2x.png"
             />

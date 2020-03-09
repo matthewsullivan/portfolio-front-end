@@ -58,7 +58,7 @@ const Hero = () => {
                 type="image/webp"
               />
               <img
-                alt="Carousel Slide Forest Background"
+                alt="Carousel slide forest background"
                 className="carousel__image"
                 src="assets/carousel/carousel-a@2x.jpg"
               />
@@ -96,12 +96,7 @@ const Hero = () => {
                 type="image/webp"
               />
               <img
-                alt="Carousel Slide Forest Background With Sun"
-                className="carousel__image"
-                src="assets/carousel/carousel-b.jpg"
-              />
-              <img
-                alt="Carousel Slide Forest Background With Sun"
+                alt="Carousel slide rorest background with sun"
                 className="carousel__image"
                 src="assets/carousel/carousel-b@2x.jpg"
               />
