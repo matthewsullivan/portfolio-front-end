@@ -19,8 +19,7 @@
 
 .drawer__image {
   height: 80px;
-  margin-left: -8px;
-  object-fit: contain;
+  margin-left: -14px;
   width: 80px;
 }
 
@@ -117,7 +116,6 @@
 .header__image {
   background: var(--palette-primary);
   height: 72px;
-  object-fit: contain;
   width: 72px;
 }
 
@@ -142,7 +140,6 @@
   .headroom__image {
     display: block;
     height: 72px;
-    object-fit: contain;
     width: 72px;
   }
 

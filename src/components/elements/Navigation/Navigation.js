@@ -89,19 +89,11 @@ const Navigation = () => {
                 offset="128"
                 onClick={() => setDrawerState(false)}
               >
-                <picture>
-                  <source srcSet="assets/logo/logo.webp" type="image/webp" />
-                  <source
-                    media="(min-width: 768px)"
-                    srcSet="assets/logo/logo@2x.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    alt="Header logo"
-                    className="drawer__image"
-                    src="assets/logo/logo@2x.png"
-                  />
-                </picture>
+                <img
+                  alt="Header logo"
+                  className="drawer__image"
+                  src="assets/logo/logo.svg"
+                />
               </AnchorLink>
 
               <div
@@ -123,19 +115,11 @@ const Navigation = () => {
         wrapperStyle={{marginTop: -88}}
       >
         <AnchorLink aria-label="Scroll page to top" href="#hero" offset="208">
-          <picture>
-            <source srcSet="assets/logo/logo.webp" type="image/webp" />
-            <source
-              media="(min-width: 768px)"
-              srcSet="assets/logo/logo@2x.webp"
-              type="image/webp"
-            />
-            <img
-              alt="Header logo"
-              className="headroom__image"
-              src="assets/logo/logo@2x.png"
-            />
-          </picture>
+          <img
+            alt="Header logo"
+            className="headroom__image"
+            src="assets/logo/logo.svg"
+          />
         </AnchorLink>
 
         <div
@@ -149,19 +133,11 @@ const Navigation = () => {
 
       <header className="header">
         <AnchorLink aria-label="Scroll page to top" href="#hero" offset="208">
-          <picture>
-            <source srcSet="assets/logo/logo.webp" type="image/webp" />
-            <source
-              media="(min-width: 768px)"
-              srcSet="assets/logo/logo@2x.webp"
-              type="image/webp"
-            />
-            <img
-              alt="Header logo"
-              className="header__image"
-              src="assets/logo/logo@2x.png"
-            />
-          </picture>
+          <img
+            alt="Header logo"
+            className="header__image"
+            src="assets/logo/logo.svg"
+          />
         </AnchorLink>
 
         <IosMenu
