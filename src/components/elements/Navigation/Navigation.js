@@ -89,10 +89,10 @@ const Navigation = () => {
                 offset="128"
                 onClick={() => setDrawerState(false)}
               >
-                <img
-                  alt="Header logo"
+                <object
+                  aria-label="Header logo"
                   className="drawer__image"
-                  src="assets/logo/logo.svg"
+                  data="assets/logo/logo.svg"
                 />
               </AnchorLink>
 
@@ -115,10 +115,10 @@ const Navigation = () => {
         wrapperStyle={{marginTop: -88}}
       >
         <AnchorLink aria-label="Scroll page to top" href="#hero" offset="208">
-          <img
-            alt="Header logo"
+          <object
+            aria-label="Header logo"
             className="headroom__image"
-            src="assets/logo/logo.svg"
+            data="assets/logo/logo.svg"
           />
         </AnchorLink>
 
@@ -133,10 +133,10 @@ const Navigation = () => {
 
       <header className="header">
         <AnchorLink aria-label="Scroll page to top" href="#hero" offset="208">
-          <img
-            alt="Header logo"
+          <object
+            aria-label="Header logo"
             className="header__image"
-            src="assets/logo/logo.svg"
+            data="assets/logo/logo.svg"
           />
         </AnchorLink>
 
