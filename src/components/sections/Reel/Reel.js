@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-import ReactPlayer from 'react-player';
+import LazyLoad from 'react-lazyload';
+import YouTubePlayer from 'react-player/lib/players/YouTube';
+import BarLoader from 'react-spinners/BarLoader';
 
 import Title from '../../elements/Title/Title';
 
 import './Reel.css';
 
 const Reel = () => {
+  const [loading, setLoading] = useState(true);
+
   const options = {
+    controls: true,
+    onReady: () => setLoading(false),
     url: 'https://youtu.be/nQa72e_cC5I',
   };
 
@@ -25,7 +31,15 @@ const Reel = () => {
       </header>
 
       <section className="reel__content">
-        <ReactPlayer className="reel__video" {...options} />
+        <BarLoader
+          css="margin: auto; position: absolute; width: 136px;"
+          color="#2ecc71"
+          loading={loading}
+        />
+
+        <LazyLoad offset={184} once>
+          <YouTubePlayer className="reel__video" {...options} />
+        </LazyLoad>
       </section>
     </section>
   );

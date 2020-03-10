@@ -120,7 +120,7 @@ const Study = (props) => {
                   {loading ? (
                     <BarLoader
                       css="margin: auto; width: 136px;"
-                      color={'#2ecc71'}
+                      color="#2ecc71"
                       loading={loading}
                     />
                   ) : (

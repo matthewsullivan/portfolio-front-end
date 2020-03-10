@@ -14,6 +14,7 @@
 .reel__content {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 24px 0;
 }
@@ -27,13 +28,18 @@
   width: 1px;
 }
 
+.reel__video {
+  background: var(--palette-primary);
+  height: 488px !important;
+  width: 100% !important;
+}
+
 @media only screen and (min-width: 768px) {
   .reel__content {
     padding: 44px;
   }
 
   .reel__video {
-    height: 488px !important;
-    width: 904px !important;
+    max-width: 904px !important;
   }
 }
