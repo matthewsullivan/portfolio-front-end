@@ -61,7 +61,7 @@ const Hero = () => {
                 type="image/jpeg"
               />
               <img
-                alt="Carousel slide rorest background with sun"
+                alt="Carousel slide forest background with sun"
                 className="carousel__image"
                 src="assets/carousel/jpg/carousel-a--large.jpg"
               />
@@ -102,7 +102,7 @@ const Hero = () => {
                 type="image/jpeg"
               />
               <img
-                alt="Carousel slide forest background with sun"
+                alt="Carousel slide forest night with water background"
                 className="carousel__image"
                 src="assets/carousel/jpg/carousel-b--large.jpg"
               />
