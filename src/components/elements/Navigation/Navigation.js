@@ -78,7 +78,7 @@ const Navigation = () => {
         isOpen={drawerOpen}
         panelClassName="drawer"
         size={80}
-        type={'right'}
+        type="right"
       >
         <ScrollLock isActive={drawerOpen}>
           <section className="drawer__content">
