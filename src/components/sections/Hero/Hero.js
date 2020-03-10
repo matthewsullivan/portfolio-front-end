@@ -55,9 +55,9 @@ const Hero = () => {
                 type="image/webp"
               />
               <source
-                srcSet="assets/carousel/jpg/carousel-b--small.jpg 480w,
-                        assets/carousel/jpg/carousel-b--medium.jpg 1198w,
-                        assets/carousel/jpg/carousel-b--large.jpg 1536w"
+                srcSet="assets/carousel/jpg/carousel-a--small.jpg 480w,
+                        assets/carousel/jpg/carousel-a--medium.jpg 1198w,
+                        assets/carousel/jpg/carousel-a--large.jpg 1536w"
                 type="image/jpeg"
               />
               <img
