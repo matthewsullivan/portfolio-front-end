@@ -7,7 +7,7 @@
 
 .carousel__slide {
   background: var(--palette-primary);
-  cursor: grab;
+  cursor: move;
   height: calc(100vh - 112px - 56px);
   min-height: 440px;
 }

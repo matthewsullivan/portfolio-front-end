@@ -94,7 +94,7 @@ const Study = (props) => {
               <div className="study__container">
                 <header className="study__header">
                   <img
-                    alt="Study Logo"
+                    alt="Study logo"
                     className="study__image"
                     src={selectedStudy.media.logo}
                   />

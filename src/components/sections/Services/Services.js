@@ -90,7 +90,7 @@ const Services = () => {
               <picture>
                 <source srcSet="assets/services/brian.webp" type="image/webp" />
                 <img
-                  alt="Review Avatar"
+                  alt="Review avatar"
                   className="review__avatar-img"
                   src="assets/services/brian.jpg"
                 />

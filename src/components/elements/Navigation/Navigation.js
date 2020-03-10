@@ -78,7 +78,7 @@ const Navigation = () => {
         isOpen={drawerOpen}
         panelClassName="drawer"
         size={80}
-        type={'right'}
+        type="right"
       >
         <ScrollLock isActive={drawerOpen}>
           <section className="drawer__content">
@@ -89,17 +89,11 @@ const Navigation = () => {
                 offset="128"
                 onClick={() => setDrawerState(false)}
               >
-                <picture>
-                  <source
-                    srcSet="assets/logo/logo--square.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    alt="Header Logo"
-                    className="drawer__image"
-                    src="assets/logo/logo--square.png"
-                  />
-                </picture>
+                <object
+                  aria-label="Header logo"
+                  className="drawer__image"
+                  data="assets/logo/logo.svg"
+                />
               </AnchorLink>
 
               <div
@@ -121,14 +115,11 @@ const Navigation = () => {
         wrapperStyle={{marginTop: -88}}
       >
         <AnchorLink aria-label="Scroll page to top" href="#hero" offset="208">
-          <picture>
-            <source srcSet="assets/logo/logo--square.webp" type="image/webp" />
-            <img
-              alt="Header Logo"
-              className="headroom__image"
-              src="assets/logo/logo--square.png"
-            />
-          </picture>
+          <object
+            aria-label="Header logo"
+            className="headroom__image"
+            data="assets/logo/logo.svg"
+          />
         </AnchorLink>
 
         <div
@@ -142,14 +133,11 @@ const Navigation = () => {
 
       <header className="header">
         <AnchorLink aria-label="Scroll page to top" href="#hero" offset="208">
-          <picture>
-            <source srcSet="assets/logo/logo--square.webp" type="image/webp" />
-            <img
-              alt="Header Logo"
-              className="header__image"
-              src="assets/logo/logo--square.png"
-            />
-          </picture>
+          <object
+            aria-label="Header logo"
+            className="header__image"
+            data="assets/logo/logo.svg"
+          />
         </AnchorLink>
 
         <IosMenu

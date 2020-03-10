@@ -1,0 +1,42 @@
+<svg preserveAspectRatio="xMinYMin meet" viewBox="-21 -30 96 96" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter filterUnits="userSpaceOnUse" height="32.178" id="filter-a" width="27.077" x="0" y="2.865" >
+      <feOffset dx="1.273" input="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="0.477"/>
+      <feFlood flood-color="#221f1f" flood-opacity="0.2"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+
+    <filter filterUnits="userSpaceOnUse" height="37.907" id="filter-b" width="32.875" x="16.979" y="0">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur result="blur-2" stdDeviation="1.432"/>
+      <feFlood flood-color="#221f1f" flood-opacity="0.322"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+
+    <filter filterUnits="userSpaceOnUse" height="7.893" id="filter-c" width="7.195" x="49.289" y="27.63">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur result="blur-3" stdDeviation="0.637"/>
+      <feFlood flood-color="#221f1f" flood-opacity="0.388"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(-278.444 -52.769)">
+    <path d="M299.238,86.379H314.1L303.5,57.066H288.439Z" fill="#f7f8f9"/>
+    <path d="M309.08,57.066h14.926l9.008,25.255L329.8,86.379H319.535Z" fill="#f7f8f9"/>
+
+    <g filter="url(#filter-a)" transform="matrix(1, 0, 0, 1, 278.44, 52.77)">
+      <path d="M293.6,86.379H278.6l9.7-29.313h14.513Z" fill="#f7f8f9" transform="translate(-278.44 -52.77)"/>
+    </g>
+    <g filter="url(#filter-b)" transform="matrix(1, 0, 0, 1, 278.44, 52.77)">
+      <path d="M299.72,86.379H314.3L324,57.066H309.143Z" fill="#f7f8f9" transform="translate(-278.44 -52.77)"/>
+    </g>
+    <g filter="url(#filter-c)" transform="matrix(1, 0, 0, 1, 278.44, 52.77)">
+      <path d="M329.8,86.382l-.158-3.938,3.375-.135Z" fill="#f2f2f2" transform="translate(-278.44 -52.77)"/>
+    </g>
+  </g>
+</svg>

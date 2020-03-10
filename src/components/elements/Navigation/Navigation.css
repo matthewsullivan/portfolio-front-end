@@ -19,8 +19,8 @@
 
 .drawer__image {
   height: 80px;
-  margin-left: -8px;
-  object-fit: contain;
+  margin-left: -12px;
+  pointer-events: none;
   width: 80px;
 }
 
@@ -117,7 +117,7 @@
 .header__image {
   background: var(--palette-primary);
   height: 72px;
-  object-fit: contain;
+  pointer-events: none;
   width: 72px;
 }
 
@@ -142,7 +142,7 @@
   .headroom__image {
     display: block;
     height: 72px;
-    object-fit: contain;
+    pointer-events: none;
     width: 72px;
   }
 

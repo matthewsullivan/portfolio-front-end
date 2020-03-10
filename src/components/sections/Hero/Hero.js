@@ -49,13 +49,21 @@ const Hero = () => {
           >
             <picture>
               <source
-                srcSet="assets/carousel/carousel-a.webp"
+                srcSet="assets/carousel/webp/carousel-a--small.webp 480w,
+                        assets/carousel/webp/carousel-a--medium.webp 1098w,
+                        assets/carousel/webp/carousel-a--large.webp 1536w"
                 type="image/webp"
               />
+              <source
+                srcSet="assets/carousel/jpg/carousel-b--small.jpg 480w,
+                        assets/carousel/jpg/carousel-b--medium.jpg 1198w,
+                        assets/carousel/jpg/carousel-b--large.jpg 1536w"
+                type="image/jpeg"
+              />
               <img
-                alt="Carousel Slide Forest Background"
+                alt="Carousel slide forest background with sun"
                 className="carousel__image"
-                src="assets/carousel/carousel-a.jpg"
+                src="assets/carousel/jpg/carousel-a--large.jpg"
               />
             </picture>
 
@@ -82,13 +90,21 @@ const Hero = () => {
           >
             <picture>
               <source
-                srcSet="assets/carousel/carousel-b.webp"
+                srcSet="assets/carousel/webp/carousel-b--small.webp 480w,
+                        assets/carousel/webp/carousel-b--medium.webp 1198w,
+                        assets/carousel/webp/carousel-b--large.webp 1536w"
                 type="image/webp"
               />
+              <source
+                srcSet="assets/carousel/jpg/carousel-b--small.jpg 480w,
+                        assets/carousel/jpg/carousel-b--medium.jpg 1198w,
+                        assets/carousel/jpg/carousel-b--large.jpg 1536w"
+                type="image/jpeg"
+              />
               <img
-                alt="Carousel Slide Forest Background with Sun"
+                alt="Carousel slide forest at night with water background"
                 className="carousel__image"
-                src="assets/carousel/carousel-b.jpg"
+                src="assets/carousel/jpg/carousel-b--large.jpg"
               />
             </picture>
 
