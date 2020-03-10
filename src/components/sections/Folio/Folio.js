@@ -4,7 +4,6 @@ import axios from 'axios';
 import LogoGithub from 'react-ionicons/lib/LogoGithub';
 import LogoLinkedin from 'react-ionicons/lib/LogoLinkedin';
 import MdUmbrella from 'react-ionicons/lib/MdUmbrella';
-import LazyLoad from 'react-lazyload';
 
 import api from '../../../api/api';
 import Card from '../../elements/Card/Card';
@@ -57,23 +56,21 @@ const Folio = () => {
 
       <div className="preview">
         {studies ? (
-          <LazyLoad offset={184} once>
-            <Scroller>
-              <div className="preview__container">
-                {studies.map((study) => {
-                  return (
-                    <div
-                      className="preview__item"
-                      key={study.name}
-                      onClick={() => handleStudySelection(study)}
-                    >
-                      <Card study={study} />
-                    </div>
-                  );
-                })}
-              </div>
-            </Scroller>
-          </LazyLoad>
+          <Scroller>
+            <div className="preview__container">
+              {studies.map((study) => {
+                return (
+                  <div
+                    className="preview__item"
+                    key={study.name}
+                    onClick={() => handleStudySelection(study)}
+                  >
+                    <Card study={study} />
+                  </div>
+                );
+              })}
+            </div>
+          </Scroller>
         ) : (
           <div className="error">
             <MdUmbrella color="#2ecc71" fontSize="48" shake />
