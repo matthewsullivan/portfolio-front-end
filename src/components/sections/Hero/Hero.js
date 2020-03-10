@@ -102,7 +102,7 @@ const Hero = () => {
                 type="image/jpeg"
               />
               <img
-                alt="Carousel slide forest night with water background"
+                alt="Carousel slide forest at night with water background"
                 className="carousel__image"
                 src="assets/carousel/jpg/carousel-b--large.jpg"
               />
