@@ -59,15 +59,21 @@ const About = () => {
           <LazyLoad offset={184} once>
             <picture>
               <source
-                sizes="(min-width: 768px) 800px, 400px"
-                srcSet="assets/about/image-a@2x.webp 800w, 
-                        assets/about/image-a.webp 400w"
+                srcSet="assets/about/webp/image-a--small.webp 480w,
+                        assets/about/webp/image-a--medium.webp 595w,
+                        assets/about/webp/image-a--large.webp 800w"
                 type="image/webp"
+              />
+              <source
+                srcSet="assets/about/jpg/image-a--small.jpg 480w,
+                        assets/about/jpg/image-a--medium.jpg 595w,
+                        assets/about/jpg/image-a--large.jpg 800w"
+                type="image/jpeg"
               />
               <img
                 alt="About office scene"
                 className="about__image"
-                src="assets/about/image-a@2x.jpg"
+                src="assets/about/jpg/image-a--large.jpg"
               />
             </picture>
           </LazyLoad>
@@ -83,14 +89,21 @@ const About = () => {
           <LazyLoad offset={184} once>
             <picture>
               <source
-                sizes="(min-width: 768px) 800px, 400px"
-                srcSet="assets/about/image-b@2x.webp 800w, 
-                        assets/about/image-b.webp 400w"
+                srcSet="assets/about/webp/image-b--small.webp 480w,
+                        assets/about/webp/image-b--medium.webp 595w,
+                        assets/about/webp/image-b--large.webp 800w"
+                type="image/webp"
+              />
+              <source
+                srcSet="assets/about/jpg/image-b--small.jpg 480w,
+                        assets/about/jpg/image-b--medium.jpg 595w,
+                        assets/about/jpg/image-b--large.jpg 800w"
+                type="image/jpeg"
               />
               <img
                 alt="About forest scene"
                 className="about__image"
-                src="assets/about/image-b@2x.jpg"
+                src="assets/about/jpg/image-b--large.jpg"
               />
             </picture>
           </LazyLoad>

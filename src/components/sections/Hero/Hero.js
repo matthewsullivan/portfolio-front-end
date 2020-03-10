@@ -49,14 +49,21 @@ const Hero = () => {
           >
             <picture>
               <source
-                sizes="(min-width: 768px) 1600px, 800px"
-                srcSet="assets/carousel/carousel-a@2x.webp 1600w,
-                        assets/carousel/carousel-a.webp 800w"
+                srcSet="assets/carousel/webp/carousel-a--small.webp 480w,
+                        assets/carousel/webp/carousel-a--medium.webp 1098w,
+                        assets/carousel/webp/carousel-a--large.webp 1536w"
+                type="image/webp"
+              />
+              <source
+                srcSet="assets/carousel/jpg/carousel-b--small.jpg 480w,
+                        assets/carousel/jpg/carousel-b--medium.jpg 1198w,
+                        assets/carousel/jpg/carousel-b--large.jpg 1536w"
+                type="image/jpeg"
               />
               <img
-                alt="Carousel slide forest background"
+                alt="Carousel slide rorest background with sun"
                 className="carousel__image"
-                src="assets/carousel/carousel-a@2x.jpg"
+                src="assets/carousel/jpg/carousel-a--large.jpg"
               />
             </picture>
 
@@ -83,14 +90,21 @@ const Hero = () => {
           >
             <picture>
               <source
-                sizes="(min-width: 768px) 1600px, 800px"
-                srcSet="assets/carousel/carousel-b@2x.webp 1600w,
-                        assets/carousel/carousel-b.webp 800w"
+                srcSet="assets/carousel/webp/carousel-b--small.webp 480w,
+                        assets/carousel/webp/carousel-b--medium.webp 1198w,
+                        assets/carousel/webp/carousel-b--large.webp 1536w"
+                type="image/webp"
+              />
+              <source
+                srcSet="assets/carousel/jpg/carousel-b--small.jpg 480w,
+                        assets/carousel/jpg/carousel-b--medium.jpg 1198w,
+                        assets/carousel/jpg/carousel-b--large.jpg 1536w"
+                type="image/jpeg"
               />
               <img
-                alt="Carousel slide rorest background with sun"
+                alt="Carousel slide forest background with sun"
                 className="carousel__image"
-                src="assets/carousel/carousel-b@2x.jpg"
+                src="assets/carousel/jpg/carousel-b--large.jpg"
               />
             </picture>
 
