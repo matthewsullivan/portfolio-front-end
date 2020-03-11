@@ -14,6 +14,7 @@ const Reel = () => {
   const options = {
     controls: true,
     onReady: () => setLoading(false),
+    style: {backgroundColor: 'transparent'},
     url: 'https://youtu.be/nQa72e_cC5I',
   };
 
