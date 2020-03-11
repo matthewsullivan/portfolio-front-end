@@ -66,5 +66,5 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "version": "2.1.6"
+  "version": "2.1.7"
 }
