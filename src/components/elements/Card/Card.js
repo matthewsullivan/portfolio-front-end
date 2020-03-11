@@ -23,7 +23,7 @@ const Card = (props) => {
   const {study} = props;
 
   return (
-    <div className="card" data-study={1} key={study.name}>
+    <div className="card" key={study.name}>
       <LazyLoad offset={184} once>
         <CardHeader className="card__header" study={study} />
 
