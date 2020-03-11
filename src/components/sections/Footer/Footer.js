@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
 
       <p className="footer__copy">
-        COPYRIGHT ©{date.getFullYear()} Matthew Sullivan Media
+        COPYRIGHT © {date.getFullYear()} Matthew Sullivan Media
       </p>
     </section>
   );
