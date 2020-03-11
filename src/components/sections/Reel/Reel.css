@@ -30,7 +30,6 @@
 }
 
 .reel__video {
-  background: var(--palette-primary);
   height: 488px !important;
   width: 100% !important;
 }
