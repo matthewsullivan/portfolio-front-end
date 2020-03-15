@@ -1,6 +1,6 @@
 <img src="https://static.matthewsullivan.media/logo--circle.png" height="72" width="72">
 
-_production_: https://staging.matthewsullivan.media
+_production_: https://matthewsullivan.media
 
 <hr>
 
