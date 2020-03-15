@@ -7,7 +7,7 @@ import Folio from './Folio';
 test('Displays Title', () => {
   const {getByText} = render(<Folio />);
 
-  const title = getByText(/Works/i);
+  const title = getByText('Works');
 
   expect(title).toBeInTheDocument();
 });
