@@ -1,6 +1,6 @@
 ![Node.js CI](https://github.com/matthewsullivan/portfolio-front-end/workflows/Node.js%20CI/badge.svg)
 
-<img src="https://static.matthewsullivan.media/logo--circle.png" height="24" width="24"> _staging_: https://staging.matthewsullivan.media
+<img src="https://static.matthewsullivan.media/logo--circle.png" height="24" width="24"> https://staging.matthewsullivan.media
 
 <hr>
 
