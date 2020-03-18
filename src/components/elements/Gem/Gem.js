@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import './Gem.css';
 
-const Button = (props) => {
+const Gem = (props) => {
   const {children, icon, label} = props;
 
   return (
@@ -16,10 +16,10 @@ const Button = (props) => {
   );
 };
 
-Button.propTypes = {
+Gem.propTypes = {
   children: PropTypes.string,
   icon: PropTypes.object,
   label: PropTypes.string,
 };
 
-export default Button;
+export default Gem;
