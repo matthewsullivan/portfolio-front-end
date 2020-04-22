@@ -22,9 +22,7 @@ const Vitae = () => {
         Curriculum Vitae
       </Button>
 
-      <p className="vitae__body">
-        Avaliable for full time work as well as consultation work.
-      </p>
+      <p className="vitae__body">Senior Full Stack Engineer @thinkific.</p>
     </section>
   );
 };
