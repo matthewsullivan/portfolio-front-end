@@ -15,9 +15,7 @@ test('Displays Title', () => {
 test('Displays Content', () => {
   const {getAllByText} = render(<Vitae />);
 
-  const body = getAllByText(
-    'Avaliable for full time work as well as consultation work.'
-  );
+  const body = getAllByText('Senior Full Stack Engineer @thinkific.');
 
   const button = getAllByText('Curriculum Vitae');
   const subtitle = getAllByText(
