@@ -24,6 +24,19 @@
   font-weight: 400;
 }
 
+.vitae__link {
+  color: #333;
+  font-family: var(--typography-primary);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none; 
+  transition: 0.2s;
+}
+
+.vitae__link:hover {
+  color: var(--palette-secondary);
+}
+
 @media only screen and (min-width: 768px) {
   .vitae {
     padding: 72px 44px;
