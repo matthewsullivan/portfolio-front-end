@@ -31,7 +31,7 @@ const Contact = () => {
         autoHideBadge: true,
       };
 
-      const recaptcha = await load(process.env.SITE_KEY, options);
+      const recaptcha = await load(process.env.REACT_APP_SITE_KEY, options);
       const token = await recaptcha.execute('contact');
 
       setToken(token);
