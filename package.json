@@ -46,19 +46,27 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
+    "browserify-css": "0.12.0",
     "eslint": "^6.1.0",
     "eslint-config-google": "^0.12.0",
     "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-flowtype": "^3.13.0",
     "eslint-plugin-prettier": "^3.0.1",
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "typescript": "^2.8.0"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "homepage": ".",
+  "license": "UNLICENSED",
   "name": "portfolio-front-end",
   "proxy": "http://localhost:3000/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthewsullivan/portfolio-front-end.git"
+  },
   "scripts": {
     "start": "react-scripts start ",
     "build": "react-scripts build",
