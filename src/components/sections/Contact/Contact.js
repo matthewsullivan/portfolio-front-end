@@ -31,10 +31,7 @@ const Contact = () => {
         autoHideBadge: true,
       };
 
-      const recaptcha = await load(
-        process.env.SITE_KEY || '6LcgcrkZAAAAAK6lWILukveUvv_j6GMAx00azBw_',
-        options
-      );
+      const recaptcha = await load(process.env.SITE_KEY, options);
       const token = await recaptcha.execute('contact');
 
       setToken(token);
