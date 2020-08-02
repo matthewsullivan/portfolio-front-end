@@ -1,3 +1,4 @@
+const axios = require('axios');
 const cors = require('cors');
 const express = require('express');
 const path = require('path');
@@ -10,6 +11,21 @@ const studies = require('./model/studies.json');
 
 const app = express();
 const port = process.env.NODE_ENV === 'production' ? 8888 : 8080;
+
+const validateRecaptcha = async (req, token) => {
+  if (!token) return false;
+
+  const url = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${token}&remoteip=${req.connection.remoteAddress}`;
+
+  try {
+    const response = await axios.get(url);
+    const score = JSON.parse(response.data.score);
+
+    return score > 0.5;
+  } catch (err) {
+    return false;
+  }
+};
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -35,11 +51,20 @@ app.get('/api/v1/study/:id', (req, res) => {
   res.json(study);
 });
 
-app.post('/api/v1/send-email', (req, res) => {
+app.post('/api/v1/send-email', async (req, res) => {
   const data = req.body;
+  const message = 'Please email contact@matthewsullivan.media directly.';
 
   if (!data.userEmail || !data.userMessage || !data.userName) {
-    res.send('All fields required');
+    res.status(400).send('All fields are required.');
+
+    return;
+  }
+
+  const validUser = validateRecaptcha(req, data.token);
+
+  if (!validUser) {
+    res.status(418).send(message);
 
     return;
   }
@@ -62,9 +87,9 @@ app.post('/api/v1/send-email', (req, res) => {
            <p>${data.userMessage}</p>`,
   };
 
-  smtpTransport.sendMail(mailOptions, (error, response) => {
-    if (error) {
-      res.send('Something went wrong. Please try again.');
+  smtpTransport.sendMail(mailOptions, (err) => {
+    if (err) {
+      res.status(400).send(message);
 
       return;
     }
