@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {load} from 'recaptcha-v3';
 
 import axios from 'axios';
@@ -22,30 +22,24 @@ const Contact = () => {
   const [name, setName] = useState('');
   const [response, setResponse] = useState('* Please fill all the fields');
   const [sent, setSent] = useState(false);
-  const [token, setToken] = useState('');
-
-  useEffect(() => {
-    const fetchToken = async () => {
-      const options = {
-        useRecaptchaNet: true,
-        autoHideBadge: true,
-      };
-
-      const recaptcha = await load(process.env.REACT_APP_SITE_KEY, options);
-      const token = await recaptcha.execute('contact');
-
-      setToken(token);
-    };
-
-    fetchToken();
-  }, []);
 
   /**
    * Handle Submit Form
    * @param {object} event
    */
-  const handleSubmitForm = (event) => {
+  const handleSubmitForm = async (event) => {
     event.preventDefault();
+
+    const options = {
+      useRecaptchaNet: true,
+      autoHideBadge: true,
+    };
+
+    const recaptcha = await load(
+      '6LcgcrkZAAAAAK6lWILukveUvv_j6GMAx00azBw_',
+      options
+    );
+    const token = await recaptcha.execute('contact');
 
     const data = {
       userEmail: email,
