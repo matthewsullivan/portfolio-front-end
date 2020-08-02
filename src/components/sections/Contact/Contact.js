@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
+import {load} from 'recaptcha-v3';
 
 import axios from 'axios';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -21,6 +22,26 @@ const Contact = () => {
   const [name, setName] = useState('');
   const [response, setResponse] = useState('* Please fill all the fields');
   const [sent, setSent] = useState(false);
+  const [token, setToken] = useState('');
+
+  useEffect(() => {
+    const fetchToken = async () => {
+      const options = {
+        useRecaptchaNet: true,
+        autoHideBadge: true,
+      };
+
+      const recaptcha = await load(
+        process.env.SITE_KEY || '6LcgcrkZAAAAAK6lWILukveUvv_j6GMAx00azBw_',
+        options
+      );
+      const token = await recaptcha.execute('contact');
+
+      setToken(token);
+    };
+
+    fetchToken();
+  }, []);
 
   /**
    * Handle Submit Form
@@ -33,6 +54,7 @@ const Contact = () => {
       userEmail: email,
       userMessage: message,
       userName: name,
+      token: token,
     };
 
     setLabel('Sending...');

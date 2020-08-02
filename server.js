@@ -1,5 +1,6 @@
 const cors = require('cors');
 const express = require('express');
+const request = require('request');
 const path = require('path');
 
 const bodyParser = require('body-parser');
@@ -10,6 +11,20 @@ const studies = require('./model/studies.json');
 
 const app = express();
 const port = process.env.NODE_ENV === 'production' ? 8888 : 8080;
+
+const validRecaptcha = (req, token) => {
+  if (!token) return false;
+
+  const url = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${token}&remoteip=${req.connection.remoteAddress}`;
+
+  request(url, (error, response, body) => {
+    body = JSON.parse(body);
+
+    if (body.success !== undefined && body.success) return body.score > 0.5;
+
+    return false;
+  });
+};
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -37,9 +52,17 @@ app.get('/api/v1/study/:id', (req, res) => {
 
 app.post('/api/v1/send-email', (req, res) => {
   const data = req.body;
+  const error =
+    'Something went wrong. Please email contact@matthewsullivan.media directly.';
 
   if (!data.userEmail || !data.userMessage || !data.userName) {
     res.status(400).send('All fields are required.');
+
+    return;
+  }
+
+  if (!validRecaptcha(req, data.token)) {
+    res.status(418).send(error);
 
     return;
   }
@@ -64,7 +87,7 @@ app.post('/api/v1/send-email', (req, res) => {
 
   smtpTransport.sendMail(mailOptions, (error, response) => {
     if (error) {
-      res.status(400).send('Something went wrong. Please try again.');
+      res.status(400).send(error);
 
       return;
     }
