@@ -47,7 +47,7 @@ const Contact = () => {
       })
       .catch((e) => {
         setLabel('Submit');
-        setResponse(e.data);
+        setResponse(e.response.data);
         setSent(false);
       });
   };

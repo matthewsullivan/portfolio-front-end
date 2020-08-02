@@ -39,7 +39,7 @@ app.post('/api/v1/send-email', (req, res) => {
   const data = req.body;
 
   if (!data.userEmail || !data.userMessage || !data.userName) {
-    res.send('All fields required');
+    res.status(400).send('All fields are required.');
 
     return;
   }
@@ -64,7 +64,7 @@ app.post('/api/v1/send-email', (req, res) => {
 
   smtpTransport.sendMail(mailOptions, (error, response) => {
     if (error) {
-      res.send('Something went wrong. Please try again.');
+      res.status(400).send('Something went wrong. Please try again.');
 
       return;
     }
