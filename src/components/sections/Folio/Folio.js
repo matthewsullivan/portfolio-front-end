@@ -20,9 +20,13 @@ const Folio = () => {
   const [studies, setStudies] = useState();
 
   useEffect(() => {
+    let mounted = true;
+
     axios
       .get(`${api}/api/v1/studies`)
       .then((res) => {
+        if (!mounted) return;
+
         if (res.status === 204) {
           setfetchError('Unable to load case studies');
 
@@ -32,8 +36,14 @@ const Folio = () => {
         setStudies(res.data);
       })
       .catch(() => {
+        if (!mounted) return;
+
         setfetchError('Unable to load case studies');
       });
+
+    return () => {
+      mounted = false;
+    };
   }, []);
 
   /**
