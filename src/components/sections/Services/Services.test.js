@@ -44,7 +44,7 @@ test('Displays Service C', () => {
   const {getAllByText} = render(<Services />);
 
   const body = getAllByText(
-    'The Adobe Suite? No problem. I can create anything from simple, effective logos, all the way to complete application design. With unparelled attention to detail, I can produce highly effective interfaces.'
+    'The Adobe Suite? No problem. I can create anything from simple, effective logos, all the way to complete application design. With unparalleled attention to detail, I can produce highly effective interfaces.'
   );
 
   const title = getAllByText('UX Design');

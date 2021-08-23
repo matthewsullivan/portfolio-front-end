@@ -61,7 +61,7 @@ const Services = () => {
           >
             The Adobe Suite? No problem. I can create anything from simple,
             effective logos, all the way to complete application design. With
-            unparelled attention to detail, I can produce highly effective
+            unparalleled attention to detail, I can produce highly effective
             interfaces.
           </Gem>
           <Gem
