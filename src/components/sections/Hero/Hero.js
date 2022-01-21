@@ -16,7 +16,7 @@ const Hero = () => {
 
   const options = {
     autoPlay: true,
-    autoPlayInterval: 4000,
+    autoPlayInterval: 6000,
     buttonsDisabled: true,
     disableAutoPlayOnAction: true,
     dotsDisabled: true,
@@ -73,14 +73,12 @@ const Hero = () => {
                 color="#f9f9f9"
                 fontSize="32"
               />
-              <h1 className="carousel__title">Software Engineer</h1>
+              <h1 className="carousel__title">Engineer Manager</h1>
               <p className="carousel__body">
-                More than just a Developer. I am a well rounded Media Specialist
-                who has a keen interest in leadership.
+                Not only building and consulting, but instructing and leading
+                engineers.
               </p>
-              <ScrollAnimation animateIn="fadeInUp" animateOnce>
-                <Button path="folio">Portfolio</Button>
-              </ScrollAnimation>
+              <Button path="cv">Curriculum Vitae</Button>
             </div>
           </div>
 
@@ -114,12 +112,14 @@ const Hero = () => {
                 color="#f9f9f9"
                 fontSize="32"
               />
-              <h1 className="carousel__title">Natural Leader</h1>
+              <h1 className="carousel__title">Software Engineer</h1>
               <p className="carousel__body">
-                Not only building and consulting, but instructing and leading
-                developers.
+                More than just an Engineer. I am a well rounded Media Specialist
+                who has a keen interest in leadership.
               </p>
-              <Button path="cv">Curriculum Vitae</Button>
+              <ScrollAnimation animateIn="fadeInUp" animateOnce>
+                <Button path="folio">Portfolio</Button>
+              </ScrollAnimation>
             </div>
           </div>
         </AliceCarousel>
