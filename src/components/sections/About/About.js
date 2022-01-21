@@ -14,7 +14,7 @@ const About = () => {
   return (
     <section className="about">
       <Title
-        body="Enthuiastic and Experienced Software Developer"
+        body="Enthuiastic and Experienced Engineer Manager and Software Engineer"
         chapter="01"
         title="About"
       />
