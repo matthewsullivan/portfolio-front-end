@@ -31,10 +31,10 @@ test('Displays Service B', () => {
   const {getAllByText} = render(<Services />);
 
   const body = getAllByText(
-    'A passionate leader and instructor who actively engages and instills a healthy environment. I am able to receive and give constructive criticism to produce highly efficient development teams.'
+    'A passionate leader, coach, and instructor who actively engages and instills a healthy environment. I am able to receive and give constructive criticism to produce highly efficient development teams.'
   );
 
-  const title = getAllByText('Team Lead');
+  const title = getAllByText('Engineer Manager');
 
   expect(title[0]).toBeInTheDocument();
   expect(body[0]).toBeInTheDocument();

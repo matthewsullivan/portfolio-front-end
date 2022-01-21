@@ -44,11 +44,12 @@ const Services = () => {
                 <IosLeafOutline color="#070a21" fontSize="64px" />
               </ScrollAnimation>
             }
-            label="Team Lead"
+            label="Engineer Manager"
           >
-            A passionate leader and instructor who actively engages and instills
-            a healthy environment. I am able to receive and give constructive
-            criticism to produce highly efficient development teams.
+            A passionate leader, coach, and instructor who actively engages and
+            instills a healthy environment. I am able to receive and give
+            constructive criticism to produce highly efficient development
+            teams.
           </Gem>
           <Gem
             className="service__item"
