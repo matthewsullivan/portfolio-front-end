@@ -18,7 +18,7 @@ test('Displays Service A', () => {
   const {getAllByText} = render(<Services />);
 
   const body = getAllByText(
-    'Providing elegant, maintainable, and simple solutions to complex problems. From native applications to web development, I bring many years of experience to the table. There has not been a problem I could not solve.'
+    'Writing elegant, maintainable, and simple solutions to complex problems. From native applications to web development, I bring many years of experience to the table. There has not been a problem I could not solve.'
   );
 
   const title = getAllByText('Development');
@@ -31,10 +31,10 @@ test('Displays Service B', () => {
   const {getAllByText} = render(<Services />);
 
   const body = getAllByText(
-    'A passionate leader, coach, and instructor who actively engages and instills a healthy environment. I am able to receive and give constructive criticism to produce highly efficient development teams.'
+    'A passionate leader, coach, and instructor who actively engages and instills a healthy team environment. I am able to manage, receive, and provide constructive criticism to produce highly efficient development teams.'
   );
 
-  const title = getAllByText('Engineer Manager');
+  const title = getAllByText('Engineer Management');
 
   expect(title[0]).toBeInTheDocument();
   expect(body[0]).toBeInTheDocument();
