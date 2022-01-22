@@ -26,29 +26,30 @@ const Services = () => {
           <Gem
             className="service__item"
             icon={
+              <ScrollAnimation animateIn="rotateIn" animateOnce delay={150}>
+                <IosLeafOutline color="#070a21" fontSize="64px" />
+              </ScrollAnimation>
+            }
+            label="Engineer Management"
+          >
+            A passionate leader, coach, and instructor who actively engages and
+            instills a healthy team environment. I am able to manage, receive,
+            and provide constructive criticism to produce highly efficient
+            development teams.
+          </Gem>
+          <Gem
+            className="service__item"
+            icon={
               <ScrollAnimation animateIn="rotateIn" animateOnce>
                 <IosCodeWorking color="#070a21" fontSize="64px" />
               </ScrollAnimation>
             }
             label="Development"
           >
-            Providing elegant, maintainable, and simple solutions to complex
+            Writing elegant, maintainable, and simple solutions to complex
             problems. From native applications to web development, I bring many
             years of experience to the table. There has not been a problem I
             could not solve.
-          </Gem>
-          <Gem
-            className="service__item"
-            icon={
-              <ScrollAnimation animateIn="rotateIn" animateOnce delay={150}>
-                <IosLeafOutline color="#070a21" fontSize="64px" />
-              </ScrollAnimation>
-            }
-            label="Team Lead"
-          >
-            A passionate leader and instructor who actively engages and instills
-            a healthy environment. I am able to receive and give constructive
-            criticism to produce highly efficient development teams.
           </Gem>
           <Gem
             className="service__item"

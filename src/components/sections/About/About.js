@@ -14,7 +14,7 @@ const About = () => {
   return (
     <section className="about">
       <Title
-        body="Enthuiastic and Experienced Software Developer"
+        body="Enthuiastic and Experienced Engineer Manager and Software Engineer"
         chapter="01"
         title="About"
       />
@@ -28,9 +28,9 @@ const About = () => {
 
           <ScrollAnimation animateIn="fadeInUp" animateOnce>
             <p className="about__body">
-              My name is Matthew Sullivan. I am a Software Engineer, Team Lead,
-              and Multimedia Specialist who is fascinated by all aspects of
-              media production.
+              My name is Matthew Sullivan. I am an Engineer Manager, Software
+              Engineer, and Multimedia Specialist who is fascinated by all
+              aspects of media production.
             </p>
           </ScrollAnimation>
 
