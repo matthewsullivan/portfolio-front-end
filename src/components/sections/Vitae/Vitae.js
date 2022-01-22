@@ -15,10 +15,7 @@ const Vitae = () => {
 
       <div className="vitae__line" />
 
-      <Button
-        external
-        path="https://www.static.matthewsullivan.media/matthewsullivancv.pdf"
-      >
+      <Button external path="/assets/cv/matthewsullivancv.pdf">
         Curriculum Vitae
       </Button>
 

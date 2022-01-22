@@ -3,8 +3,8 @@
         "description": "To connect to pre-existing JSON services, and build the iOS side of the Burgerdex platform.",
         "languages": "Built using Swift 5.0 and Xcode.",
         "link": {
-            "title": "Download the app",
-            "path": "https://apps.apple.com/ca/app/burgerdex/id1372235797"
+          "title": "Download the app",
+          "path": "https://apps.apple.com/ca/app/burgerdex/id1372235797"
         },
         "media": {
             "images": [
@@ -78,10 +78,6 @@
     {
         "description": "To design and develop a new website to add and manage vehicle inventory.\n\nA custom CMS was built for the staff at Bonter Polaris to manage, upload, and archive inventory. A custom API was built for the CMS and scalability. Multi-image uploading and record management were high priority items built into the CMS.\n\nThe front-end design is built with simplicity and user-experience in mind. Customers may view inventory with multiple filter controls, view featured items, view similar items based on the current inventory being viewed as well as see current deals.",
         "languages": "Built using HTML5/CSS3, jQuery, AJAX, JSON, PHP(PDO), and MySQL.",
-        "link": {
-            "title": "visit site",
-            "path": "https://polaris.matthewsullivan.media"
-        },
         "media": {
             "images": [
                 {
@@ -254,10 +250,6 @@
     {
         "description": "Free Live Yoga is a responsive CMS driven mobile-friendly website. This allows students and potential clients to access information on the go at any time.\n\nFree Live Yoga's content comes from a custom-built CMS that allows administrators to make changes to content, images, and layout without the need to program.\n\nWhen work commenced with Free Live Yoga, a logo was needed. The idea behind the origami-style logo is to complement the nature of bending in yoga. The bird was used as a representation of Free Live Yoga as an acronym (FLY).\n\nThe goal of Free Live Yoga's UI/UX is to match the flow of how a class operates. With easing and a layout that falls into place while browsing.",
         "languages": "The front-end of the website was built using HTML5/CSS3, jQuery, and AJAX. The back-end is powered by PHP(PDO) and MySQL.",
-        "link": {
-            "title": "visit site",
-            "path": "https://fly.matthewsullivan.media"
-        },
         "media": {
             "images": [
                 {
@@ -294,10 +286,6 @@
     {
         "description": "This site was built for a broker under Mortgage Alliance.\n\nThe client had a pre-existing brochure site and was looking to enhance the overall design, and add a modern-day look and feel.",
         "languages": "HTML5/CSS3, jQuery, AJAX, JSON, PHP(PDO), and MySQL.",
-        "link": {
-            "title": "visit site",
-            "path": "https://www.mortgagealliance.matthewsullivan.media/"
-        },
         "media": {
             "images": [
                 {
@@ -330,10 +318,6 @@
     {
         "description": "The soundscape and design of the game are to reflect a dark world where things just aren't quite right.\n\nSome of the challenges faced while creating this game was animating static content. All images provided from Hallowette needed to be broken into layers to be animated and brought into the gameplay environment.\n\nThere are various levels that increase in difficulty. Each unlocking a piece of art as a reward. Each level has it's own theme that comes back to haunt the user in the final level.\n\nThe final level was what started the concept of this game. A zoom quilt style world where the level starts with one image and continually zooms deeper and deeper into it while revealing elements and gameplay pieces.",
         "languages": "Actionscript 3.0 was used to program this game. There was a heavy use of Adobe Photoshop, Adobe Flash (now Animate), and Adobe After Effects as well.",
-        "link": {
-            "title": "Downalod Air Application",
-            "path": "https://www.static.matthewsullivan.media/hallowettesworld.zip"
-        },
         "media": {
             "images": [
                 {

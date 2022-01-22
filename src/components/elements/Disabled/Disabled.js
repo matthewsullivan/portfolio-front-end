@@ -5,11 +5,7 @@ import './Disabled.css';
 const Disabled = () => {
   return (
     <div className="disabled">
-      <img
-        alt="logo"
-        className="disabled__logo"
-        src="https://static.matthewsullivan.media/logo.png"
-      />
+      <img alt="logo" className="disabled__logo" src="/assets/logo/logo.png" />
 
       <h2 className="disabled__title">Old Browser Detected</h2>
       <p className="disabled__body">
@@ -30,7 +26,7 @@ const Disabled = () => {
       </p>
       <a
         className="disabled__link"
-        href="https://static.matthewsullivan.media/matthewsullivancv.pdf"
+        href="/assets/cv/matthewsullivancv.pdf"
         rel="noopener noreferrer"
         target="_blank"
       >
