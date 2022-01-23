@@ -4,7 +4,7 @@ if (
   process.env.REACT_APP_ENV === 'production' ||
   process.env.REACT_APP_ENV === 'staging'
 ) {
-  api = '/';
+  api = '';
 }
 
 export default api;
