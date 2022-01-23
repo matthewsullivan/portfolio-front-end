@@ -20,11 +20,11 @@ Set environment
 
 Start server
 
-    $ node server.js
+    $ npm run start
 
 ## Serve
 
-    $ npm run start
+    $ npm run develop
 
 ## Technologies
 
