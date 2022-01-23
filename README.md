@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/matthewsullivan/portfolio-front-end/master/public/assets/logo/logo--circle.png" height="24" width="24">  ![Node.js CI](https://github.com/matthewsullivan/portfolio-front-end/workflows/Node.js%20CI/badge.svg)
 
-https://matthewsullivan.media
+www.matthewsullivan.media
 
 <hr>
 
