@@ -74,7 +74,7 @@
     "build:staging": "env-cmd -f .env.staging npm run build",
     "develop": "react-scripts start",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm install pm2",
+    "heroku-postbuild": "npm run build && npm install pm2",
     "server:production": "pm2-runtime start ecosystem.config.js --only production",
     "server:staging": "pm2-runtime start ecosystem.config.js --only staging",
     "start": "react-scripts start",
