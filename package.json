@@ -27,6 +27,7 @@
     "install": "^0.13.0",
     "nodemailer": "^6.4.2",
     "opensans-npm-webfont": "^1.0.0",
+    "pm2": "^5.1.2",
     "react": "^16.12.0",
     "react-alice-carousel": "^1.17.3",
     "react-anchor-link-smooth-scroll": "^1.0.12",
@@ -69,11 +70,12 @@
     "url": "https://github.com/matthewsullivan/portfolio-front-end.git"
   },
   "scripts": {
-    "start": "react-scripts start ",
     "build": "react-scripts build",
     "build:staging": "env-cmd -f .env.staging npm run build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "develop": "react-scripts start",
+    "eject": "react-scripts eject",
+    "start": "pm2-runtime start ecosystem.config.js --only production",
+    "test": "react-scripts test"
   },
-  "version": "2.4.5"
+  "version": "2.4.6"
 }

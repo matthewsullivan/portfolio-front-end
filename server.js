@@ -10,7 +10,7 @@ const preview = require('./model/preview.json');
 const studies = require('./model/studies.json');
 
 const app = express();
-const port = process.env.NODE_ENV === 'production' ? 8888 : 8080;
+const port = 8080;
 
 const validateRecaptcha = async (req, token) => {
   if (!token) return false;
