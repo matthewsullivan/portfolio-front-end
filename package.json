@@ -25,6 +25,7 @@
     "env-cmd": "^10.1.0",
     "express": "^4.17.1",
     "install": "^0.13.0",
+    "newrelic": "^8.7.1",
     "nodemailer": "^6.4.2",
     "opensans-npm-webfont": "^1.0.0",
     "react": "^16.12.0",
