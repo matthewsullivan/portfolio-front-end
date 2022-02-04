@@ -1,5 +1,3 @@
-require('newrelic');
-
 const axios = require('axios');
 const cors = require('cors');
 const express = require('express');
@@ -111,6 +109,8 @@ if (
   app.get('/', (req, res) => {
     res.sendFile(path.resolve('build/index.html'));
   });
+
+  require('newrelic');
 }
 
 app.listen(port, () => {
