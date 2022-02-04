@@ -109,6 +109,8 @@ if (
   app.get('/', (req, res) => {
     res.sendFile(path.resolve('build/index.html'));
   });
+
+  require('newrelic');
 }
 
 app.listen(port, () => {
