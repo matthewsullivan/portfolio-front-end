@@ -20,7 +20,7 @@ const Vitae = () => {
       </Button>
 
       <p className="vitae__body">
-        Engineer Manager{' '}
+        Engineering Manager{' '}
         <a
           className="vitae__link"
           href="https://www.thinkific.com/"

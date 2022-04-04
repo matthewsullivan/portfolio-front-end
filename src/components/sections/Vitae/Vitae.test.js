@@ -15,7 +15,7 @@ test('Displays Title', () => {
 test('Displays Content', () => {
   const {getAllByText} = render(<Vitae />);
 
-  const body = getAllByText('Engineer Manager');
+  const body = getAllByText('Engineering Manager');
 
   const button = getAllByText('Curriculum Vitae');
   const subtitle = getAllByText(
