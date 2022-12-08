@@ -1,21 +1,28 @@
 import React from 'react';
 
-import {render} from '@testing-library/react';
+import {render, screen} from '@testing-library/react';
 
 import Button from './Button';
 
-test('Renders as Button', () => {
-  const {getByText} = render(<Button type="submit">Submit</Button>);
+describe('<Button />', () => {
+  describe('render', () => {
+    it('renders a button', () => {
+      render(<Button type="button">Submit</Button>);
+      expect(screen.getByText('Submit')).toBeInTheDocument();
+    });
+  });
 
-  const button = getByText('Submit');
+  describe('when external prop is passed', () => {
+    it('renders a hypertext link', () => {
+      render(<Button external>Curriculum Vitae</Button>);
+      expect(screen.getByText('Curriculum Vitae')).toBeInTheDocument();
+    });
+  });
 
-  expect(button).toBeInTheDocument();
-});
-
-test('Renders as Link', () => {
-  const {getByText} = render(<Button path="folio">Portfolio</Button>);
-
-  const link = getByText('Portfolio');
-
-  expect(link).toBeInTheDocument();
+  describe('when path prop with no type prop is passed', () => {
+    it('renders an anchor link', () => {
+      render(<Button path="folio">Portolio</Button>);
+      expect(screen.getByText('Portolio')).toBeInTheDocument();
+    });
+  });
 });
